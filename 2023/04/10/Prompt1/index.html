@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/1.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>分享 ChatGPT 自用 Prompt 区别于网络上大多数烂套路 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -286,55 +315,55 @@
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">请对Text以表格返回：<br>项目|结果<br>翻译成英文<br>国际音标<br>词性<br>词形<br>中文解释<br>词根词缀<br>例句1(英-中)<br>例句2<br>例句3<br>Text: <span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreiarzugkshqfkk4nzieutghxk2aze64mkuat4tdzprlq32yodhvdpu" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreiarzugkshqfkk4nzieutghxk2aze64mkuat4tdzprlq32yodhvdpu"></p>
 <hr>
 <h2 id="英文例句"><a href="#英文例句" class="headerlink" title="英文例句"></a>英文例句</h2><blockquote>
 <p>{查询中&#x2F;英词汇，返回 3 个例句附中文}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">请对Text以表格返回：<br>项目|结果<br>英文<br>例句1(英-中)<br>例句2(英-中)<br>例句3(英-中)<br>Text: <span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreicermbghs54w3njx3mspw4jd3whoo4rjqfbs5e6ddutx2cj7eilki" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreicermbghs54w3njx3mspw4jd3whoo4rjqfbs5e6ddutx2cj7eilki"></p>
 <hr>
 <h2 id="汉字查询"><a href="#汉字查询" class="headerlink" title="汉字查询"></a>汉字查询</h2><blockquote>
 <p>{查询汉字的拼音组词解释}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">请对Text以表格返回：<br>项目|结果<br>拼音<br>组词<br>汉字解释<br>例句<br>Text: <span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreifk3k23otoylokiyyhlhtot7c4byq37klltgsxozhmxdvzuvo5kju" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreifk3k23otoylokiyyhlhtot7c4byq37klltgsxozhmxdvzuvo5kju"></p>
 <hr>
 <h2 id="中英互译"><a href="#中英互译" class="headerlink" title="中英互译"></a>中英互译</h2><blockquote>
 <p>{自动翻译目标语言}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">translates  EN/CN,answer only.<br>Text:<span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreiatyzux3ecz3g74aimatzsvrveq432fbaysdtey4agod2vgxxgiqe" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafkreiatyzux3ecz3g74aimatzsvrveq432fbaysdtey4agod2vgxxgiqe"></p>
 <hr>
 <h2 id="古文解释"><a href="#古文解释" class="headerlink" title="古文解释"></a>古文解释</h2><blockquote>
 <p>{自动翻译目标语言}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">请对Text以表格返回：<br>项目|结果<br>拼音<br>现代解释<br>例句<br>Text: <span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeiginadrvksulfqsa2lt2pioc7kc5pb2w3zga5llkz5rctyxdswysq" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeiginadrvksulfqsa2lt2pioc7kc5pb2w3zga5llkz5rctyxdswysq"></p>
 <hr>
 <h2 id="语言优化"><a href="#语言优化" class="headerlink" title="语言优化"></a>语言优化</h2><blockquote>
 <p>{用简洁的语言整理这一段话，增加逻辑性，去掉错别字}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">请改进Text的拼写、语法、清晰、简洁和整体可读性，同时分解长句，减少重复。只返回更正版本，避免解释。<br>Text:<span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeidndw5sj5apalwbskmj6qnge3ek2nkiv4slatq35socyutww5il5a" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeidndw5sj5apalwbskmj6qnge3ek2nkiv4slatq35socyutww5il5a"></p>
 <hr>
 <h2 id="Excel-函数生成器"><a href="#Excel-函数生成器" class="headerlink" title="Excel 函数生成器"></a>Excel 函数生成器</h2><blockquote>
 <p>{根据描述生成函数}</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">将Text指令返回指定的excel函数：<br>项目|结果<br>Excel函数<br>精简描述<br>Text:<span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;&#123;&#123;&#125;&#125;&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeidk4dzk2cem5egtwifxpvbhbzll6o335t4qetqm3ypee6xsipa2hq" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeidk4dzk2cem5egtwifxpvbhbzll6o335t4qetqm3ypee6xsipa2hq"></p>
 <hr>
 <h2 id="生成标题"><a href="#生成标题" class="headerlink" title="生成标题"></a>生成标题</h2><blockquote>
 <p>{复制&#x2F;粘贴您的页面内容并询问}<br>[配合 <a target="_blank" rel="noopener" href="https://github.com/mckaywrigley/chatbot-ui">Chatbot-ui</a>使用，实现多变量 Prompt]</p>
 </blockquote>
 <p><code>生成&#123;&#123;生成几个&#125;&#125;个独特的标题标签，最多 60 个字符，用于Text。它们应该描述性并包含术语&quot;&#123;&#123;包含术语&#125;&#125;&quot;： Text:&quot;&quot;&quot;&#123;&#123;内容&#125;&#125;&quot;&quot;&quot;</code></p>
-<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeigxase52oxwjux5hvdfpzsonbfcn6pmjdauhtwdx3w4yrdawhpwfe" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cloudflare-ipfs.com/ipfs/bafybeigxase52oxwjux5hvdfpzsonbfcn6pmjdauhtwdx3w4yrdawhpwfe"></p>
 
                 
               </div>
@@ -539,6 +568,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -582,10 +635,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -684,6 +733,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

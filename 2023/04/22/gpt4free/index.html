@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038828.jpg">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>本地部署免费的  GPT3.5 和 GPT4 - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -295,10 +324,10 @@
 <p>去中心化 AI 产业，通过几个反向工程的 API（poe.com、phind.com、chat.openai.com 等）提供免费的 GPT-4&#x2F;3.5 脚本。</p>
 </blockquote>
 <h2 id="在线访问"><a href="#在线访问" class="headerlink" title="在线访问"></a>在线访问</h2><p><a target="_blank" rel="noopener" href="https://chat.chatbot.sex/chat">https://chat.chatbot.sex/chat</a> 包括 gpt-4、网络访问和类似于 gpt-jailbreak 的 DAN 模型</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038826.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038826.webp"></p>
 <h2 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h2><h3 id="下载代码包"><a href="#下载代码包" class="headerlink" title="下载代码包"></a>下载代码包</h3><p>打开 <a target="_blank" rel="noopener" href="https://github.com/xtekky/chatgpt-clone">xtekky&#x2F;chatgpt-clone</a></p>
 <p>下载压缩包并解压</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038823.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038823.webp"></p>
 <h3 id="创建虚拟环境"><a href="#创建虚拟环境" class="headerlink" title="创建虚拟环境"></a>创建虚拟环境</h3><p>首先，打开终端，进入上面解压包所在文件夹，运行下面命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">python3 -m venv myenv<br></code></pre></td></tr></table></figure>
 
@@ -320,14 +349,14 @@
 <h3 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">python3 run.py<br></code></pre></td></tr></table></figure>
 
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038824.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038824.webp"></p>
 <hr>
-<p>打开 <a target="_blank" rel="noopener" href="http://127.0.0.1:1337/">http://127.0.0.1:1337</a><br>(需富强)<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038825.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038822.webp" srcset="/img/loading.gif" lazyload></p>
+<p>打开 <a target="_blank" rel="noopener" href="http://127.0.0.1:1337/">http://127.0.0.1:1337</a><br>(需富强)<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038825.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038822.webp"></p>
 <hr>
 <p>请且用且珍惜……</p>
 <p>4 月 23 日更新：已撸坏，再观察吧……</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038827.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261038827.webp"></p>
 <h2 id="安装-python3"><a href="#安装-python3" class="headerlink" title="安装 python3"></a>安装 python3</h2><p>您可以尝试重新安装 pip 3 以确保它已正确安装。在终端中输入以下命令以卸载旧版本的 pip 3：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo apt-get remove python3-pip<br></code></pre></td></tr></table></figure>
 
@@ -571,6 +600,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -614,10 +667,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -716,6 +765,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

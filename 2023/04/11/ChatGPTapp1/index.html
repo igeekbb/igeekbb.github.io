@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/bafybeigfswxffmlqgnsry5hmjymfgxa6dvdlronybzogbyv26geszbltbq.min.2.jpeg">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>Github 近期热门 ChatGPT 介绍及特点 (第一期) - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -286,11 +315,11 @@
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">主要功能：<br>提示模板（<span class="hljs-number">3</span><span class="hljs-regexp">/27/</span><span class="hljs-number">23</span>）<br>重新生成和编辑响应（<span class="hljs-number">3</span><span class="hljs-regexp">/25/</span><span class="hljs-number">23</span>）<br>文件夹（<span class="hljs-number">3</span><span class="hljs-regexp">/24/</span><span class="hljs-number">23</span>）<br>搜索聊天内容（<span class="hljs-number">3</span><span class="hljs-regexp">/23/</span><span class="hljs-number">23</span>）<br>停止消息生成（<span class="hljs-number">3</span><span class="hljs-regexp">/22/</span><span class="hljs-number">23</span>）<br>导入<span class="hljs-regexp">/导出聊天记录（3/</span><span class="hljs-number">22</span>/<span class="hljs-number">23</span>）<br>自定义系统提示（<span class="hljs-number">3</span><span class="hljs-regexp">/21/</span><span class="hljs-number">23</span>）<br>错误处理（<span class="hljs-number">3</span><span class="hljs-regexp">/20/</span><span class="hljs-number">23</span>）<br>GPT-<span class="hljs-number">4</span>支持（需要访问）（<span class="hljs-number">3</span><span class="hljs-regexp">/20/</span><span class="hljs-number">23</span>）<br>搜索对话（<span class="hljs-number">3</span><span class="hljs-regexp">/19/</span><span class="hljs-number">23</span>）<br>代码语法高亮（<span class="hljs-number">3</span><span class="hljs-regexp">/18/</span><span class="hljs-number">23</span>）<br>切换侧边栏（<span class="hljs-number">3</span><span class="hljs-regexp">/18/</span><span class="hljs-number">23</span>）<br>对话命名（<span class="hljs-number">3</span><span class="hljs-regexp">/18/</span><span class="hljs-number">23</span>）<br>Github风格的标记（<span class="hljs-number">3</span><span class="hljs-regexp">/18/</span><span class="hljs-number">23</span>）<br>在应用中添加OpenAI API密钥（<span class="hljs-number">3</span><span class="hljs-regexp">/18/</span><span class="hljs-number">23</span>）<br>Markdown支持（<span class="hljs-number">3</span><span class="hljs-regexp">/17/</span><span class="hljs-number">23</span>）<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><strong>点评：开源 ChatGPT 用户界面，近期更新的右侧自定义提示支持变量，配合“<a target="_blank" rel="noopener" href="https://geekbb.xlog.app/fen-xiang-ChatGPT-zi-yong-Prompt-qu-bie-yu-wang-luo-shang-da-duo-shu-lan-tao-lu">ChatGPT 自用 Prompt 区别于网络上大多数烂套路</a>”食用，极大提升我的效率，支持导出话题记录和自定义 Prompt，目前是我的主力。</strong><br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406529.webp" srcset="/img/loading.gif" lazyload></li>
+<li><strong>点评：开源 ChatGPT 用户界面，近期更新的右侧自定义提示支持变量，配合“<a target="_blank" rel="noopener" href="https://geekbb.xlog.app/fen-xiang-ChatGPT-zi-yong-Prompt-qu-bie-yu-wang-luo-shang-da-duo-shu-lan-tao-lu">ChatGPT 自用 Prompt 区别于网络上大多数烂套路</a>”食用，极大提升我的效率，支持导出话题记录和自定义 Prompt，目前是我的主力。</strong><br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406529.webp"></li>
 </ul>
 <p><strong>Github 链接：<a target="_blank" rel="noopener" href="https://github.com/mckaywrigley/chatbot-ui">Chatbot-ui</a></strong></p>
 <hr>
-<h2 id="Chatbox"><a href="#Chatbox" class="headerlink" title="Chatbox"></a>Chatbox</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406545.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="Chatbox"><a href="#Chatbox" class="headerlink" title="Chatbox"></a>Chatbox</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406545.webp"></p>
 <blockquote>
 <p>开源的 ChatGPT API (OpenAI API) 桌面客户端，Prompt 的调试与管理工具，支持 Windows、Mac 和 Linux</p>
 </blockquote>
@@ -299,30 +328,30 @@
 <ul>
 <li><strong>点评：快是真快，期待加入自定义 Prompt。</strong><br>运行界面</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406557.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406557.webp"></p>
 <p>Github 链接：<a target="_blank" rel="noopener" href="https://github.com/Bin-Huang/chatbox">Chatboxi</a></p>
 <hr>
-<h2 id="ChatGPT-Box"><a href="#ChatGPT-Box" class="headerlink" title="ChatGPT Box"></a>ChatGPT Box</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406569.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="ChatGPT-Box"><a href="#ChatGPT-Box" class="headerlink" title="ChatGPT Box"></a>ChatGPT Box</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406569.webp"></p>
 <blockquote>
 <p>将 ChatGPT 深度集成到浏览器中，你所需要的一切均在于此</p>
 </blockquote>
 <figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs gcode">🌈 在任何页面随时呼出聊天对话框 <span class="hljs-comment">(Ctrl+B)</span><br>📱 支持手机等移动设备<br>📓 通过右键菜单总结任意页面 <span class="hljs-comment">(Alt+B)</span><br>📖 独立对话页面 <span class="hljs-comment">(Ctrl+Shift+H)</span><br>🔗 多种API支持 <span class="hljs-comment">(免费用户和Plus用户可用Web API, 此外还有GPT-3.5, GPT-4, NewBing, 自托管支持, Azure等)</span><br>📦 对各种常用网站的集成适配 <span class="hljs-comment">(Reddit, Quora, YouTube, GitHub, GitLab, StackOverflow, Zhihu, Bilibili)</span> <span class="hljs-comment">(受到wimdenherder启发)</span><br>🔍 对所有主流搜索引擎的适配, 并支持自定义查询以支持额外的站点<br>🧰 框选工具与右键菜单, 执行各种你的需求, 如翻译, 总结, 润色, 情感分析, 段落划分, 代码解释, 问询<br>🗂️ 静态卡片支持浮出聊天框, 进行多分支对话<br>🖨️ 随意保存你的完整对话记录, 或进行局部复制<br>🎨 强大的渲染支持, 不论是代码高亮, 还是复杂数学公式<br>🌍 多语言偏好支持<br>📝 自定义API地址支持<br>⚙️ 所有站点适配与工具均可自由开关, 随时停用你不需要的模块<br>💡 工具与站点适配开发易于扩展, 对于开发人员易于自定义, 请查看开发&amp;贡献部分<br>😉 此外, 如果回答有任何不足, 直接聊天解决!<br></code></pre></td></tr></table></figure>
 <ul>
-<li><p><strong>点评：此神软可代替 chathub，writely，BingGPT，openai-translator！我愿称最强</strong>！<br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406581.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406594.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406606.webp" srcset="/img/loading.gif" lazyload></p>
+<li><p><strong>点评：此神软可代替 chathub，writely，BingGPT，openai-translator！我愿称最强</strong>！<br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406581.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406594.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406606.webp"></p>
 </li>
 <li><p><strong>Github 链接：<a target="_blank" rel="noopener" href="https://github.com/josStorer/chatGPTBox">ChatGPT Box</a></strong></p>
 </li>
 </ul>
 <hr>
-<h2 id="BingGPT"><a href="#BingGPT" class="headerlink" title="BingGPT"></a>BingGPT</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406618.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="BingGPT"><a href="#BingGPT" class="headerlink" title="BingGPT"></a>BingGPT</h2><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406618.webp"></p>
 <blockquote>
 <p>新必应人工智能聊天的桌面应用程序</p>
 </blockquote>
 <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs mathematica">与新的必应聊天，无需安装 <span class="hljs-variable">Microsoft</span> <span class="hljs-variable">Edge</span> 或浏览器插件<br>将完整对话导出为 <span class="hljs-variable">Markdown</span>、<span class="hljs-variable">PNG</span> 或 <span class="hljs-built_in">PDF</span><br>自定义外观（主题和字体大小）<br>键盘快捷键<br>多平台<br></code></pre></td></tr></table></figure>
 <ul>
-<li><strong>点评：反映比 Edge 自带的快，并且稳如老狗</strong><br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406631.webp" srcset="/img/loading.gif" lazyload></li>
+<li><strong>点评：反映比 Edge 自带的快，并且稳如老狗</strong><br>运行界面<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406631.webp"></li>
 </ul>
 <p><strong>Github 链接：<a target="_blank" rel="noopener" href="https://github.com/dice2o/BingGPT">BingGPT</a></strong></p>
 <hr>
@@ -333,8 +362,8 @@
 <ul>
 <li><strong>点评：部署在 docker 超方便，接入我国内亲朋使用</strong></li>
 </ul>
-<p>  <img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406644.webp" srcset="/img/loading.gif" lazyload></p>
-<p>  <img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406656.webp" srcset="/img/loading.gif" lazyload></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406644.webp"></p>
+<p>  <img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251406656.webp"></p>
 <p><strong>Github 链接：<a target="_blank" rel="noopener" href="https://github.com/Chanzhaoyu/chatgpt-web">Chatgpt-web</a></strong></p>
 <hr>
 
@@ -545,6 +574,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -588,10 +641,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -690,6 +739,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272106957.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>macOS 14 Sonoma 博通网卡驱动支持 - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -288,21 +317,21 @@
 <li>在 NVRAM&gt;Add&gt;7C436110-AB2A-4BBB-A880-FE41995C9F82&gt;csr-active-config 添加 <code>03080000</code></li>
 <li>NVRAM&gt;Add&gt;7C436110-AB2A-4BBB-A880-FE41995C9F82&gt;boot-args 添加 <code>amfi=0x80</code></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272116730.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272116730.webp"></p>
 <blockquote>
 <p>将 csr-active-config 添加到删除</p>
 </blockquote>
 <ul>
 <li>在 NVRAM&gt;Delete&gt;7C436110-AB2A-4BBB-A880-FE41995C9F82&gt; 添加<code>csr-active-config</code></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272119688.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272119688.webp"></p>
 <h4 id="Misc-其它设置"><a href="#Misc-其它设置" class="headerlink" title="Misc-其它设置"></a>Misc-其它设置</h4><blockquote>
 <p>将安全启动模型设置为 Disabled</p>
 </blockquote>
 <ul>
 <li>Misc &gt; Security &gt; SecureBootModel &gt; <code>Disabled</code></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272121775.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272121775.webp"></p>
 <h4 id="Kernel-内核设置"><a href="#Kernel-内核设置" class="headerlink" title="Kernel-内核设置"></a>Kernel-内核设置</h4><p>按以下顺序注入三个 kext   (<strong><u>一定要按图设置，否则有卡白苹果的风险</u></strong>)</p>
 <p>下载： <strong><a target="_blank" rel="noopener" href="https://github.com/dortania/OpenCore-Legacy-Patcher/blob/e21efa975c0cf228cb36e81a974bc6b4c27c7807/payloads/Kexts/Wifi/IOSkywalkFamily-v1.0.0.zip">IOSkywalk.kext</a>、<a target="_blank" rel="noopener" href="https://github.com/dortania/OpenCore-Legacy-Patcher/blob/e21efa975c0cf228cb36e81a974bc6b4c27c7807/payloads/Kexts/Wifi/IO80211FamilyLegacy-v1.0.0.zip">IO80211FamilyLegacy.kext</a></strong> （右边下载原始文件）</p>
 <ul>
@@ -311,26 +340,26 @@
 <li>O80211FamilyLegacy.kext(AirPortBrcmNIC)</li>
 <li><strong>最小内核设置为 23.0.0</strong></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272123218.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272123218.webp"></p>
 <p>阻止<code>com.apple.iokit.IOSkywalkFamily</code>加载 (<strong><u>一定要按图设置，否则有卡白苹果的风险</u></strong>)</p>
 <ul>
 <li><strong>最小内核设置为 23.0.0</strong></li>
 <li><strong>Strategy(策略) 设置为 Exclude(阻止)</strong></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272130168.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272130168.webp"></p>
 <h4 id="以上设置好后重启电脑"><a href="#以上设置好后重启电脑" class="headerlink" title="以上设置好后重启电脑"></a>以上设置好后重启电脑</h4><hr>
 <h3 id="OpenCore-Legacy-Patcher-设置"><a href="#OpenCore-Legacy-Patcher-设置" class="headerlink" title="OpenCore Legacy Patcher 设置"></a>OpenCore Legacy Patcher 设置</h3><p>OpenCore Legacy Patcher <a target="_blank" rel="noopener" href="https://bit.ly/3ZAH0ve">下载</a></p>
 <ul>
 <li>点 Post-Install Root Patch</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272136489.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272136489.webp"></p>
 <ul>
 <li>Start Root Patching</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272138408.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272139664.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272138408.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272139664.webp"></p>
 <h4 id="以上设置好后重启电脑-1"><a href="#以上设置好后重启电脑-1" class="headerlink" title="以上设置好后重启电脑"></a>以上设置好后重启电脑</h4><hr>
-<h3 id="搞定"><a href="#搞定" class="headerlink" title="搞定"></a>搞定</h3><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272140309.webp" srcset="/img/loading.gif" lazyload></p>
+<h3 id="搞定"><a href="#搞定" class="headerlink" title="搞定"></a>搞定</h3><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309272140309.webp"></p>
 <p>且玩且珍惜~~</p>
 <hr>
 <h3 id="番外-博通网卡速率问题"><a href="#番外-博通网卡速率问题" class="headerlink" title="番外 博通网卡速率问题"></a>番外 博通网卡速率问题</h3><p>早在 macOS 13 我就发现，博通部分网卡，虽然免驱，但是链接后速率很低（350Mbps 以下），刚开始以为是无线路由问题，后来才知道需要调整所属地区代码。</p>
@@ -340,15 +369,15 @@
 <li><p>放入 Kernel-内核设置，最大内核按图设置。（注意加载顺序）</p>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281337152.webp" srcset="/img/loading.gif" lazyload> </p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281337152.webp"> </p>
 <ul>
 <li>NVRAM-随机访问存储器设置 boot-args 添加 <code>-brcmfxbeta brcmfx-country=HK</code> 地区设置成香港</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281346642.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281346642.webp"></p>
 <ul>
 <li>保存重启搞定</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281347552.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309281347552.png"></p>
 
                 
               </div>
@@ -557,6 +586,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -600,10 +653,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -702,6 +751,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934509.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>个人搭梯过墙备忘录 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -281,13 +310,13 @@
               <div class="markdown-body">
                 
                 <h3 id="搭梯过墙三步走"><a href="#搭梯过墙三步走" class="headerlink" title="搭梯过墙三步走"></a>搭梯过墙三步走</h3><p>一台 VPS</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934511.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934511.webp"></p>
 <h4 id="重装系统-DD"><a href="#重装系统-DD" class="headerlink" title="重装系统 (DD)"></a>重装系统 (DD)</h4><h3 id="Linux-一键网络重装系统傻瓜版"><a href="#Linux-一键网络重装系统傻瓜版" class="headerlink" title="Linux 一键网络重装系统傻瓜版"></a><a target="_blank" rel="noopener" href="https://www.939.me/1969.html">Linux 一键网络重装系统傻瓜版</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -N --no-check-certificate <span class="hljs-string">&quot;https://raw.githubusercontent.com/chiakge/installNET/master/Install.sh&quot;</span><br><span class="hljs-built_in">chmod</span> +x Install.sh<br>./Install.sh<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li>安装 Debian11 系统 -2-3</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934512.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934512.webp"></p>
 <hr>
 <h4 id="更新系统-一键安装-curl-wget"><a href="#更新系统-一键安装-curl-wget" class="headerlink" title="更新系统&amp;一键安装 curl wget"></a>更新系统&amp;一键安装 curl wget</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">apt update -y  &amp;&amp; apt upgrade -y &amp;&amp; apt install -y curl wget sudo<br></code></pre></td></tr></table></figure>
 
@@ -298,7 +327,7 @@
 <li>安装 BBR 原版内核 -1-11</li>
 <li>安装 BBRplus 新版内核 -5-19</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934513.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934513.webp"></p>
 <hr>
 <h4 id="安装代理"><a href="#安装代理" class="headerlink" title="安装代理"></a>安装代理</h4><h3 id="VLESS-TCP-Vision、Reality、gRPC-八合一共存脚本"><a href="#VLESS-TCP-Vision、Reality、gRPC-八合一共存脚本" class="headerlink" title="VLESS (TCP_Vision、Reality、gRPC 八合一共存脚本"></a><a target="_blank" rel="noopener" href="https://github.com/mack-a/v2ray-agent">VLESS (TCP_Vision、Reality、gRPC 八合一共存脚本</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -P /root -N --no-check-certificate <span class="hljs-string">&quot;https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh&quot;</span> &amp;&amp; <span class="hljs-built_in">chmod</span> 700 /root/install.sh &amp;&amp; /root/install.sh<br></code></pre></td></tr></table></figure>
 
@@ -308,7 +337,7 @@
 <li>VLESS+Realityt+uTLSt+Vision[推荐〕</li>
 </ul>
 <p>2-1-07</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934514.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270934514.webp"></p>
 <hr>
 <p>多说无益</p>
 
@@ -521,6 +550,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -564,10 +617,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -666,6 +715,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

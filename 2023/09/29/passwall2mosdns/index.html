@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309291131634.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>PassWall+MosDNS 分流设置 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -295,23 +324,23 @@
 </li>
 </ul>
 <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>前两天我 <a target="_blank" rel="noopener" href="https://x.com/geekbb/status/1705860118452347383?s=20">Twitter</a> 上推荐的 OpenWrt 固件中自带有一款 DNS 插件：<a target="_blank" rel="noopener" href="https://github.com/haiibo/OpenWrt">MosDNS</a>，在其官方 <a class="btn" href="https://github.com/IrineSistiana/mosdns"  title="fab fa-github fa-fw fa-lg" target="_blank">GitHub</a> 上显示是 2020 年 11 月推出第一版，现在已经迭代到 v5.2.1，我发现此 DNS 转发器设置比 SmartDNS 简单太多。想到不良林这两期【<a target="_blank" rel="noopener" href="https://youtu.be/TOhF5RcTGiM?si=OwPsyWM6pdNw54Yh">再谈 DNS 泄漏</a>】【<a target="_blank" rel="noopener" href="https://youtu.be/fqREM6b25SY?si=VswEPtSfQQKy6mZg">进阶•DNS 泄漏篇</a>】，在当时并没有引起我的重视，心想泄漏就泄漏，你能把我怎么样，我们就是追求极致网速体验。现在想想确实天真了 (承德) 。既然能够通过技术避免一些不必要的麻烦，为什么不更好的保护自己呢，那下面记录一下我的设置流程。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309291118344.webp" srcset="/img/loading.gif" lazyload alt="不良林"></p>
-<h3 id="MosDNS-设置"><a href="#MosDNS-设置" class="headerlink" title="MosDNS 设置"></a>MosDNS 设置</h3><h4 id="MosDNS-基本设置-基本选项"><a href="#MosDNS-基本设置-基本选项" class="headerlink" title="MosDNS 基本设置 - 基本选项"></a>MosDNS 基本设置 - 基本选项</h4><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061858121.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309291118344.webp" alt="不良林"></p>
+<h3 id="MosDNS-设置"><a href="#MosDNS-设置" class="headerlink" title="MosDNS 设置"></a>MosDNS 设置</h3><h4 id="MosDNS-基本设置-基本选项"><a href="#MosDNS-基本设置-基本选项" class="headerlink" title="MosDNS 基本设置 - 基本选项"></a>MosDNS 基本设置 - 基本选项</h4><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061858121.webp"></p>
 <h4 id="MosDNS-基本设置-高级选项"><a href="#MosDNS-基本设置-高级选项" class="headerlink" title="MosDNS 基本设置 - 高级选项"></a>MosDNS 基本设置 - 高级选项</h4><ul>
 <li>如要启用 DNS 广告过滤，记得勾选最后一项</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061859569.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061859569.webp"></p>
 <h3 id="PassWall-设置"><a href="#PassWall-设置" class="headerlink" title="PassWall 设置"></a>PassWall 设置</h3><h4 id="PassWall-DNS"><a href="#PassWall-DNS" class="headerlink" title="PassWall DNS"></a>PassWall DNS</h4><ul>
 <li>远程 DNS 填写 <code>127.0.0.1:5335</code></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061859139.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310061859139.webp"></p>
 <h3 id="OpenWrt-DHCP-设置"><a href="#OpenWrt-DHCP-设置" class="headerlink" title="OpenWrt DHCP 设置"></a>OpenWrt DHCP 设置</h3><h4 id="DHCP-DNS-基本设置"><a href="#DHCP-DNS-基本设置" class="headerlink" title="DHCP&#x2F;DNS 基本设置"></a>DHCP&#x2F;DNS 基本设置</h4><ul>
 <li>查看 DNS 转发 是否为 <code>127.0.0.1#5335</code>（以上设置好后此处会自动变更，只需要核对。）</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309291137850.webp" srcset="/img/loading.gif" lazyload alt="DHCP/DNS"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309291137850.webp" alt="DHCP/DNS"></p>
 <hr>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>以上设置完成后，再查询你的 DNS 泄漏<a target="_blank" rel="noopener" href="https://ipleak.net/">https://ipleak.net/</a> 和 WebRTC 泄漏<a target="_blank" rel="noopener" href="https://browserleaks.com/webrtc">https://browserleaks.com/webrtc</a> 如果没有中国 DNS，就基本搞定了。<strong>这只是最初阶入门玩法，要看高阶玩法和了解原理可参考不良林的几期 DNS 讲解视频。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309292030259.webp" srcset="/img/loading.gif" lazyload alt="DNS"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202309292030259.webp" alt="DNS"></p>
 
                 
               </div>
@@ -522,6 +551,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -565,10 +618,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -667,6 +716,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

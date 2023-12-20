@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500058.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>快速获取 SSL 泛二级域名证书-acme.sh - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -302,17 +331,17 @@
 </blockquote>
 <h3 id="手动-DNS-验证方式"><a href="#手动-DNS-验证方式" class="headerlink" title="手动 DNS 验证方式"></a>手动 DNS 验证方式</h3><h4 id="一、安装-acme-sh"><a href="#一、安装-acme-sh" class="headerlink" title="一、安装 acme.sh"></a>一、安装 acme.sh</h4><ul>
 <li>打开 SSH 输入以下命令安装 acme.sh（注：最后<span style="color:red">Email</span>地址改成你注册 Cloudflare 的邮箱）<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim">curl https://<span class="hljs-built_in">get</span>.acme.<span class="hljs-keyword">sh</span> | <span class="hljs-keyword">sh</span> -s email=my@example.<span class="hljs-keyword">com</span><br></code></pre></td></tr></table></figure>
-<img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500740.webp" srcset="/img/loading.gif" lazyload></li>
+<img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500740.webp"></li>
 </ul>
 <hr>
 <h4 id="二、运行脚本手动验证-DNS"><a href="#二、运行脚本手动验证-DNS" class="headerlink" title="二、运行脚本手动验证 DNS"></a>二、运行脚本手动验证 DNS</h4><ul>
 <li>就以我的<code>198406.xyz</code> 来申请泛二级域名 (*.198406.xyz)SSL 证书，下面代码改成你自己的域名。<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">acme<span class="hljs-selector-class">.sh</span> <span class="hljs-attr">--issue</span> <span class="hljs-attr">--dns</span> -d <span class="hljs-string">&quot;*.198406.xyz&quot;</span> <span class="hljs-attr">--yes-I-know-dns-manual-mode-enough-go-ahead-please</span><br></code></pre></td></tr></table></figure>
-<img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500741.webp" srcset="/img/loading.gif" lazyload></li>
+<img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500741.webp"></li>
 </ul>
 <p><span style="color:red">记录</span>上面的 Domain 和 TXT value 的所有值（<span style="color:yellow">黄色</span>字体部分）</p>
 <hr>
 <h4 id="三、Cloudflare-添加-TXT-解析"><a href="#三、Cloudflare-添加-TXT-解析" class="headerlink" title="三、Cloudflare 添加 TXT 解析"></a>三、Cloudflare 添加 TXT 解析</h4><p>*在 Cloudflare 管理域名添加 TXT 解析</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500742.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500742.webp"></p>
 <ul>
 <li>等待 1 min 生效后</li>
 </ul>
@@ -320,7 +349,7 @@
 <h4 id="四、运行申请脚本"><a href="#四、运行申请脚本" class="headerlink" title="四、运行申请脚本"></a>四、运行申请脚本</h4><ul>
 <li><p><strong>（记得改成你自己的<span style="color:red">域名</span>）</strong></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">acme<span class="hljs-selector-class">.sh</span> <span class="hljs-attr">--renew</span> <span class="hljs-attr">--dns</span> -d <span class="hljs-string">&quot;*.198406.xyz&quot;</span> <span class="hljs-attr">--yes-I-know-dns-manual-mode-enough-go-ahead-please</span><br></code></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500743.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500743.webp"></p>
 </li>
 <li><p>成功申请到*.198406.xyz 泛二级域名证书</p>
 </li>
@@ -329,9 +358,9 @@
 <h4 id="五、域名证书安全处理"><a href="#五、域名证书安全处理" class="headerlink" title="五、域名证书安全处理"></a>五、域名证书安全处理</h4><ul>
 <li>将 pem 域名文件保存到&#x2F;root&#x2F;cert&#x2F;(改域名，文件目录要先建好)<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs stylus">acme<span class="hljs-selector-class">.sh</span> <span class="hljs-attr">--install-cert</span> -d <span class="hljs-string">&quot;*.198406.xyz&quot;</span> \ <br><span class="hljs-attr">--key-file</span>       /root/cert/key<span class="hljs-selector-class">.pem</span>  \<br><span class="hljs-attr">--fullchain-file</span> /root/cert/cert<span class="hljs-selector-class">.pem</span> \<br><span class="hljs-attr">--reloadcmd</span>     <span class="hljs-string">&quot;service nginx force-reload&quot;</span><br></code></pre></td></tr></table></figure></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500744.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500744.webp"></p>
 <hr>
-<p>搞定<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500745.webp" srcset="/img/loading.gif" lazyload></p>
+<p>搞定<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307251500745.webp"></p>
 
                 
               </div>
@@ -542,6 +571,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -585,10 +638,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -687,6 +736,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

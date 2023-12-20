@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436636.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>从 macOS 到 iPhone 全面拥抱 RIME 输入法 - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -284,7 +313,7 @@
 </blockquote>
 <h2 id="我的看法"><a href="#我的看法" class="headerlink" title="我的看法"></a>我的看法</h2><h3 id="初始"><a href="#初始" class="headerlink" title="初始"></a>初始</h3><p>我是一名五笔输入法使用者，大约在 16 年接触到了中州韵输入法引擎，当时使用的是 Windows 发行版小狼毫。相比于搜狗输入法，这种输入法没有设置界面，全凭用户通过修改用户文件夹或程序文件夹里的 YAML 配置文件来客制化自己的输入法，在当时绝对是一股清流。后来，像大多数人一样，由于找不到各种功能的配置文件，入门即放弃。几年后，我断断续续地使用过，但总是感觉不得要领。</p>
 <h3 id="转机"><a href="#转机" class="headerlink" title="转机"></a>转机</h3><p>直到最近，我看到一篇博文《<a target="_blank" rel="noopener" href="https://ssnhd.com/2022/01/06/rime/">Rime Squirrel 鼠须管输入法配置详解</a>》，通读过才算正真了解了 RIME 输入法，就是博主的这张图彻底解决了我找不到各种配置文件目录的问题，我真心建议想用好 RIME 输入法的朋友仔细看看这篇博文，你一定会从中得到很多收获。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436637.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436637.webp"></p>
 <ul>
 <li>随即磨拳擦掌再次开始安装使用</li>
 </ul>
@@ -301,17 +330,17 @@
 <h3 id="皮肤效果"><a href="#皮肤效果" class="headerlink" title="皮肤效果"></a>皮肤效果</h3><blockquote>
 <p>首选皮肤”微信键盘皮肤”，香不香！</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436636.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436636.webp"></p>
 <blockquote>
 <p>另外几套皮肤 (借用博主的图)</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436638.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436638.webp"></p>
 <h3 id="词库管理推荐"><a href="#词库管理推荐" class="headerlink" title="词库管理推荐"></a>词库管理推荐</h3><blockquote>
 <p>管理 #Rime #五笔 词库的工具，可添加、删除、批量导入外部词条、批量生成指定版本的五笔编码，支持 macOS Windows Ubuntu 多个平台</p>
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/KyleBing/wubi-dict-editor">五笔码表助手 for Rime</a></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436639.webp" srcset="/img/loading.gif" lazyload></p>
-<p>可以看到，拼音词库是 65116，五笔词库是 89271，还不够造吗？，有了这个词库工具，自己造吧<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436640.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436639.webp"></p>
+<p>可以看到，拼音词库是 65116，五笔词库是 89271，还不够造吗？，有了这个词库工具，自己造吧<br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436640.webp"></p>
 <ul>
 <li>这不比微信输入法强？顺嘴一提，为了您的隐私，真心不建议国内用户安装微信输入法。</li>
 </ul>
@@ -334,23 +363,23 @@
 <blockquote>
 <p><strong>仓输入法</strong> 经过几次迭代，已经很完备了，推荐使用。</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436641.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436641.webp"></p>
 <h3 id="iPhone-拼音方案"><a href="#iPhone-拼音方案" class="headerlink" title="iPhone 拼音方案"></a>iPhone 拼音方案</h3><blockquote>
 <p>只推荐<a target="_blank" rel="noopener" href="https://github.com/iDvel/rime-ice">雾凇拼音</a>，将<a target="_blank" rel="noopener" href="https://github.com/iDvel/rime-ice">雾凇拼音</a>打包下载解压重命名为 Rime</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436642.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436642.webp"></p>
 <h3 id="输入方案上传"><a href="#输入方案上传" class="headerlink" title="输入方案上传"></a>输入方案上传</h3><blockquote>
 <p>打开网页，将原来的 Rime 方案删除，上传雾凇拼音包，注意文件夹还是要命名为 Rime </p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436643.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436643.webp"></p>
 <blockquote>
 <p>选择雾凇拼音，然后重新部署即可。</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436644.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436644.webp"></p>
 <blockquote>
 <p>切记不要打开配色方案，相信我，用自带的主题，又快又简洁！</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436645.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261436645.webp"></p>
 <ul>
 <li>模糊音请修改 <code>rime_ice.schema.yaml</code> 文件</li>
 </ul>
@@ -564,6 +593,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -607,10 +660,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -709,6 +758,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

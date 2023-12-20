@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -33,6 +33,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009389.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由 - Hexo</title>
@@ -77,7 +79,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -87,6 +89,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -301,7 +330,7 @@
 </tbody></table>
 <p><code>Access Token</code> 有效期 <code>14</code> 天，期间访问<strong>不需要梯子</strong></p>
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><h4 id="安装-Docker"><a href="#安装-Docker" class="headerlink" title="安装 Docker"></a>安装 Docker</h4><p>打开 OpenWrt 我使用的固件是 <a target="_blank" rel="noopener" href="https://supes.top/">https://supes.top/</a> ，找到<code>系统</code>—<code>软件包</code>，点击更新列表</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009390.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009390.webp"></p>
 <p>更新后分别安装：</p>
 <ol>
 <li><p>luci-lib-jsonc</p>
@@ -311,27 +340,27 @@
 <li><p>luci-app-dockerman</p>
 </li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009391.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009392.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009391.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009392.webp"></p>
 <p>安装完成后就可以在左栏找到 Docker</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009393.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009393.webp"></p>
 <p>下面的操作建议在 SSH 完成，OpenWrt 上操作 Docker 真难用！</p>
 <p>使用 SSH 工具连接 OpenWrt 网关 192.168.2.1，用户名和密码就是 OpenWrt 的用户名和密码。推荐工具  <a target="_blank" rel="noopener" href="https://github.com/electerm/electerm">electerm</a></p>
 <h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker pull pengzhile/pandora<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009394.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009394.webp"></p>
 <h4 id="运行镜像"><a href="#运行镜像" class="headerlink" title="运行镜像"></a>运行镜像</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -e PANDORA_CLOUD=cloud -e PANDORA_SERVER=0.0.0.0:8899 -p 8899:8899 -d pengzhile/pandora<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009395.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009395.webp"></p>
 <p>更多 Docker 环境变量请看： <a target="_blank" rel="noopener" href="https://github.com/pengzhile/pandora/blob/master/doc/wiki.md#docker%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">pandora 环境变量</a></p>
 <h4 id="获取-Access-Token"><a href="#获取-Access-Token" class="headerlink" title="获取 Access Token"></a>获取 Access Token</h4><ul>
 <li><p>官方登录，然后访问 <a target="_blank" rel="noopener" href="http://chat.openai.com/api/auth/session">这里</a> 拿 <code>Access Token</code> 有效期 <code>14</code> 天</p>
 </li>
-<li><p>也可以直接用 OpenAI 帐号登录<br>打开 http:&#x2F;&#x2F;网关:8899&#x2F;<br>我使用 <code>Access Token</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009396.webp" srcset="/img/loading.gif" lazyload></p>
+<li><p>也可以直接用 OpenAI 帐号登录<br>打开 http:&#x2F;&#x2F;网关:8899&#x2F;<br>我使用 <code>Access Token</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009396.webp"></p>
 </li>
 </ul>
 <p>搞定，使用 cloud 模式，和 ChatGPT 官网无异，聊天记录同步更新，比官网稳定快捷。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009397.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009397.webp"></p>
 <h3 id="设置开机启动-非必须"><a href="#设置开机启动-非必须" class="headerlink" title="设置开机启动 (非必须)"></a>设置开机启动 (非必须)</h3><ul>
 <li><p>使用&#x2F;etc&#x2F;rc.local 文件来执行自定义的启动脚本</p>
 </li>
@@ -342,16 +371,16 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br>/etc/init.d/dockerd restart <span class="hljs-comment"># 重启Docker服务</span><br><span class="hljs-built_in">sleep</span> 10 <span class="hljs-comment"># 等待10秒，确保Docker服务已启动 docker start my_container # 启动Docker容器</span><br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009398.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009398.webp"></p>
 <p>把上面的 docker start <code>my_container</code> 替换成 openwrt Docker 里的容器 ID 比如我的是 <code>3c3ab7807401</code><br>docker start <code>3c3ab7807401</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009399.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009399.webp"></p>
 <ul>
 <li>保存并关闭文件。</li>
 </ul>
 <p>授予<code>/etc/rc.local</code>文件执行权限：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">chmod</span> +x /etc/rc.local<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009400.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009400.webp"></p>
 
                 
               </div>
@@ -564,6 +593,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -607,10 +660,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -709,6 +758,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

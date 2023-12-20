@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323792.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>用 Rust 命令行一键打包网页生成桌面 App - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -305,11 +334,11 @@
 
 <h3 id="使用-npm-进行安装"><a href="#使用-npm-进行安装" class="headerlink" title="使用 npm 进行安装"></a><strong>使用 npm 进行安装</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g pake-cli<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323792.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323792.webp"></p>
 <h3 id="查找-Pake-安装路径"><a href="#查找-Pake-安装路径" class="headerlink" title="查找 Pake 安装路径"></a><strong>查找 Pake 安装路径</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm bin -g<br></code></pre></td></tr></table></figure>
 
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323793.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323793.webp"></p>
 <h3 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a><strong>编辑配置文件</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">nano ~/.bash_profile<br></code></pre></td></tr></table></figure>
 
 
@@ -318,7 +347,7 @@
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">export</span> PATH=<span class="hljs-variable">$PATH</span>:/Users/geek/.npm-packages/bin<br></code></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323794.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323794.webp"></p>
 <p>按下 <code>Ctrl</code> 键和 <code>X</code> 键，然后 <code>Y</code>，保存退出。</p>
 <h3 id="重新加载-Bash-配置文件"><a href="#重新加载-Bash-配置文件" class="headerlink" title="重新加载 Bash 配置文件"></a><strong>重新加载 Bash 配置文件</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">source</span> ~/.bash_profile<br></code></pre></td></tr></table></figure>
 
@@ -328,9 +357,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pake https://x.geekbb.ml --name Geek --transparent<br></code></pre></td></tr></table></figure>
 
 <p><code>*如遇见 rustc 错误请看最后</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323795.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323796.webp" srcset="/img/loading.gif" lazyload></p>
-<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a><strong>效果图</strong></h3><p><code>GIF加载中……</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323797.gif" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323795.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323796.webp"></p>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a><strong>效果图</strong></h3><p><code>GIF加载中……</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323797.gif"></p>
 <hr>
 <p>不过默认图标也是醉了，随便找一个 JPG 转 ICNS 网站</p>
 <p>👉<a target="_blank" rel="noopener" href="https://www.aconvert.com/cn/image/jpg-to-icns/">JPG 转 ICNS - 在线转换图像文件 (aconvert.com)</a></p>
@@ -345,14 +374,14 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pake https://x.geekbb.ml --name Geek --transparent --icon /Users/geek/Documents/123/Geek.icns<br></code></pre></td></tr></table></figure>
 
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323798.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323798.webp"></p>
 <hr>
 <h2 id="打包-Chatbot-UI"><a href="#打包-Chatbot-UI" class="headerlink" title="打包 Chatbot UI"></a><strong>打包 <a target="_blank" rel="noopener" href="https://x.geekbb.ml/Github-Chatbot-ui">Chatbot UI</a></strong></h2><blockquote>
 <p><a target="_blank" rel="noopener" href="https://x.geekbb.ml/Github-Chatbot-ui">Chatbot UI 部署在本地</a>，正好可以打包，免得每次输入网址</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pake http://192.168.2.100:3000 --name Chatbot --transparent --icon /Users/geek/Documents/123/chatgpt.icns<br></code></pre></td></tr></table></figure>
 
-<h3 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a><strong>效果图</strong></h3><p><code>GIF加载中……</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323799.gif" srcset="/img/loading.gif" lazyload></p>
+<h3 id="效果图-1"><a href="#效果图-1" class="headerlink" title="效果图"></a><strong>效果图</strong></h3><p><code>GIF加载中……</code><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307261323799.gif"></p>
 <hr>
 <blockquote>
 <p>如果遇见 zsh: command not found: rustc 错误👇</p>
@@ -586,6 +615,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -629,10 +682,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -731,6 +780,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

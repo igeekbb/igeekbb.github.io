@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081333002.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>稳定三年的斐讯 K2T 三台 KVR 组网方案 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -281,20 +310,20 @@
               <div class="markdown-body">
                 
                 <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>早在 19 年，看了“司波图“的《<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=mfo3M1zL1Ss&t=103s&ab_channel=%E5%8F%B8%E6%B3%A2%E5%9B%BE">斐讯 K2T 无线路由 KVR 组网实战</a>》，高通 Soc 方案，QCA9886 无线芯片。作为垃圾佬中的性价比之王，种草了斐讯 K2T，当时 K2T 还是矿难产品，各大二手平台充斥着物美价廉的 K2T，随即入手两台斐讯 K2T+ 新三路由器给家里组网。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081341812.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081341812.webp"></p>
 <h2 id="K2T-刷机"><a href="#K2T-刷机" class="headerlink" title="K2T 刷机"></a>K2T 刷机</h2><p>记得 2019 年购买时还是斐讯原装系统，需要自己刷 breed，也是在“<a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum.php?mod=forumdisplay&fid=158&filter=typeid&typeid=19">恩山论坛 K2T 版块</a>”找到刷机教程搞定，现在购买的基本都刷好 OpenWRT 或集客 AC 了，自然也刷好了 breed。在这三年的使用中，发现新三路由器 (Newifi3) 刷集客固件组网还是没有 K2T 稳定，AP 管理时常掉线（网未断）。就在前两天刷 PDD 又看到了 K2T，价格居然降下来了，70 元入手一台，把三路由器 (Newifi3) 替换，组成 K2T 三台 KVR，爽歪歪。</p>
 <h3 id="进入-Breed"><a href="#进入-Breed" class="headerlink" title="进入 Breed"></a>进入 Breed</h3><p>到货后直接戳住 ‘RESET’ 孔，上电开机，breed 后台是 192.168.1.1</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081414052.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081414052.webp"></p>
 <p>刷入集客官网下载的固件<a target="_blank" rel="noopener" href="http://file.cnrouter.com/index.php/Index/index.html?model_id=45&device_type_id=4">GECOOS_K2T_QCA956X_7.1_2022022200.bin</a> （无需注册，功能解锁）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081417606.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956778.webp" srcset="/img/loading.gif" lazyload><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956779.webp" srcset="/img/loading.gif" lazyload><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956780.webp" srcset="/img/loading.gif" lazyload><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956781.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081417606.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956778.webp"><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956779.webp"><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956780.webp"><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081956781.webp"></p>
 <h2 id="接入集客-AP"><a href="#接入集客-AP" class="headerlink" title="接入集客 AP"></a>接入集客 AP</h2><p>重启后自动接入部署在 Unraid 的集客网关 AC</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111904.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111904.webp"></p>
 <p>配好默认模板，接入后自动套用 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111905.webp" srcset="/img/loading.gif" lazyload><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111906.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111905.webp"><br><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308082111906.webp"></p>
 <h2 id="速度测试"><a href="#速度测试" class="headerlink" title="速度测试"></a>速度测试</h2><p>这里借用司波图的图</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081435502.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081448001.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081435502.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202308081448001.webp"></p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>斐讯 K2T 无线路由做为家宽在 500M 以内，如果喜欢折腾和追求性价比，还是非常推荐。这两台在近四年的使用中，一直稳定运行，中途一只电源坏过一次，在 PDD 单补了一个电源大概在 30 元左右，成本已经很低了。</p>
 <hr>
 <p>就在准备发布这篇博文的时候，PDD 购买的 K2T 电源就故障了，具体表现是每个 10 分钟就重启，已申请退款😂，马上重新在淘宝以 65 元下单。所以买矿难产品就是看人品，想买到全新基本不可能，好在另外两台一直稳定了近四年，已经值票价。来吧，垃圾佬就不要怕折腾。</p>
@@ -508,6 +537,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -551,10 +604,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -653,6 +702,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

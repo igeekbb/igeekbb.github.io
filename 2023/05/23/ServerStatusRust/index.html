@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270957791.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>我把使用多年的哪吒监控换成了 ServerStatus-Rust - Hexo</title>
@@ -75,7 +77,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -85,6 +87,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -282,9 +311,9 @@
                 <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote>
 <p>当使用一个东西太久，就会出现审美疲劳，<a target="_blank" rel="noopener" href="https://nezha.wiki/">哪吒监控</a>使用多年，倒是也没有掉过链子，搭建也方便，监控项目中规中矩，报警通知也很好配置，非常适合普通用户。不过生命在于折腾，我就喜欢不断尝试新的事物。</p>
 </blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270959977.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270959977.webp"></p>
 <p>很久以前就看中 ServerStatus 监控面板，感觉就是简洁过头，没有后台，对小白来说搭建也不是太友好，最近发现 Rust 版 ServerStatus 云探针，<code>ServerStatus</code> 威力加强版，保持轻量和简单部署，也支持显示三网 ping 值和丢包率，这样一来，也可以把部署的 smokeping 给删除了</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307282050843.avif" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307282050843.avif"></p>
 <h3 id="搭建-ServerStatus-Rust"><a href="#搭建-ServerStatus-Rust" class="headerlink" title="搭建 ServerStatus-Rust"></a>搭建 ServerStatus-Rust</h3><table>
 <thead>
 <tr>
@@ -336,7 +365,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -sSLf <span class="hljs-string">&quot;https://ssr.rs/i?pass=pp&amp;gid=g1&amp;vnstat=0&amp;alias=$ (hostname)&quot;</span> &gt; ssr-client-init. Sh<br>Bash -x ssr-client-init. Sh<br></code></pre></td></tr></table></figure>
 <hr>
 <h3 id="ServerStatus-常用命令"><a href="#ServerStatus-常用命令" class="headerlink" title="ServerStatus 常用命令"></a>ServerStatus 常用命令</h3><figure class="highlight nsis"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs nsis"><span class="hljs-comment"># 启动</span><br><span class="hljs-params">system</span>ctl start stat_server<br><span class="hljs-params">system</span>ctl start stat_client<br><br><span class="hljs-comment"># 状态查看</span><br><span class="hljs-params">system</span>ctl status stat_server<br><span class="hljs-params">system</span>ctl status stat_client<br><br><span class="hljs-comment"># 使用以下命令开机自启</span><br><span class="hljs-params">system</span>ctl enable stat_server<br><span class="hljs-params">system</span>ctl enable stat_client<br><br><span class="hljs-comment"># 停止</span><br><span class="hljs-params">system</span>ctl stop stat_server<br><span class="hljs-params">system</span>ctl stop stat_client<br></code></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270959885.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270959885.webp"></p>
 <hr>
 <h3 id="Telegram-警告通知"><a href="#Telegram-警告通知" class="headerlink" title="Telegram 警告通知"></a>Telegram 警告通知</h3><p><a target="_blank" rel="noopener" href="https://doc.ssr.rs/notification/">https://doc.ssr.rs/notification/</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># https://core.telegram.org/bots/api</span><br><span class="hljs-comment"># https://jinja.palletsprojects.com/en/3.0.x/templates/#if</span><br>[tgbot]<br><span class="hljs-comment"># 开关 true 打开</span><br>Enabled = <span class="hljs-literal">false</span><br>bot_token = <span class="hljs-string">&quot;&lt;tg bot token&gt;&quot;</span><br>chat_id = <span class="hljs-string">&quot;&lt;chat id&gt;&quot;</span><br><span class="hljs-comment"># host 可用字段参见 payload. Rs 文件 HostStat 结构, &#123;&#123;host.xxx&#125;&#125; 为占位变量</span><br><span class="hljs-comment"># 例如 host. Name 可替换为 host. Alias，大家根据自己的喜好来编写通知消息</span><br><span class="hljs-comment"># &#123;&#123;ip_info.query&#125;&#125; 主机 ip,  &#123;&#123;sys_info.host_name&#125;&#125; 主机 hostname</span><br>title = <span class="hljs-string">&quot;❗&lt;b&gt;Server Status&lt;/b&gt;&quot;</span><br>online_tpl =  <span class="hljs-string">&quot; &#123;&#123;config.title&#125;&#125; \n😆 &#123;&#123;host.location&#125;&#125; &#123;&#123;host.name&#125;&#125; 主机恢复上线啦&quot;</span><br>offline_tpl = <span class="hljs-string">&quot; &#123;&#123;config.title&#125;&#125; \n😱 &#123;&#123;host.location&#125;&#125; &#123;&#123;host.name&#125;&#125; 主机已经掉线啦&quot;</span><br><br><span class="hljs-comment"># Custom 模板置空则停用自定义告警，只保留上下线通知</span><br>Custom_tpl = <span class="hljs-string">&quot;&quot;</span><span class="hljs-string">&quot;</span><br><span class="hljs-string">&#123;% if host. Memory_used / host. Memory_total &gt; 0.5  %&#125;</span><br><span class="hljs-string">&lt;pre&gt;😲 &#123;&#123;host.name&#125;&#125; 主机内存使用率超 50%, 当前 &#123;&#123; (100 * host.memory_used / host.memory_total) | round &#125;&#125; %  &lt;/pre&gt;</span><br><span class="hljs-string">&#123;% endif %&#125;</span><br><span class="hljs-string"></span><br><span class="hljs-string">&#123;% if host. Hdd_used / host. Hdd_total  &gt; 0.5  %&#125;</span><br><span class="hljs-string">&lt;pre&gt;😲 &#123;&#123;host.name&#125;&#125; 主机硬盘使用率超 50%, 当前 &#123;&#123; (100 * host.hdd_used / host.hdd_total) | round &#125;&#125; % &lt;/pre&gt;</span><br><span class="hljs-string">&#123;% endif %&#125;</span><br><span class="hljs-string">&quot;</span><span class="hljs-string">&quot;&quot;</span><br></code></pre></td></tr></table></figure>
@@ -548,6 +577,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -591,10 +644,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -693,6 +742,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

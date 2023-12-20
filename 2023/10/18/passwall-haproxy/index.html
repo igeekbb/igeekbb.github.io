@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182206436.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>PassWall 负载均衡 HAProxy 保姆级设置 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -299,55 +328,55 @@
 <li><p>保存&amp;应用</p>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182251012.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182251012.webp"></p>
 <h4 id="进入-HAProxy"><a href="#进入-HAProxy" class="headerlink" title="进入 HAProxy"></a>进入 HAProxy</h4><ul>
 <li>保存后进入界面 &amp; 路由地址:1188</li>
 <li>密码用户名就是刚设置的</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182255441.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182255441.webp"></p>
 <ul>
 <li>可以看到每个节点流量情况，说明已启动成功。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182256897.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182256897.webp"></p>
 <h4 id="新建负载均衡节点"><a href="#新建负载均衡节点" class="headerlink" title="新建负载均衡节点"></a>新建<strong>负载均衡</strong>节点</h4><ul>
 <li>【<strong>节点列表</strong>】新建一个【Socks 负载均衡】如图</li>
 <li>地址填 OpenWrt 路由地址</li>
 <li>端口 1181</li>
 <li>保存</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182258420.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182258420.webp"></p>
 <h4 id="套用负载均衡节点"><a href="#套用负载均衡节点" class="headerlink" title="套用负载均衡节点"></a>套用负载均衡节点</h4><ul>
 <li>回到 PassWall【基本设置】</li>
 <li>TCP 节点选择刚刚新建的【Socks 负载均衡】</li>
 <li>【Socks 配置】也要新建一个【Socks 负载均衡】节点，端口 1081</li>
 <li>保存并应用即可，进入 HAProxy 能看到流量在增加。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182301962.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182301962.webp"></p>
 <ul>
 <li>也可以使用 PassWall 分流功能</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182307843.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182307843.webp"></p>
 <p>结束</p>
 <hr>
 <h3 id="Socks-套娃新玩法"><a href="#Socks-套娃新玩法" class="headerlink" title="Socks 套娃新玩法"></a>Socks 套娃新玩法</h3><p>折腾好上面，我发现就一个节点也可以做 Socks 套娃的玩法，见推 <a target="_blank" rel="noopener" href="https://x.com/geekbb/status/1713820323274224118?s=20">https://x.com/geekbb/status/1713820323274224118?s=20</a> 一般来说我们使用 PassWall 会直接使用节点或分流使用节点，但是如果使用本地 Socks 节点套一层梯子节点，我发现是对 UDP 流量阻断情况有所减轻的，甚至更快，大家可以设置试试：</p>
 <h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><ul>
 <li>【<strong>节点列表</strong>】里新建一个  Socks 套娃，如图</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182228436.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182228436.webp"></p>
 <ul>
 <li>【<strong>基本设置</strong>】-【<strong>Socks 配置</strong>】如图：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182230011.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182230011.webp"></p>
 <ul>
 <li>在 TCP 节点中选择  [ Socks 套娃] ，下面<strong>Socks 配置</strong>启用，Socks 节点选择你的梯子节点即可</li>
 </ul>
 <p>下面上对比图</p>
-<h5 id="直接使用节点"><a href="#直接使用节点" class="headerlink" title="直接使用节点"></a>直接使用节点</h5><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182237476.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182243826.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182243279.webp" srcset="/img/loading.gif" lazyload></p>
-<h5 id="使用-Socks-套娃"><a href="#使用-Socks-套娃" class="headerlink" title="使用 Socks 套娃"></a>使用 Socks 套娃</h5><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182246766.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182247226.webp" srcset="/img/loading.gif" lazyload></p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182248378.webp" srcset="/img/loading.gif" lazyload></p>
+<h5 id="直接使用节点"><a href="#直接使用节点" class="headerlink" title="直接使用节点"></a>直接使用节点</h5><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182237476.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182243826.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182243279.webp"></p>
+<h5 id="使用-Socks-套娃"><a href="#使用-Socks-套娃" class="headerlink" title="使用 Socks 套娃"></a>使用 Socks 套娃</h5><p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182246766.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182247226.webp"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202310182248378.webp"></p>
 <p>玩得愉快~</p>
 
                 
@@ -559,6 +588,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -602,10 +655,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -704,6 +753,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

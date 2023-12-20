@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -32,6 +32,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270945085.webp">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>PicGo + uPic + Github 搭建免费图床 - Hexo</title>
@@ -76,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":50,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -86,6 +88,33 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -283,15 +312,15 @@
                 <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 &amp; Cloudflare R2，感兴趣的可以看看 <a target="_blank" rel="noopener" href="https://www.vantage.sh/blog/cloudflare-r2-aws-s3-comparison">R2 vs S3</a>，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github，要比稳定，谁能比过 Github？使用总之一句话：”有备无患”。</p>
 <h3 id="Github-图库"><a href="#Github-图库" class="headerlink" title="Github 图库"></a>Github 图库</h3><h4 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h4><p>注册好 Github 帐号，新建仓库，仓库名记住。</p>
 <h4 id="新建-token"><a href="#新建-token" class="headerlink" title="新建 token"></a>新建 token</h4><p>1&#x2F;点击个人——“设置”</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2010.35.21@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at10.35.21@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2010.35.21@2x.png" alt="CleanShot2023-05-20at10.35.21@2x"></p>
 <p>2&#x2F;左边最下面选择” &lt;&gt;Developer settings “</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949561.webp" srcset="/img/loading.gif" lazyload alt="3"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949561.webp" alt="3"></p>
 <p>3&#x2F;选择令牌 Tokens (classic)——Generate new token (classic)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949172.webp" srcset="/img/loading.gif" lazyload alt="4"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949172.webp" alt="4"></p>
 <p>4&#x2F;备注选填，一定勾选 repo</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949943.webp" srcset="/img/loading.gif" lazyload alt="5"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949943.webp" alt="5"></p>
 <p>5&#x2F;复制好 token</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270950127.webp" srcset="/img/loading.gif" lazyload alt="6"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270950127.webp" alt="6"></p>
 <p>以上，Github 图库仓库设置完成</p>
 <hr>
 <h3 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h3><h4 id="下载-PicGo"><a href="#下载-PicGo" class="headerlink" title="下载 PicGo"></a>下载 PicGo</h4><table>
@@ -311,9 +340,9 @@
 </tr>
 </tbody></table>
 <h4 id="设置-PicGo"><a href="#设置-PicGo" class="headerlink" title="设置 PicGo"></a>设置 PicGo</h4><p>打开 PicGo 设置，选择 Github 后编辑右边的配置文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270951296.webp" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270951296.webp"></p>
 <p>填入第一步记下的仓库名（格式是 userame&#x2F;repo）和拷贝下来的 token，确定即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.27.35@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at13.27.35@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.27.35@2x.png" alt="CleanShot2023-05-20at13.27.35@2x"></p>
 <hr>
 <h3 id="uPic"><a href="#uPic" class="headerlink" title="uPic"></a>uPic</h3><h4 id="下载-uPic"><a href="#下载-uPic" class="headerlink" title="下载 uPic"></a>下载 uPic</h4><table>
 <thead>
@@ -336,7 +365,7 @@
 </tr>
 </tbody></table>
 <h4 id="配置-uPic"><a href="#配置-uPic" class="headerlink" title="配置 uPic"></a>配置 uPic</h4><p>在设置中选择图床，左下脚 + “Github”</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.43.20@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at13.43.20@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.43.20@2x.png" alt="CleanShot2023-05-20at13.43.20@2x"></p>
 <blockquote>
 <ul>
 <li><code>用户名</code>: Github 用户名。例如：我的 Github 主页 <a target="_blank" rel="noopener" href="https://github.com/gee1k">https://github.com/gee1k</a>，我的用户名就是 <code>gee1k</code></li>
@@ -348,17 +377,17 @@
 </ul>
 </blockquote>
 <p>保存即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.50@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at13.44.50@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.50@2x.png" alt="CleanShot2023-05-20at13.44.50@2x"></p>
 <h4 id="jsDelivr-加速"><a href="#jsDelivr-加速" class="headerlink" title="jsDelivr 加速"></a>jsDelivr 加速</h4><p>需要 <code>jsdelivr</code> CDN 加速访问请勾选👇</p>
 <p>链接将会变成</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/g</span>eekbb/oss_img@×***<br></code></pre></td></tr></table></figure>
 
 
 
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.30@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at13.44.30@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.30@2x.png" alt="CleanShot2023-05-20at13.44.30@2x"></p>
 <hr>
 <h3 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h3><p>Typora 的配置更为简单，只要你配置好 PicGo，在 Typora 设置里选择 PicGo. app 即可</p>
-<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.55.06@2x.png" srcset="/img/loading.gif" lazyload alt="CleanShot2023-05-20at13.55.06@2x"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.55.06@2x.png" alt="CleanShot2023-05-20at13.55.06@2x"></p>
 
                 
               </div>
@@ -569,6 +598,30 @@
     </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
   
   
 </div>
@@ -612,10 +665,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
@@ -714,6 +763,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
