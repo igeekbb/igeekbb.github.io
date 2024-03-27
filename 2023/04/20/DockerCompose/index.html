@@ -19,15 +19,15 @@
   <title>小白如何安装 Docker&Compose - Geek</title>
 
   
-    <meta name="description" content="安装 DockerDebian为例  更新软件包、安装 wget 和 vim 工具1apt-get update &amp;&amp; apt-get install -y wget vim    下载并安装 Docker12wget -qO- get.docker.com | bash    显示 Docker 版本1docker -v    设置开机启动1systemctl enable do">
+    <meta name="description" content="安装 Docker   Debian为例  更新软件包、安装 wget 和 vim 工具1apt-get update &amp;&amp; apt-get install -y wget vim    下载并安装 Docker12wget -qO- get.docker.com | bash    显示 Docker 版本1docker -v    设置开机启动1systemctl enable">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小白如何安装 Docker&amp;Compose">
 <meta property="og:url" content="https://igeekbb.github.io/2023/04/20/DockerCompose/index.html">
 <meta property="og:site_name" content="Geek">
-<meta property="og:description" content="安装 DockerDebian为例  更新软件包、安装 wget 和 vim 工具1apt-get update &amp;&amp; apt-get install -y wget vim    下载并安装 Docker12wget -qO- get.docker.com | bash    显示 Docker 版本1docker -v    设置开机启动1systemctl enable do">
+<meta property="og:description" content="安装 Docker   Debian为例  更新软件包、安装 wget 和 vim 工具1apt-get update &amp;&amp; apt-get install -y wget vim    下载并安装 Docker12wget -qO- get.docker.com | bash    显示 Docker 版本1docker -v    设置开机启动1systemctl enable">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-20T00:54:43.000Z">
-<meta property="article:modified_time" content="2024-03-26T06:36:36.771Z">
+<meta property="article:modified_time" content="2024-03-27T00:54:39.390Z">
 <meta property="article:author" content="Geek">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
@@ -65,7 +65,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a><a class="item title" href="/2023/04/17/SiriChatGPT/"><span class="title">Siri 接入 ChatGPT 之捷径</span></a><a class="item title" href="/2023/09/29/passwall2mosdns/"><span class="title">PassWall+MosDNS 分流设置</span></a><a class="item title" href="/2023/04/18/AmazingQR/"><span class="title">Amazing-QR 只需四步制作一个炫酷二维码</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a><a class="item title" href="/2023/04/17/SiriChatGPT/"><span class="title">Siri 接入 ChatGPT 之捷径</span></a><a class="item title" href="/2023/09/29/passwall2mosdns/"><span class="title">PassWall+MosDNS 分流设置</span></a><a class="item title" href="/2023/05/06/CleanMyMac/"><span class="title">两款平替 CleanMyMac 磁盘清理工具推荐</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -78,7 +78,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-04-20T00:54:43.000Z">2023-04-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-26T06:36:36.771Z">2024-03-26</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-04-20T00:54:43.000Z">2023-04-20</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-27T00:54:39.390Z">2024-03-27</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -89,7 +89,10 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><h2 id="安装-Docker"><a href="#安装-Docker" class="headerlink" title="安装 Docker"></a>安装 Docker</h2><a class="tag-plugin colorful hashtag" color="yellow"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>Debian为例</span></a>
+  </div><article class="md-text content"><div class="tag-plugin quot"><h2 class="content" id="安装 Docker" type="text"><a href="#安装 Docker" class="headerlink" title="安装 Docker"></a><span class="empty"></span><span class="text">安装 Docker</span><span class="empty"></span></h2></div>
+
+
+<a class="tag-plugin colorful hashtag" color="yellow"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>Debian为例</span></a>
 
 <figure class="highlight bash"><figcaption><span>更新软件包、安装 wget 和 vim 工具</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update &amp;&amp; apt-get install -y wget vim</span><br></pre></td></tr></table></figure>
 
@@ -105,7 +108,11 @@
 
 <figure class="highlight bash"><figcaption><span>设置开机启动</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> docker</span><br></pre></td></tr></table></figure>
 
-<h2 id="安装-Docker-Compose"><a href="#安装-Docker-Compose" class="headerlink" title="安装 Docker-Compose"></a>安装 Docker-Compose</h2><figure class="highlight bash"><figcaption><span>更新包列表</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<div class="tag-plugin quot"><h2 class="content" id="安装 Docker-Compose" type="text"><a href="#安装 Docker-Compose" class="headerlink" title="安装 Docker-Compose"></a><span class="empty"></span><span class="text">安装 Docker-Compose</span><span class="empty"></span></h2></div>
+
+
+<figure class="highlight bash"><figcaption><span>更新包列表</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight bash"><figcaption><span>安装 Docker Compose 依赖</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install curl</span><br></pre></td></tr></table></figure>
@@ -123,11 +130,16 @@
 
 <p>如果成功安装，将显示 Docker Compose 的版本信息。</p>
 <hr>
-<h2 id="卸载-Docker"><a href="#卸载-Docker" class="headerlink" title="卸载 Docker"></a>卸载 Docker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sudo apt-get purge docker-ce docker-ce-cli containerd. Io</span><br></pre></td></tr></table></figure>
+<div class="tag-plugin quot"><h2 class="content" id="卸载 Docker" type="text"><a href="#卸载 Docker" class="headerlink" title="卸载 Docker"></a><span class="empty"></span><span class="text">卸载 Docker</span><span class="empty"></span></h2></div>
+
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sudo apt-get purge docker-ce docker-ce-cli containerd. Io</span><br></pre></td></tr></table></figure>
 
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Sudo <span class="built_in">rm</span> -rf /var/lib/docker</span><br><span class="line">Sudo <span class="built_in">rm</span> -rf /var/lib/containerd</span><br></pre></td></tr></table></figure>
-<h2 id="Docker-常用命令"><a href="#Docker-常用命令" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h2><table>
+
+<div class="tag-plugin quot"><h2 class="content" id="Docker 常用命令" type="text"><a href="#Docker 常用命令" class="headerlink" title="Docker 常用命令"></a><span class="empty"></span><span class="text">Docker 常用命令</span><span class="empty"></span></h2></div>
+<table>
 <thead>
 <tr>
 <th align="left">命令</th>
@@ -180,7 +192,7 @@
 </tr>
 <tr>
 <td align="left"><code>docker rm $(docker ps -a -q)</code></td>
-<td><strong>删除所有容器</strong></td>
+<td><mark class="tag-plugin colorful mark" color="red">删除所有容器</mark></td>
 </tr>
 <tr>
 <td align="left"><code>docker image prune -a</code></td>
@@ -271,7 +283,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Docker"><span class="toc-text">安装 Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Docker-Compose"><span class="toc-text">安装 Docker-Compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD-Docker"><span class="toc-text">卸载 Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">Docker 常用命令</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%20Docker"><span class="toc-text">安装 Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%20Docker-Compose"><span class="toc-text">安装 Docker-Compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD%20Docker"><span class="toc-text">卸载 Docker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">Docker 常用命令</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
@@ -537,7 +549,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-tau.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {

@@ -35,8 +35,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181054136.webp">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181057163.webp">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181123734.webp">
+<meta property="og:image" content="https://api.iconify.design/solar:link-circle-bold-duotone.svg">
 <meta property="article:published_time" content="2023-11-29T05:39:23.000Z">
-<meta property="article:modified_time" content="2024-03-25T14:24:41.998Z">
+<meta property="article:modified_time" content="2024-03-27T06:41:21.120Z">
 <meta property="article:author" content="Geek">
 <meta property="article:tag" content="Proxmoxve">
 <meta property="article:tag" content="虚拟机">
@@ -76,7 +77,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a><a class="item title" href="/2023/04/17/SiriChatGPT/"><span class="title">Siri 接入 ChatGPT 之捷径</span></a><a class="item title" href="/2023/09/29/passwall2mosdns/"><span class="title">PassWall+MosDNS 分流设置</span></a><a class="item title" href="/2023/04/18/AmazingQR/"><span class="title">Amazing-QR 只需四步制作一个炫酷二维码</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a><a class="item title" href="/2023/04/17/SiriChatGPT/"><span class="title">Siri 接入 ChatGPT 之捷径</span></a><a class="item title" href="/2023/09/29/passwall2mosdns/"><span class="title">PassWall+MosDNS 分流设置</span></a><a class="item title" href="/2023/05/06/CleanMyMac/"><span class="title">两款平替 CleanMyMac 磁盘清理工具推荐</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -89,7 +90,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-11-29T05:39:23.000Z">2023-11-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-25T14:24:41.998Z">2024-03-25</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-11-29T05:39:23.000Z">2023-11-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-27T06:41:21.120Z">2024-03-27</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -180,7 +181,7 @@
 <div class="tag-plugin quot"><h2 class="content" id="创建 CT (Docker)" type="text"><a href="#创建 CT (Docker)" class="headerlink" title="创建 CT (Docker)"></a><span class="empty"></span><span class="text">创建 CT (Docker)</span><span class="empty"></span></h2></div>
 
 
-<h3 id="下载模板、创建-特权-LXC"><a href="#下载模板、创建-特权-LXC" class="headerlink" title="下载模板、创建 特权\LXC"></a>下载模板、创建 <code>特权\LXC</code></h3><div class="tag-plugin gallery grid-box" size="xl" ratio="origin"><div class="grid-cell"><img class="lazy" data-fancybox="gallery-15" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181054136.webp"/><div class="image-meta"></div></div><div class="grid-cell"><img class="lazy" data-fancybox="gallery-15" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181057163.webp"/><div class="image-meta"></div></div><div class="grid-cell"><img class="lazy" data-fancybox="gallery-15" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181123734.webp"/><div class="image-meta"></div></div></div>
+<h3 id="下载模板、创建-特权-LXC"><a href="#下载模板、创建-特权-LXC" class="headerlink" title="下载模板、创建 特权\LXC"></a>下载模板、创建 <code>特权\LXC</code></h3><div class="tag-plugin gallery grid-box" size="xl" ratio="origin"><div class="grid-cell"><img class="lazy" data-fancybox="gallery-14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181054136.webp"/><div class="image-meta"></div></div><div class="grid-cell"><img class="lazy" data-fancybox="gallery-14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181057163.webp"/><div class="image-meta"></div></div><div class="grid-cell"><img class="lazy" data-fancybox="gallery-14" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181123734.webp"/><div class="image-meta"></div></div></div>
 
 
 <figure class="highlight bash"><figcaption><span>CT 模板换源</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /usr/share/perl5/PVE/APLInfo.pm /usr/share/perl5/PVE/APLInfo.pm_back</span><br><span class="line">sed -i <span class="string">&#x27;s|http://download.proxmox.com|https://mirrors.tuna.tsinghua.edu.cn/proxmox|g&#x27;</span> /usr/share/perl5/PVE/APLInfo.pm</span><br></pre></td></tr></table></figure>
@@ -191,8 +192,7 @@
 
 <div class="tag-plugin quot"><h2 class="content" id="为容器加入 GPU 核显" type="text"><a href="#为容器加入 GPU 核显" class="headerlink" title="为容器加入 GPU 核显"></a><span class="empty"></span><span class="text">为容器加入 GPU 核显</span><span class="empty"></span></h2></div>
 
-
-
+<p>参考 <a class="tag-plugin colorful button" color="theme" title="司波图/通用PVE AIO安装教程" target="_blank" rel="noopener" href="https://gitee.com/spoto/PVE_Generic_AIO/tree/master/1%E3%80%81%E5%88%9B%E5%BB%BA%E5%9F%BA%E4%BA%8ELXC%E7%9A%84Docker%E5%AE%B9%E5%99%A8_%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg><span>司波图/通用PVE AIO安装教程</span></a></p>
 <figure class="highlight bash"><figcaption><span>部分显卡可能需要更新内核才能找到渲染器</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/pve/lxc/[CT_ID].conf</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">lxc.cgroup2.devices.allow: c 226:0 rwm</span><br><span class="line">lxc.cgroup2.devices.allow: c 226:128 rwm</span><br><span class="line">lxc.cgroup2.devices.allow: c 29:0 rwm</span><br><span class="line">lxc.mount.entry: /dev/dri dev/dri none <span class="built_in">bind</span>,optional,create=<span class="built_in">dir</span></span><br><span class="line">lxc.mount.entry: /dev/fb0 dev/fb0 none <span class="built_in">bind</span>,optional,create=file</span><br><span class="line">lxc.apparmor.profile: unconfined</span><br></pre></td></tr></table></figure>
@@ -217,16 +217,13 @@
 <figure class="highlight bash"><figcaption><span>设置文件挂载位置 "/mnt/nas_share"</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//<span class="variable">$smb_server</span>/share /mnt/nas_share cifs credentials=/root/.smbcredentials,iocharset=utf8 0 0</span><br></pre></td></tr></table></figure>
 
 
-<p>参考</p>
-<a class="tag-plugin colorful button" color="theme" title="司波图/通用PVE AIO安装教程" target="_blank" rel="noopener" href="https://gitee.com/spoto/PVE_Generic_AIO/tree/master/1%E3%80%81%E5%88%9B%E5%BB%BA%E5%9F%BA%E4%BA%8ELXC%E7%9A%84Docker%E5%AE%B9%E5%99%A8_%EF%BC%88%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%89/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg><span>司波图/通用PVE AIO安装教程</span></a>
+
 
 
 <div class="tag-plugin quot"><h2 class="content" id="Docker 安装" type="text"><a href="#Docker 安装" class="headerlink" title="Docker 安装"></a><span class="empty"></span><span class="text">Docker 安装</span><span class="empty"></span></h2></div>
 
 
-<p>参考: <strong><span class="label label-success"><a href="https://igeekbb.github.io/2023/04/20/DockerCompose/">小白如何安装 Docker</a></span></strong></p>
-<iframe src="https://igeekbb.github.io/2023/04/20/DockerCompose/" width="100%" height="500" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
-
+<p>参考: <a class="tag-plugin colorful button" color="theme" title="小白如何安装 Docker" href="https://igeekbb.github.io/2023/04/20/DockerCompose/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.iconify.design/solar:link-circle-bold-duotone.svg" /><span>小白如何安装 Docker</span></a></p>
 <h3 id="Clouddrive2"><a href="#Clouddrive2" class="headerlink" title="Clouddrive2"></a><span class="label label-info">Clouddrive2</span></h3><p>安装前请检查 <strong><span class="label label-success"><a target="_blank" rel="noopener" href="https://hub.docker.com/r/cloudnas/clouddrive2-unstable">项目官网</a></span></strong> 最新配置  </p>
 <figure class="highlight bash"><figcaption><span>使用 fuse3 挂载云存储，启用 MountFlags</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /etc/systemd/system/docker.service.d/</span><br><span class="line"><span class="built_in">cat</span> &lt;&lt;<span class="string">EOF &gt; /etc/systemd/system/docker.service.d/clear_mount_propagation_flags.conf</span></span><br><span class="line"><span class="string">[Service]</span></span><br><span class="line"><span class="string">MountFlags=shared</span></span><br><span class="line"><span class="string">EOF</span></span><br><span class="line">systemctl restart docker.service</span><br></pre></td></tr></table></figure>
 
@@ -243,6 +240,8 @@
 
 <h3 id="Portainer-汉化版"><a href="#Portainer-汉化版" class="headerlink" title="Portainer 汉化版"></a>Portainer 汉化版</h3><p>安装前请检查 <a target="_blank" rel="noopener" href="https://hub.docker.com/r/6053537/portainer-ce">hashtag 项目官网</a>  最新配置   </p>
 <figure class="highlight bash"><figcaption><span>一键安装</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --restart=always --name=<span class="string">&quot;portainer&quot;</span> -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce</span><br></pre></td></tr></table></figure>
+
+
 
 <hr>
 <p>更新中……</p>
@@ -564,7 +563,7 @@
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-tau.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
