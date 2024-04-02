@@ -1,0 +1,670 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0" theme-name="Stellar" theme-version="1.27.0">
+  
+  <meta name="generator" content="Hexo 7.1.1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>转译-15个适用于学术写作的 ChatGPT Prompts - Geek</title>
+
+  
+    <meta name="description" content="引言  15 ChatGPT Prompts for Academic Writing 这篇文章详细阐述了如何利用 ChatGPT 来增强学术写作的各个方面,帮助学术作者通过生成创意点子、结构化论证、克服写作障碍以及格式化引用来提升学术写作质量。我认为是一篇非常不错的 Prompts ,这 15 条 Prompts 都可以单独提取使用. 是一个很好的学习范例.  本文用到的工具们月之暗面 moon">
+<meta property="og:type" content="article">
+<meta property="og:title" content="转译-15个适用于学术写作的 ChatGPT Prompts">
+<meta property="og:url" content="https://igeekbb.github.io/2024/04/02/academicprompts/index.html">
+<meta property="og:site_name" content="Geek">
+<meta property="og:description" content="引言  15 ChatGPT Prompts for Academic Writing 这篇文章详细阐述了如何利用 ChatGPT 来增强学术写作的各个方面,帮助学术作者通过生成创意点子、结构化论证、克服写作障碍以及格式化引用来提升学术写作质量。我认为是一篇非常不错的 Prompts ,这 15 条 Prompts 都可以单独提取使用. 是一个很好的学习范例.  本文用到的工具们月之暗面 moon">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021515480.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021520129.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021524451.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021526811.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021526757.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021527738.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021528683.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021529991.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021529313.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530467.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530446.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530446.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021535493.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021536949.webp">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021536899.webp">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="article:published_time" content="2024-04-02T01:35:51.000Z">
+<meta property="article:modified_time" content="2024-04-02T07:36:50.283Z">
+<meta property="article:author" content="Geek">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Prompt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta name="twitter:creator" content="@geekbb# for open_graph meta">
+  
+  
+  
+  <meta name="keywords" content="ChatGPT,Prompt">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.27.0">
+
+  
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  
+
+  
+
+  <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Geek</div><div class="sub normal cap">🧠在家居士\🥦素食者</div><div class="sub hover cap" style="opacity:0"> 就是爱瞎折腾🐤</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/wiki/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="探索" href="/explore/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a><a class="nav-item" title="X" target="_blank" rel="noopener" href="https://twitter.com/geekbb" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M14 4h-4C6.229 4 4.343 4 3.172 5.172C2 6.343 2 8.229 2 12c0 3.771 0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12c0-3.771 0-5.657-1.172-6.828C19.657 4 17.771 4 14 4" opacity="0.5"/><path fill="currentColor" d="M13.25 9a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75m1 3a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75m1 3a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75M9 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 6c4 0 4-.895 4-2s-1.79-2-4-2s-4 .895-4 2s0 2 4 2"/></svg></a></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/04/02/academicprompts/"><span class="title">转译-15个适用于学术写作的 ChatGPT Prompts</span></a><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a><a class="item title" href="/2023/04/17/SiriChatGPT/"><span class="title">Siri 接入 ChatGPT 之捷径</span></a><a class="item title" href="/2023/09/29/passwall2mosdns/"><span class="title">PassWall+MosDNS 分流设置</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top"><img class="bg lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021441202.webp">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/AI/">AI</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-02T01:35:51.000Z">2024-04-02</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-02T07:36:50.283Z">2024-04-02</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>转译-15个适用于学术写作的 ChatGPT Prompts</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><div class="tag-plugin quot"><h3 class="content" id="引言" type="icon"><a href="#引言" class="headerlink" title="引言"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">引言</span><span class="empty"></span></h3></div>
+
+<div class="tag-plugin colorful note" color="cyan"><div class="body"><p><a target="_blank" rel="noopener" href="https://www.godofprompt.ai/blog/chatgpt-prompts-for-academic-writing">15 ChatGPT Prompts for Academic Writing</a> 这篇文章详细阐述了如何利用 ChatGPT 来增强学术写作的各个方面,帮助学术作者通过生成创意点子、结构化论证、克服写作障碍以及格式化引用来提升学术写作质量。我认为是一篇非常不错的 Prompts ,这 15 条 Prompts 都可以单独提取使用. 是一个很好的学习范例.</p></div></div>
+
+<div class="tag-plugin poetry"><div class="content"><div class="title">本文用到的工具们</div><div class="body"><ul><li><p>月之暗面 moonshot 国产大模型 <a class="tag-plugin colorful button" color="theme" size="xs" title="Kimi" target="_blank" rel="noopener" href="https://kimi.moonshot.cn/"><span>Kimi</span></a>.</p></li><li><p>通过 <a class="tag-plugin colorful button" color="theme" size="xs" title="kimi-free-api" target="_blank" rel="noopener" href="https://github.com/LLM-Red-Team/kimi-free-api/"><span>kimi-free-api</span></a> 转为 API.</p></li><li><p>在 <a target="_blank" rel="noopener" href="https://github.com/open-webui/open-webui">Open WebUI</a> 使用 <a class="tag-plugin colorful button" color="theme" size="xs" title="宝玉翻译" target="_blank" rel="noopener" href="https://x.com/geekbb/status/1737634536257995177?s=20"><span>宝玉翻译</span></a> Prompts .</p></li><li><p><mark class="tag-plugin colorful mark" color="orange">全文翻译采用’意译’,仅修改几处,感谢&nbsp;AI&nbsp;工具辛勤付出.</mark></p></li><li><p>所有对话保存在”<a target="_blank" rel="noopener" href="https://github.com/igeekbb/OSS/blob/main/appendix/chat-%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8.txt">chat-学术写作的利器.txt</a>“,有兴趣可以自行查看.</p></li></ul></div><div class="footer">我认为一个好的&nbsp;Prompts&nbsp;可以一定程度弥补国产大模型的不足</div></div></div>
+
+<div class="tag-plugin quot"><h3 class="content" id="正文" type="icon"><a href="#正文" class="headerlink" title="正文"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">正文</span><span class="empty"></span></h3></div>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">学术论文写作可能很困难。为了获得更好的结果，你必须研究新的想法并将它们转化为正式的写作。</span><br><span class="line">更不用说在事实核查、准确引用资料以及维持文章客观性方面所面临的压力了。</span><br><span class="line">不过，好消息是：ChatGPT 能成为你学术写作的得力助手。</span><br><span class="line">本文将介绍 15 个 ChatGPT 提示，助你一臂之力。</span><br><span class="line">借助这些提示，ChatGPT 不仅能帮你锁定出色的论文议题、构建论证结构，还能为你的文字增添独特风格。</span><br><span class="line">它同样能助你梳理思绪，将繁杂信息整合成条理清晰的论文。</span><br><span class="line">继续阅读，探索 ChatGPT 如何在撰写学术论文过程中助你一臂之力。</span><br></pre></td></tr></table></figure>
+
+<div class="tag-plugin quot"><h3 class="content" id="15 个 ChatGPT Prompts 助力学术写作" type="text"><a href="#15 个 ChatGPT Prompts 助力学术写作" class="headerlink" title="15 个 ChatGPT Prompts 助力学术写作"></a><span class="empty"></span><span class="text">15 个 ChatGPT Prompts 助力学术写作</span><span class="empty"></span></h3></div>
+
+<h4 id="1-优化论文陈述"><a href="#1-优化论文陈述" class="headerlink" title="1. 优化论文陈述"></a>1. 优化论文陈述</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一位擅长学术写作的论文指导老师。你的职责是对学生的初始论文陈述进行优化，使其更加精炼和深入。学生给出的主题句为：“<mark class="tag-plugin colorful mark" color="blue">&lt;初始论文陈述&gt;</mark>” 你需要评估这个初始论文陈述在清晰度、具体性和学术严谨性方面的表现，并提出建议，帮助学生使陈述更加简洁、集中，并具有说服力。可以考虑加入明确的立场、关键的研究问题和研究可能带来的影响。确保优化后的主题句界限明确、具有争议性，并能为其论文中的有趣论证打下坚实的基础。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021515480.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="2-深入剖析数据与研究成果"><a href="#2-深入剖析数据与研究成果" class="headerlink" title="2. 深入剖析数据与研究成果"></a>2. 深入剖析数据与研究成果</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>在学术写作的过程中，扮演一位数据分析师。你需要对论文中“<mark class="tag-plugin colorful mark" color="blue">&lt;数据章节名称&gt;</mark>” 提供的数据进行深入分析。首先，概述主要的数据点和研究成果。寻找数据呈现的规律、联系或异常现象。分析这些成果是如何印证或对论文的主要论点提出质疑的。对数据采集方法进行评价，包括样本量、采集手段和可能的偏差等。最后，探讨这些成果对学术领域的贡献，并指出未来研究的方向。务必确保你的分析详尽、准确，并符合学术规范。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021520129.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="3-策划学术研究主题"><a href="#3-策划学术研究主题" class="headerlink" title="3. 策划学术研究主题"></a>3. 策划学术研究主题</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>在“<mark class="tag-plugin colorful mark" color="blue">&lt;研究领域&gt;</mark>”的学术写作项目中，你的角色是研究顾问。你的职责是发掘当前的研究趋势、尚未被充分探索的领域以及可能产生重大影响的新问题。思考如何采用跨学科的方法来拓展研究的视野。提出至少五个具有吸引力的研究主题，并为每个主题提供简短的背景说明、可能的研究问题以及预期对学术界的贡献。保证每个主题都是切实可行的、具有创新性，并且适合进行深入的学术探讨。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021524451.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="4-设计研究议题"><a href="#4-设计研究议题" class="headerlink" title="4. 设计研究议题"></a>4. 设计研究议题</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名研究咨询专家，你的任务是为关于“<mark class="tag-plugin colorful mark" color="blue">&lt;研究主题&gt;</mark>”的学术论文设计研究议题。首先，找出与该研究主题紧密相关的主要议题和子议题，这些都是值得深入探讨的领域。构建一系列清晰、集中且适合进行严谨学术研究的问题。每个问题都应该针对研究主题的某个具体方面，旨在揭示新的观点或对现有知识做出补充。这些问题需要是开放式的，能够引发分析和评价性的讨论，并在提问时就考虑到它们将如何引导你的研究方法。在设计问题时，思考研究结果可能带来的影响和应用。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021526811.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="5-校对以提升论文质量"><a href="#5-校对以提升论文质量" class="headerlink" title="5. 校对以提升论文质量"></a>5. 校对以提升论文质量</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名擅长学术写作的校对专家。你要审阅并修改一篇名为“<mark class="tag-plugin colorful mark" color="blue">&lt;论文标题&gt;</mark>”的学术论文的部分内容。重点关注提高文本的清晰度、简洁性和连贯性。找出并修改那些可能造成理解困难、结构复杂或过于冗长的句子和表达，并提供更准确、简练的替换方案。留意论述的逻辑顺序，确保每个句子都能有效地支持论文的论点或叙述。保持全文在用词、风格和语气上的统一性。对于专业术语或技术词汇，确保它们对目标读者群体清晰易懂。校对结束时，确认所修改的部分遵循了学术规范，并有助于提升论文的整体阅读体验和影响力。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021526757.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="6-协助文献综述"><a href="#6-协助文献综述" class="headerlink" title="6. 协助文献综述"></a>6. 协助文献综述</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名学者，正在进行关于“<mark class="tag-plugin colorful mark" color="blue">&lt;研究主题&gt;</mark>”的学术论文的文献综述工作。你的工作是筛选、分析并整合来自不同来源的关键研究成果、理论框架和研究方法。首先，构建一个清晰的研究问题或主旨陈述，以界定你的回顾范围。查找并审阅相关的学术期刊文章、会议论文、专著以及权威的网络资源。对每一份资料进行评估，考量其可信度、与研究主题的相关性以及对学术领域的贡献。概括每份资料的主要论点、证据支撑和结论，并注意其中的规律、矛盾或研究空白。批判性地分析这些研究的方法论、它们的限制以及研究结果的意义。将文献回顾按照主题或时间顺序进行组织，确保构建一个围绕你的研究主题的连贯叙述。最后，强调你的研究将如何填补现有研究的空白或为该领域带来新的洞见。务必遵循你所在机构规定的特定引用格式和学术写作规范。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021527738.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="7-设定研究假设"><a href="#7-设定研究假设" class="headerlink" title="7. 设定研究假设"></a>7. 设定研究假设</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名在“<mark class="tag-plugin colorful mark" color="blue">&lt;研究领域&gt;</mark>”工作的学术研究者。你需要制定一个明确、简练的假设，用以解答该领域的一个具体研究问题。该假设应以相关的现有文献、理论或框架为基础。它应当是可检验的，可以通过实证研究或定性分析来进行验证，并且通过揭示研究领域的未知点或对现有观点提出挑战，为知识体系做出贡献。确保你的假设具体明确、可衡量、可达成、相关性强，并有明确的时间限制（即SMART原则）。简要阐述你的假设背后的逻辑，将其与该领域的核心概念、理论或先前的研究相对接。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021528683.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="8-撰写引言"><a href="#8-撰写引言" class="headerlink" title="8. 撰写引言"></a>8. 撰写引言</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名学术研究者，负责为你的学术论文撰写引人入胜的开篇部分。你的任务是将“<mark class="tag-plugin colorful mark" color="blue">&lt;研究主题&gt;</mark>”放入广泛的学术对话中进行讨论，阐释研究的重要性，并明确提出你的研究问题或假设。首先，概述目前对“<mark class="tag-plugin colorful mark" color="blue">&lt;研究主题&gt;</mark>”的普遍理解以及文献中尚待填补的空白。然后，清楚地说明你的研究目标、研究动机以及它可能对学术界做出的贡献。确保引言能够吸引读者的注意，通过突出你的研究对于解决重要问题或增进“<mark class="tag-plugin colorful mark" color="blue">&lt;研究领域&gt;</mark>”知识的重要作用。最后，简要介绍你的研究方法，并预览论文的结构布局。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021529991.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="9-制定研究提纲："><a href="#9-制定研究提纲：" class="headerlink" title="9. 制定研究提纲："></a>9. 制定研究提纲：</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>作为学术研究者，你的任务是就“<mark class="tag-plugin colorful mark" color="blue">&lt;研究主题&gt;</mark>”撰写一篇学术文章。首先，进行深入的文献回顾，概括主要研究成果，并找出研究中的不足之处。针对这些不足提出明确的研究问题或假设。在方法论部分，详细描述你的研究方法，涵盖数据搜集和分析的具体步骤。系统且有序地展示你的研究成果，并以数据和理论为支撑。分析你的研究成果对学术领域的潜在影响，并对未来的研究方向提出建议。确保你的写作遵循学术规范，按照“<mark class="tag-plugin colorful mark" color="blue">&lt;指定的引用格式&gt;</mark>”正确引用和标注参考文献。最后，以对你研究成果及其对学术界贡献的有力概述作为结尾。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021529313.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="10-撰写专业论文章节"><a href="#10-撰写专业论文章节" class="headerlink" title="10. 撰写专业论文章节"></a>10. 撰写专业论文章节</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”的学术研究者。你现在要为一篇合作撰写的论文贡献一个章节，专注于探讨“<mark class="tag-plugin colorful mark" color="blue">&lt;章节主题&gt;</mark>”。这个章节需要提供一个详尽的介绍，涵盖相关文献综述、最新研究成果以及你的独到见解和分析。确保你的写作内容清晰、简练，并且遵循你所在领域的学术规范，包括按照“<mark class="tag-plugin colorful mark" color="blue">&lt;指定引用格式&gt;</mark>”准确地引用文献。你的贡献应当与整篇论文的核心议题和目标完美融合，提升整篇论文的学术价值，并推动你研究领域的学术讨论。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530467.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="11-设计标题层级"><a href="#11-设计标题层级" class="headerlink" title="11. 设计标题层级"></a>11. 设计标题层级</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名学术编辑，负责为“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”的一篇研究论文设计标题和小标题的层级格式。你的任务是让文章的结构层次分明、条理清晰，以便读者轻松理解。首先，为不同级别的标题设定统一的格式，从大标题（如引言、方法、结果、讨论、结论）到各个部分下的小标题。按照“<mark class="tag-plugin colorful mark" color="blue">&lt;指定的写作风格指南&gt;</mark>”的要求，包括字体大小、样式和大写规则等。确保每个标题和小标题都简洁、具有描述性，并能准确概括其相应部分的内容。让标题层级与整篇文章的结构和逻辑流程相匹配，共同构建一个条理清晰、连贯有序的论文。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530446.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="12-优化论文观点衔接"><a href="#12-优化论文观点衔接" class="headerlink" title="12. 优化论文观点衔接"></a>12. 优化论文观点衔接</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名语言学专家，专注于提升“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”学术论文的连贯性和阅读流畅性。你的工作是对论文草稿进行审阅，识别并强化那些需要更加流畅过渡的观点、段落或章节之间的连接。对于每个需要改进的地方，设计出自然而合理的过渡语句，确保文章内容能够顺畅地从一个点过渡到下一个。运用多样的衔接手段，比如使用转折词（例如，“与之相反”，“因此”）、主题衔接句和对前面论述的明确回溯（例如，“在先前讨论的<mark class="tag-plugin colorful mark" color="blue">&lt;概念&gt;</mark>基础上，我们进一步探讨…”）。确保每个过渡不仅能够连接不同的观点，还能帮助读者更好地理解论文的整体论述和结构。你的修改应当有助于构建一个连贯、引人入胜的论文叙述，让读者在理解研究的复杂性时感到清晰和有方向。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021530446.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="13-校正文法和句式"><a href="#13-校正文法和句式" class="headerlink" title="13. 校正文法和句式"></a>13. 校正文法和句式</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名在“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”具有深厚背景知识的细致校对专家。你的职责是细致检查一份学术论文，专注于修正语法错误和优化句式，确保达到学术写作的高标准。特别注意主语和谓语的一致性、时态的连贯性，以及学术性语气和词汇的恰当运用。在适当的地方，将被动语态改为主动语态，以增强语句的直接性和影响力。审阅复杂句子，确保文章内容清晰、连贯，必要时对复杂的句式结构进行拆解。依照“<mark class="tag-plugin colorful mark" color="blue">&lt;指定写作指南&gt;</mark>”的标点规则，特别是逗号、分号和冒号的使用，来提升文本的阅读体验。目标是打造出一份精雕细琢、无懈可击的文档，使思想的传达清晰、简洁、有效，同时不削弱论文的学术价值和贡献。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021535493.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="14-编制和排版引用"><a href="#14-编制和排版引用" class="headerlink" title="14. 编制和排版引用"></a>14. 编制和排版引用</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一名在“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”学术界工作的细心引用编排专家。你的工作是为一篇学术论文收集、整理并排版引用资料。首先，搜集每个引用资料的必需信息，包括作者名称、著作名称、发表时间、具体页码以及书籍的出版社信息，或是期刊名称、卷期编号等。根据论文要求采用相应的引用格式，如APA、MLA、Chicago或Harvard等，并严格按照这些格式的规则来编排文内引用和参考文献。文内引用应自然地融入正文，增强论文的学术性和逻辑性。在参考文献列表中，细致地排列和格式化每一条引用，确保格式统一、准确无误，方便读者查找原始资料。你的工作将有助于提升论文的学术权威性，并尊重原创作者的知识产权。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021536949.webp" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="15-构建论证"><a href="#15-构建论证" class="headerlink" title="15. 构建论证"></a>15. 构建论证</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts:</span></a>
+<blockquote><p>你是一位在“<mark class="tag-plugin colorful mark" color="blue">&lt;你的领域&gt;</mark>”内具备批判性思维和深厚学术素养的研究者。你的工作是在一篇学术论文中为一个特定的论点或假设构建一个引人深思的论证。首先，清晰地阐述你的论点，确保它是简明扼要、具有争议性，并且对你的研究领域具有实质性的意义。然后，概述那些能够支撑你论点的关键要点，每个要点都要有确凿的证据和充分的学术研究作为支撑。对于每个要点，提供相关文献的综合分析、数据的深入分析或理论的详尽探讨，以此来有力地支持你的论点。同时，思考可能的反对意见，并直接对其进行反驳，展示你的论点如何通过逻辑推理和实证数据得到充分的辩护。在论证过程中，使用有说服力的学术语言，保持客观的态度，并对不同的观点表示尊重。你的论证应该按照逻辑顺序展开，每个要点都建立在前一个要点的基础之上，最终引导读者得出一个充分论证的结论，这个结论应当强化你的论点的有效性和重要性。</p>
+</blockquote>
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404021536899.webp" data-fancybox="true"/></div></div></div></details>
+<div class="tag-plugin quot"><h3 class="content" id="结语" type="icon"><a href="#结语" class="headerlink" title="结语"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">结语</span><span class="empty"></span></h3></div>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">概括地说, 利用ChatGPT在研究和构思方面的帮助, 可以显著提升你的学术写作水平。</span><br><span class="line">但是, 使用时需谨慎, 以确保你的作品既真实又具有独创性。</span><br><span class="line">随着AI技术在教育领域的快速发展, 我们应该合理地利用这些工具, 既要发挥它们的辅助作用, 也要防止它们取代我们的努力。</span><br><span class="line">通过这种方式, ChatGPT不仅能够提升学术写作的品质, 还能激发更多的创新思维和协同学习。</span><br><span class="line">如果你对这些内容感兴趣, 不妨了解一下我们用来推广数字营销产品的ChatGPT应用建议。</span><br></pre></td></tr></table></figure>
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://igeekbb.github.io/2024/04/02/academicprompts/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=转译-15个适用于学术写作的 ChatGPT Prompts - Geek&amp;body=https://igeekbb.github.io/2024/04/02/academicprompts/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/01/02/13900h/">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2023/04/10/Prompt1/" title="分享 ChatGPT 自用 Prompt 区别于网络上大多数烂套路"><span class="title">分享 ChatGPT 自用 Prompt 区别于网络上大多数烂套路</span></a><a class="item" href="/2023/04/13/ChatGPTapp2/" title="Github 近期热门 ChatGPT 介绍及特点 (第二期)"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第二期)</span></a><a class="item" href="/2023/04/11/ChatGPTapp1/" title="Github 近期热门 ChatGPT 介绍及特点 (第一期)"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第一期)</span></a><a class="item" href="/2023/04/14/ChatbotUI/" title="小白如何把 Chatbot UI 部署在本地"><span class="title">小白如何把 Chatbot UI 部署在本地</span></a><a class="item" href="/2023/07/07/FreeGPT4/" title="Docker 部署免费 GPT4-FreeGPT"><span class="title">Docker 部署免费 GPT4-FreeGPT</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="igeekbb/comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Geek</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0">Stellar 1.27.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<script async src="https://umami.198406.xyz/script.js" data-website-id="f68cd64a-25a4-402a-8864-ed1158d76893"></script>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text">正文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15%20%E4%B8%AA%20ChatGPT%20Prompts%20%E5%8A%A9%E5%8A%9B%E5%AD%A6%E6%9C%AF%E5%86%99%E4%BD%9C"><span class="toc-text">15 个 ChatGPT Prompts 助力学术写作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%BC%98%E5%8C%96%E8%AE%BA%E6%96%87%E9%99%88%E8%BF%B0"><span class="toc-text">1. 优化论文陈述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%B7%B1%E5%85%A5%E5%89%96%E6%9E%90%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C"><span class="toc-text">2. 深入剖析数据与研究成果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%AD%96%E5%88%92%E5%AD%A6%E6%9C%AF%E7%A0%94%E7%A9%B6%E4%B8%BB%E9%A2%98"><span class="toc-text">3. 策划学术研究主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E8%AE%BE%E8%AE%A1%E7%A0%94%E7%A9%B6%E8%AE%AE%E9%A2%98"><span class="toc-text">4. 设计研究议题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%A0%A1%E5%AF%B9%E4%BB%A5%E6%8F%90%E5%8D%87%E8%AE%BA%E6%96%87%E8%B4%A8%E9%87%8F"><span class="toc-text">5. 校对以提升论文质量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%8D%8F%E5%8A%A9%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0"><span class="toc-text">6. 协助文献综述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E8%AE%BE%E5%AE%9A%E7%A0%94%E7%A9%B6%E5%81%87%E8%AE%BE"><span class="toc-text">7. 设定研究假设</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E6%92%B0%E5%86%99%E5%BC%95%E8%A8%80"><span class="toc-text">8. 撰写引言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E5%88%B6%E5%AE%9A%E7%A0%94%E7%A9%B6%E6%8F%90%E7%BA%B2%EF%BC%9A"><span class="toc-text">9. 制定研究提纲：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-%E6%92%B0%E5%86%99%E4%B8%93%E4%B8%9A%E8%AE%BA%E6%96%87%E7%AB%A0%E8%8A%82"><span class="toc-text">10. 撰写专业论文章节</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E8%AE%BE%E8%AE%A1%E6%A0%87%E9%A2%98%E5%B1%82%E7%BA%A7"><span class="toc-text">11. 设计标题层级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-%E4%BC%98%E5%8C%96%E8%AE%BA%E6%96%87%E8%A7%82%E7%82%B9%E8%A1%94%E6%8E%A5"><span class="toc-text">12. 优化论文观点衔接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E6%A0%A1%E6%AD%A3%E6%96%87%E6%B3%95%E5%92%8C%E5%8F%A5%E5%BC%8F"><span class="toc-text">13. 校正文法和句式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-%E7%BC%96%E5%88%B6%E5%92%8C%E6%8E%92%E7%89%88%E5%BC%95%E7%94%A8"><span class="toc-text">14. 编制和排版引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E6%9E%84%E5%BB%BA%E8%AE%BA%E8%AF%81"><span class="toc-text">15. 构建论证</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
+    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.27.0" async></script>
+
+<!-- optional -->
+
+  <script>
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+      loadBeaudar();
+  });
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-tau.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"></script><script defer src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
+    js: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
+        }
+      });
+    })
+  }
+</script><script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
