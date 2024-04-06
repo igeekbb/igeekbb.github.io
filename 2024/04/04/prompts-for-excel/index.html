@@ -1,0 +1,619 @@
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0" theme-name="Stellar" theme-version="1.27.0">
+  
+  <meta name="generator" content="Hexo 7.1.1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>转译-7个必备的 ChatGPT Excel Prompts - Geek</title>
+
+  
+    <meta name="description" content="引言  7 Essential ChatGPT Prompts for Excel  主要介绍了如何通过ChatGPT来简化和提高Excel操作的效率,帮助用户解决各种Excel任务。  本文用到的工具们月之暗面 moonshot 国产大模型 Kimi.通过 kimi-free-api 转为 API.在 Open WebUI 使用 宝玉翻译 Prompts .全文翻译采用’意译’,仅修改几处,感谢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="转译-7个必备的 ChatGPT Excel Prompts">
+<meta property="og:url" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/index.html">
+<meta property="og:site_name" content="Geek">
+<meta property="og:description" content="引言  7 Essential ChatGPT Prompts for Excel  主要介绍了如何通过ChatGPT来简化和提高Excel操作的效率,帮助用户解决各种Excel任务。  本文用到的工具们月之暗面 moonshot 国产大模型 Kimi.通过 kimi-free-api 转为 API.在 Open WebUI 使用 宝玉翻译 Prompts .全文翻译采用’意译’,仅修改几处,感谢">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://igeekbb.github.io/2024/04/04/prompts-for-excel/undefined">
+<meta property="og:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta property="article:published_time" content="2024-04-04T02:39:28.000Z">
+<meta property="article:modified_time" content="2024-04-04T04:34:07.108Z">
+<meta property="article:author" content="Geek">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Prompt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2022/10/24/63567d3e07da3.png">
+<meta name="twitter:creator" content="@geekbb# for open_graph meta">
+  
+  
+  
+  <meta name="keywords" content="ChatGPT,Prompt">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.27.0">
+
+  
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico">
+  
+
+  
+
+  <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Geek</div><div class="sub normal cap">🧠在家居士\🥦素食者</div><div class="sub hover cap" style="opacity:0"> 就是爱瞎折腾🐤</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a><a class="nav-item" title="文档" href="/topic/" style="color:#3DC550"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M14.25 4.48v3.057c0 .111 0 .27.02.406a.936.936 0 0 0 .445.683a.96.96 0 0 0 .783.072c.13-.04.272-.108.378-.159L17 8.005l1.124.534c.106.05.248.119.378.16a.958.958 0 0 0 .783-.073a.936.936 0 0 0 .444-.683c.021-.136.021-.295.021-.406V3.031c.113-.005.224-.01.332-.013C21.154 2.98 22 3.86 22 4.933v11.21c0 1.112-.906 2.01-2.015 2.08c-.97.06-2.108.179-2.985.41c-1.082.286-1.99 1.068-3.373 1.436c-.626.167-1.324.257-1.627.323V5.174c.32-.079 1.382-.203 1.674-.371c.184-.107.377-.216.576-.323m5.478 8.338a.75.75 0 0 1-.546.91l-4 1a.75.75 0 0 1-.364-1.456l4-1a.75.75 0 0 1 .91.546" clip-rule="evenodd"/><path fill="currentColor" d="M18.25 3.151c-.62.073-1.23.18-1.75.336a8.2 8.2 0 0 0-.75.27v3.182l.75-.356l.008-.005a1.13 1.13 0 0 1 .492-.13c.047 0 .094.004.138.01c.175.029.315.1.354.12l.009.005l.749.356V3.647z"/><path fill="currentColor" d="M12 5.214c-.334-.064-1.057-.161-1.718-.339C8.938 4.515 8.05 3.765 7 3.487c-.887-.234-2.041-.352-3.018-.412C2.886 3.007 2 3.9 2 4.998v11.146c0 1.11.906 2.01 2.015 2.079c.97.06 2.108.179 2.985.41c.486.129 1.216.431 1.873.726c1.005.451 2.052.797 3.127 1.034z" opacity=".5"/><path fill="currentColor" d="M4.273 12.818a.75.75 0 0 1 .91-.545l4 1a.75.75 0 1 1-.365 1.455l-4-1a.75.75 0 0 1-.545-.91m.909-4.545a.75.75 0 1 0-.364 1.455l4 1a.75.75 0 0 0 .364-1.455z"/></svg></a><a class="nav-item" title="探索" href="/explore/" style="color:#FA6400"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M20 12a8 8 0 1 1-16 0a8 8 0 0 1 16 0" opacity=".5"/><path fill="currentColor" d="M17.712 5.453c1.047-.193 2.006-.259 2.797-.152c.77.103 1.536.393 1.956 1.064c.446.714.312 1.542-.012 2.258c-.33.728-.918 1.499-1.672 2.268c-1.516 1.547-3.836 3.226-6.597 4.697c-2.763 1.472-5.495 2.484-7.694 2.92c-1.095.217-2.098.299-2.923.201c-.8-.095-1.6-.383-2.032-1.075c-.47-.752-.296-1.63.07-2.379c.375-.768 1.032-1.586 1.872-2.403L4 12.416c0 .219.083.71.168 1.146c.045.23.09.444.123.596c-.652.666-1.098 1.263-1.339 1.756c-.277.567-.208.825-.145.925c.072.116.305.305.937.38c.609.073 1.44.018 2.455-.183c2.02-.4 4.613-1.351 7.28-2.772c2.667-1.42 4.85-3.015 6.23-4.423c.694-.707 1.15-1.334 1.377-1.836c.233-.515.167-.75.107-.844c-.07-.112-.289-.294-.883-.374c-.542-.072-1.272-.041-2.163.112L16.87 5.656c.338-.101.658-.17.842-.203"/></svg></a><a class="nav-item" title="X" target="_blank" rel="noopener" href="https://twitter.com/geekbb" style="color:#F44336"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M14 4h-4C6.229 4 4.343 4 3.172 5.172C2 6.343 2 8.229 2 12c0 3.771 0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12c0-3.771 0-5.657-1.172-6.828C19.657 4 17.771 4 14 4" opacity="0.5"/><path fill="currentColor" d="M13.25 9a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75m1 3a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75m1 3a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75M9 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 6c4 0 4-.895 4-2s-1.79-2-4-2s-4 .895-4 2s0 2 4 2"/></svg></a></nav>
+</div>
+<div class="widgets">
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">专栏：精选-ChatGPT Prompts</span></div><div class="widget-body"><a class="item active" href="/2024/04/04/prompts-for-excel/"><span class="title">转译-7个必备的 ChatGPT Excel Prompts</span><svg class="active-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.098v4.993c0 3.096 0 4.645-.734 5.321c-.35.323-.792.526-1.263.58c-.987.113-2.14-.907-4.445-2.946c-1.02-.901-1.529-1.352-2.118-1.47a2.225 2.225 0 0 0-.88 0c-.59.118-1.099.569-2.118 1.47c-2.305 2.039-3.458 3.059-4.445 2.945a2.238 2.238 0 0 1-1.263-.579C3 20.736 3 19.188 3 16.091v-4.994C3 6.81 3 4.666 4.318 3.333C5.636 2 7.758 2 12 2c4.243 0 6.364 0 7.682 1.332C21 4.665 21 6.81 21 11.098" opacity=".5"/><path fill="currentColor" d="M9 5.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5z"/></svg></a><a class="item" href="/2024/04/02/academicprompts/"><span class="title">转译-15个适用于学术写作的 ChatGPT Prompts</span></a><a class="item" href="/2023/04/11/ChatGPTapp1/"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第一期)</span></a></div></widget>
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/04/04/prompts-for-excel/"><span class="title">转译-7个必备的 ChatGPT Excel Prompts</span></a><a class="item title" href="/2023/04/11/ChatGPTapp1/"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第一期)</span></a><a class="item title" href="/2024/04/02/academicprompts/"><span class="title">转译-15个适用于学术写作的 ChatGPT Prompts</span></a><a class="item title" href="/2024/01/02/13900h/"><span class="title">圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</span></a><a class="item title" href="/2023/11/29/proxmoxve/"><span class="title">Proxmoxve 安装手记 - All in One</span></a><a class="item title" href="/2023/04/20/DockerCompose/"><span class="title">小白如何安装 Docker&Compose</span></a><a class="item title" href="/2023/05/14/v2ray/"><span class="title">个人搭梯过墙备忘录</span></a><a class="item title" href="/2023/09/18/hysteria/"><span class="title">Hysteria2 & VLESS-gRPC-uTLS-REALITY 对比测试</span></a><a class="item title" href="/2023/09/22/Hysteria2Port/"><span class="title">对抗 QoS 阻断&限速 Hysteria2 端口跳跃设置</span></a><a class="item title" href="/2023/05/30/Routeropenwrt/"><span class="title">124 元实现最佳性价比双千兆软路由 OpenWrt</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top"><img class="bg lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404041233706.webp">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/topic">专栏</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/2024/04/04/prompts-for-excel/">精选-ChatGPT Prompts</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-04T02:39:28.000Z">2024-04-04</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-04T04:34:07.108Z">2024-04-04</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>转译-7个必备的 ChatGPT Excel Prompts</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><div class="tag-plugin quot"><h3 class="content" id="引言" type="icon"><a href="#引言" class="headerlink" title="引言"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">引言</span><span class="empty"></span></h3></div>
+
+<div class="tag-plugin colorful note" color="cyan"><div class="body"><p><a target="_blank" rel="noopener" href="https://www.godofprompt.ai/blog/7-essential-chatgpt-prompts-for-excel-the-only-you-will-ever-need">7 Essential ChatGPT Prompts for Excel </a> 主要介绍了如何通过ChatGPT来简化和提高Excel操作的效率,帮助用户解决各种Excel任务。</p></div></div>
+
+<div class="tag-plugin poetry"><div class="content"><div class="title">本文用到的工具们</div><div class="body"><ul><li><p>月之暗面 moonshot 国产大模型 <a class="tag-plugin colorful button" color="theme" size="xs" title="Kimi" target="_blank" rel="noopener" href="https://kimi.moonshot.cn/"><span>Kimi</span></a>.</p></li><li><p>通过 <a class="tag-plugin colorful button" color="theme" size="xs" title="kimi-free-api" target="_blank" rel="noopener" href="https://github.com/LLM-Red-Team/kimi-free-api/"><span>kimi-free-api</span></a> 转为 API.</p></li><li><p>在 <a target="_blank" rel="noopener" href="https://github.com/open-webui/open-webui">Open WebUI</a> 使用 <a class="tag-plugin colorful button" color="theme" size="xs" title="宝玉翻译" target="_blank" rel="noopener" href="https://x.com/geekbb/status/1737634536257995177?s=20"><span>宝玉翻译</span></a> Prompts .</p></li><li><p><mark class="tag-plugin colorful mark" color="orange">全文翻译采用’意译’,仅修改几处,感谢&nbsp;AI&nbsp;工具辛勤付出.</mark></p></li><li><p>所有对话保存在”<a target="_blank" rel="noopener" href="https://github.com/igeekbb/OSS/blob/main/appendix/chat-%E6%8E%8C%E6%8F%A1%20Excel%20%E6%98%AF%E5%BD%93%E4%BB%8A%E8%81%8C%E5%9C%BA%E5%BF%85%E5%A4%87%E7%9A%84%E5%85%B3%E9%94%AE%E8%83%BD%E5%8A%9B.txt">chat-7个必备的 ChatGPT Excel 指令.txt</a>“,有兴趣可以自行查看.</p></li></ul></div><div class="footer">我认为一个好的&nbsp;Prompts&nbsp;可以一定程度弥补国产大模型的不足</div></div></div>
+
+<div class="tag-plugin quot"><h3 class="content" id="正文" type="icon"><a href="#正文" class="headerlink" title="正文"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">正文</span><span class="empty"></span></h3></div>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在当今职场，熟练掌握 Excel 是极其重要的技能。就算是资深专家，也会偶尔遇到一些复杂的难题，影响他们的工作效率。</span><br><span class="line">如果我们告诉你，通过ChatGPT可以解决你所有的Excel问题，你会怎么想呢？</span><br><span class="line">我们将向你展示6个非常实用的 ChatGPT 技巧，它们能够有效地显著提高你的工作效率。</span><br><span class="line">同时，我们还会向你介绍如何让 ChatGPT 成为你处理 Excel 工作的有效工具。</span><br></pre></td></tr></table></figure>
+
+<div class="tag-plugin quot"><h3 class="content" id="7个必备的 ChatGPT Excel 指令" type="text"><a href="#7个必备的 ChatGPT Excel 指令" class="headerlink" title="7个必备的 ChatGPT Excel 指令"></a><span class="empty"></span><span class="text">7个必备的 ChatGPT Excel 指令</span><span class="empty"></span></h3></div>
+
+<h4 id="1-理解-Excel-函数"><a href="#1-理解-Excel-函数" class="headerlink" title="1.理解 Excel 函数"></a>1.理解 Excel 函数</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 当你需要了解某个 Excel 函数是如何工作的时候，可以使用以下格式向 ChatGPT 提问：
+<blockquote><p>请详细解释 Excel 中“<mark class="tag-plugin colorful mark" color="blue">&lt;函数名称&gt;</mark>”的工作原理，并且分步骤说明。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+<h4 id="2-如何使用-Excel-函数"><a href="#2-如何使用-Excel-函数" class="headerlink" title="2.如何使用 Excel 函数"></a>2.如何使用 Excel 函数</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 通过以下提问示例，我们将创建一个简洁的指南，帮助你掌握如何使用任何 Excel 函数：
+<blockquote><p>如何利用Excel的“<mark class="tag-plugin colorful mark" color="blue">&lt;函数名称&gt;</mark>”来“<mark class="tag-plugin colorful mark" color="blue">&lt;实现特定目的&gt;</mark>”？请提供分步指导，跳过基础步骤。</p>
+</blockquote>
+
+<p>例如，我们将通过一个实例来学习如何计算一组单元格的平均值。</p>
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="3-创建-Excel-命令"><a href="#3-创建-Excel-命令" class="headerlink" title="3.创建 Excel 命令"></a>3.创建 Excel 命令</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 有时，你可能需要快速创建一个 Excel 命令。幸运的是，ChatGPT 可以协助你完成这项任务。使用以下提示模板来请求任何 Excel 命令：
+<blockquote><p>请编写一个用于完成“<mark class="tag-plugin colorful mark" color="blue">&lt;具体任务描述&gt;</mark>”的 Excel 命令。请直接给出代码。</p>
+</blockquote>
+<p>只需清晰地描述你希望在Excel中完成的任务，ChatGPT便会为你提供相应的命令代码。</p>
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="4-生成宏命令"><a href="#4-生成宏命令" class="headerlink" title="4.生成宏命令"></a>4.生成宏命令</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 对于热衷于Excel自动化功能的用户来说，宏是一个非常强大的工具值得深入了解。ChatGPT 为你提供支持，帮助你学习如何高效地创建和运用宏。
+<p>根据 Microsoft 的官方定义，宏是你能够进行多次重复执行的动作或一系列动作。创建宏基本上就是记录下你的鼠标操作和键盘输入，以此来实现任务的自动化。<br>下面，我为你准备了一个提问示例，以便你在编写宏时得到帮助：</p>
+<blockquote><p>编写一个VBA Excel宏，用于“<mark class="tag-plugin colorful mark" color="blue">&lt;执行特定操作&gt;</mark>”,请直接提供代码。</p>
+</blockquote>
+<p>我曾尝试编写一个基础宏，它的功能是从单元格中提取数值，并根据这个数值打开相应的工作表。</p>
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="5-在-Excel-中执行复杂任务"><a href="#5-在-Excel-中执行复杂任务" class="headerlink" title="5.在 Excel 中执行复杂任务"></a>5.在 Excel 中执行复杂任务</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> Excel 不仅仅是用来完成基本任务的；它还可以处理包括数据分析和图表创建在内的复杂工作。ChatGPT 帮助你完成这些困难任务,清晰地描述你想要做什么，包括每一个细节。
+<blockquote><p>充当一个熟练的Excel助手,“<mark class="tag-plugin colorful mark" color="blue">&lt;阐述任务的具体内容&gt;</mark>”</p>
+</blockquote>
+
+<p>我已经得到了如何执行每一步的指导，并且对每个步骤都有清晰的理解。</p>
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="6-让-ChatGPT-成为-Excel-助手"><a href="#6-让-ChatGPT-成为-Excel-助手" class="headerlink" title="6.让 ChatGPT 成为 Excel 助手"></a>6.让 ChatGPT 成为 Excel 助手</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 在 Excel 中为每项任务设置单独的提示可能会让人感到繁琐。其实，你可以通过一个统一的提示，让 ChatGPT 成为你处理任何 Excel 任务的得力助手。
+<p>下面是一个能让 ChatGPT 像 Excel 专家那样提供帮助的通用提示：</p>
+<blockquote><p>作为一个 Excel 专家，为完成 Excel 中的特定任务提供详细的逐步指导。这可能包括创建数据透视表、数据格式化、运用公式或函数、绘制图表或图形，以及其他各种 Excel 相关任务。请对每一步进行详尽的解释，明确指出必要的配置或选择，阐释应使用的函数，并给出技巧和建议，以保证任务能够准确且高效地完成。<br>请协助我完成以下任务：“<mark class="tag-plugin colorful mark" color="blue">&lt;具体描述你的任务&gt;</mark>”</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<h4 id="7-将-ChatGPT-变成一个-Excel-表格"><a href="#7-将-ChatGPT-变成一个-Excel-表格" class="headerlink" title="7.将 ChatGPT 变成一个 Excel 表格"></a>7.将 ChatGPT 变成一个 Excel 表格</h4><a class="tag-plugin colorful hashtag" color="green"><svg t="1701408144765" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4228" width="200" height="200"><path d="M426.6 64.8c34.8 5.8 58.4 38.8 52.6 73.6l-19.6 117.6h190.2l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6s58.4 38.8 52.6 73.6l-19.4 117.6H896c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-42.6 256H832c35.4 0 64 28.6 64 64s-28.6 64-64 64h-137.8l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.6-117.4h-190.4l-23 138.6c-5.8 34.8-38.8 58.4-73.6 52.6s-58.4-38.8-52.6-73.6l19.4-117.8H128c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l42.6-256H192c-35.4 0-64-28.6-64-64s28.6-64 64-64h137.8l23-138.6c5.8-34.8 38.8-58.4 73.6-52.6z m11.6 319.2l-42.6 256h190.2l42.6-256h-190.2z" p-id="4229"></path></svg><span>ChatGPT&nbsp;Prompts</span></a> 实际上，你可以将 GPT 作为一个 Excel 表格的文本版来使用，它会根据你的指令进行数据转换或计算。
+<blockquote><p>请作为一个基于文本的 Excel 表格与我互动。你只需以文本形式回复一个包含行号和列标（从A至L）的10行空白 Excel 表格。第一列应留空，用于标注行号。我会指示你哪些内容需要填入单元格，而你的回复应当仅为 Excel 表格的文本结果，无需其他内容。请避免提供解释性文字。如果需要进行计算，我会给出相应的公式，你执行后，请仅以文本形式回复计算后的 Excel 表格结果。首先，请给我一个空白的表格模板。</p>
+</blockquote>
+
+<details class="tag-plugin colorful folding" child="codeblock"><summary><span>ChatGPT&nbsp;Response:</span></summary><div class="body"><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="undefined" data-fancybox="true"/></div></div></div></details>
+
+<div class="tag-plugin quot"><h3 class="content" id="结语" type="icon"><a href="#结语" class="headerlink" title="结语"></a><img class="icon prefix lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://bu.dusays.com/2022/10/24/63567d3e07da3.png" /><span class="text">结语</span><span class="empty"></span></h3></div>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">总的来说，ChatGPT 是一个非常实用的工具，能够有效协助你完成多种类型的 Excel 任务。</span><br><span class="line">并不像大家想象的那样，使用 ChatGPT 处理 Excel 不需要很多的提示；几个有效准备的提示就足以应对。</span><br><span class="line">通过今天向你介绍的七个 Excel 提示生成器，你现在已经具备了应对可能出现的不同 Excel 挑战的能力。</span><br></pre></td></tr></table></figure>
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+    <section id="share">
+      <div class="header"><span>分享文章</span></div>
+      <div class="body">
+        <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://igeekbb.github.io/2024/04/04/prompts-for-excel/" /></div>
+        <div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=转译-7个必备的 ChatGPT Excel Prompts - Geek&amp;body=https://igeekbb.github.io/2024/04/04/prompts-for-excel/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        
+      </div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/04/02/academicprompts/">转译-15个适用于学术写作的 ChatGPT Prompts</a></div></section></div>
+
+<div class="related-wrap" id="related-posts">
+    <section class='header'>
+      <div class='title cap theme'>您可能感兴趣的文章</div>
+    </section>
+    <section class='body'>
+    <div class="related-posts"><a class="item" href="/2023/04/10/Prompt1/" title="分享 ChatGPT 自用 Prompt 区别于网络上大多数烂套路"><span class="title">分享 ChatGPT 自用 Prompt 区别于网络上大多数烂套路</span></a><a class="item" href="/2024/04/02/academicprompts/" title="转译-15个适用于学术写作的 ChatGPT Prompts"><span class="title">转译-15个适用于学术写作的 ChatGPT Prompts</span></a><a class="item" href="/2023/04/11/ChatGPTapp1/" title="Github 近期热门 ChatGPT 介绍及特点 (第一期)"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第一期)</span></a><a class="item" href="/2023/04/13/ChatGPTapp2/" title="Github 近期热门 ChatGPT 介绍及特点 (第二期)"><span class="title">Github 近期热门 ChatGPT 介绍及特点 (第二期)</span></a><a class="item" href="/2023/04/14/ChatbotUI/" title="小白如何把 Chatbot UI 部署在本地"><span class="title">小白如何把 Chatbot UI 部署在本地</span></a></div></section></div>
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="igeekbb/comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Geek</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0">Stellar 1.27.0</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<script async src="https://umami.198406.xyz/script.js" data-website-id="f68cd64a-25a4-402a-8864-ed1158d76893"></script>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E6%96%87"><span class="toc-text">正文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E4%B8%AA%E5%BF%85%E5%A4%87%E7%9A%84%20ChatGPT%20Excel%20%E6%8C%87%E4%BB%A4"><span class="toc-text">7个必备的 ChatGPT Excel 指令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%90%86%E8%A7%A3-Excel-%E5%87%BD%E6%95%B0"><span class="toc-text">1.理解 Excel 函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Excel-%E5%87%BD%E6%95%B0"><span class="toc-text">2.如何使用 Excel 函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BA-Excel-%E5%91%BD%E4%BB%A4"><span class="toc-text">3.创建 Excel 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E7%94%9F%E6%88%90%E5%AE%8F%E5%91%BD%E4%BB%A4"><span class="toc-text">4.生成宏命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%9C%A8-Excel-%E4%B8%AD%E6%89%A7%E8%A1%8C%E5%A4%8D%E6%9D%82%E4%BB%BB%E5%8A%A1"><span class="toc-text">5.在 Excel 中执行复杂任务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E8%AE%A9-ChatGPT-%E6%88%90%E4%B8%BA-Excel-%E5%8A%A9%E6%89%8B"><span class="toc-text">6.让 ChatGPT 成为 Excel 助手</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E5%B0%86-ChatGPT-%E5%8F%98%E6%88%90%E4%B8%80%E4%B8%AA-Excel-%E8%A1%A8%E6%A0%BC"><span class="toc-text">7.将 ChatGPT 变成一个 Excel 表格</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js`,
+    marked: `https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+  };
+</script>
+
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.27.0" async></script>
+
+<!-- optional -->
+
+  <script>
+  function loadBeaudar() {
+    const els = document.querySelectorAll("#comments #beaudar");
+    if (els.length === 0) return;
+    els.forEach((el, i) => {
+      try {
+        el.innerHTML = '';
+      } catch (error) {
+        console.error(error);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://beaudar.lipk.org/client.js';
+      script.async = true;
+      for (let key of Object.keys(el.attributes)) {
+        let attr = el.attributes[key];
+        if (['class', 'id'].includes(attr.name) === false) {
+          script.setAttribute(attr.name, attr.value);
+        }
+      }
+      el.appendChild(script);
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+      loadBeaudar();
+  });
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://site-info-api-tau.vercel.app/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"></script><script defer src="https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
+    js: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || null
+        }
+      });
+    })
+  }
+</script><script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
