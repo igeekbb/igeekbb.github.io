@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Geek</title>
+  
+  
+  <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://igeekbb.github.io/"/>
+  <updated>2024-04-08T11:36:57.943Z</updated>
+  <id>https://igeekbb.github.io/</id>
+  
+  <author>
+    <name>Geek</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>转译-10个 Prompts 助你重写内容</title>
+    <link href="https://igeekbb.github.io/2024/04/08/Rewrite-Content-prompts/"/>
+    <id>https://igeekbb.github.io/2024/04/08/Rewrite-Content-prompts/</id>
+    <published>2024-04-08T00:51:43.000Z</published>
+    <updated>2024-04-08T11:36:57.943Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    
+    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转译-7个必备的 ChatGPT Excel Prompts</title>
+    <link href="https://igeekbb.github.io/2024/04/04/prompts-for-excel/"/>
+    <id>https://igeekbb.github.io/2024/04/04/prompts-for-excel/</id>
+    <published>2024-04-04T02:39:28.000Z</published>
+    <updated>2024-04-08T11:36:42.088Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    
+    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>转译-15个适用于学术写作的 ChatGPT Prompts</title>
+    <link href="https://igeekbb.github.io/2024/04/02/academicprompts/"/>
+    <id>https://igeekbb.github.io/2024/04/02/academicprompts/</id>
+    <published>2024-04-02T01:35:51.000Z</published>
+    <updated>2024-04-04T01:23:33.353Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    
+    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</title>
+    <link href="https://igeekbb.github.io/2024/01/02/13900h/"/>
+    <id>https://igeekbb.github.io/2024/01/02/13900h/</id>
+    <published>2024-01-02T01:07:01.000Z</published>
+    <updated>2024-03-27T07:09:20.820Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;购入&quot; type=&quot;text&quot;&gt;&lt;a href=&quot;#购入&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="硬件DIY" scheme="https://igeekbb.github.io/tags/%E7%A1%AC%E4%BB%B6DIY/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Proxmoxve 安装手记 - All in One</title>
+    <link href="https://igeekbb.github.io/2023/11/29/proxmoxve/"/>
+    <id>https://igeekbb.github.io/2023/11/29/proxmoxve/</id>
+    <published>2023-11-29T05:39:23.000Z</published>
+    <updated>2024-03-27T06:41:21.120Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/geekbb/oss_img/202312181117241.webp&quot;&gt;&lt;/p&gt;
+&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Proxmoxve" scheme="https://igeekbb.github.io/tags/Proxmoxve/"/>
+    
+    <category term="虚拟机" scheme="https://igeekbb.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RackNerd黑五闪购1C1G12GB圣何塞机房评测</title>
+    <link href="https://igeekbb.github.io/2023/11/25/racknerd/"/>
+    <id>https://igeekbb.github.io/2023/11/25/racknerd/</id>
+    <published>2023-11-25T15:41:24.000Z</published>
+    <updated>2024-03-24T08:37:24.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;RackNerd-黑五闪购第五波小鸡-年付-8-5&quot;&gt;&lt;a href=&quot;#RackNerd-黑五闪购第五波小鸡-年付-8-5&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PassWall 负载均衡 HAProxy 保姆级设置</title>
+    <link href="https://igeekbb.github.io/2023/10/18/passwall-haproxy/"/>
+    <id>https://igeekbb.github.io/2023/10/18/passwall-haproxy/</id>
+    <published>2023-10-18T03:32:58.000Z</published>
+    <updated>2024-03-24T08:37:24.202Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;关于-HAProxy&quot;&gt;&lt;a href=&quot;#关于-HAProxy&quot; class=&quot;headerlink&quot; title=&quot;关于 HAProxy&quot;&gt;&lt;/a&gt;关于</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="OpenWrt" scheme="https://igeekbb.github.io/tags/OpenWrt/"/>
+    
+    <category term="负载均衡" scheme="https://igeekbb.github.io/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>欧洲 Scaleway 年付 40RMB VPS IPV6 搭梯评测</title>
+    <link href="https://igeekbb.github.io/2023/10/06/Scaleway/"/>
+    <id>https://igeekbb.github.io/2023/10/06/Scaleway/</id>
+    <published>2023-10-06T11:13:09.000Z</published>
+    <updated>2024-03-24T08:37:24.175Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;code&gt;#2023年10月9日更新&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;法国巴黎1C1G10GB</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+    <category term="IPV6" scheme="https://igeekbb.github.io/tags/IPV6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PassWall+MosDNS 分流设置</title>
+    <link href="https://igeekbb.github.io/2023/09/29/passwall2mosdns/"/>
+    <id>https://igeekbb.github.io/2023/09/29/passwall2mosdns/</id>
+    <published>2023-09-29T02:28:03.000Z</published>
+    <updated>2024-03-24T08:37:24.205Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;**&lt;u&gt;声明&lt;/u&gt;**：这次仅仅我个人经验，因多年没有折腾 DNS，凭借以往设置 SmartDNS 的经验，加上又学习 MosDNS 插件基本设置，本着简单、高效、不易出错的原则，舍弃</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+    <category term="DNS" scheme="https://igeekbb.github.io/tags/DNS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>macOS 14 Sonoma 博通网卡驱动支持</title>
+    <link href="https://igeekbb.github.io/2023/09/27/Hackintoswifi/"/>
+    <id>https://igeekbb.github.io/2023/09/27/Hackintoswifi/</id>
+    <published>2023-09-27T13:04:14.000Z</published>
+    <updated>2023-12-25T10:04:14.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;macOS-14-Sonoma&quot;&gt;&lt;a href=&quot;#macOS-14-Sonoma&quot; class=&quot;headerlink&quot; title=&quot;macOS 14</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="黑苹果" scheme="https://igeekbb.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对抗 QoS 阻断&amp;限速 Hysteria2 端口跳跃设置</title>
+    <link href="https://igeekbb.github.io/2023/09/22/Hysteria2Port/"/>
+    <id>https://igeekbb.github.io/2023/09/22/Hysteria2Port/</id>
+    <published>2023-09-22T01:08:41.000Z</published>
+    <updated>2024-03-26T02:28:19.031Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试</title>
+    <link href="https://igeekbb.github.io/2023/09/18/hysteria/"/>
+    <id>https://igeekbb.github.io/2023/09/18/hysteria/</id>
+    <published>2023-09-18T11:40:33.000Z</published>
+    <updated>2024-03-26T06:23:25.410Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h3&gt;&lt;p&gt;起因我在 9 月 13 日购买了 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>入手搬瓦工 CN2 GIA 特别限量版</title>
+    <link href="https://igeekbb.github.io/2023/09/14/bandwagonhost/"/>
+    <id>https://igeekbb.github.io/2023/09/14/bandwagonhost/</id>
+    <published>2023-09-14T11:44:00.000Z</published>
+    <updated>2024-03-24T08:37:24.182Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;入手&quot;&gt;&lt;a href=&quot;#入手&quot; class=&quot;headerlink&quot; title=&quot;入手&quot;&gt;&lt;/a&gt;入手&lt;/h3&gt;&lt;p&gt;2023 年 9 月 13 日，搬瓦工</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>稳定三年的斐讯 K2T 三台 KVR 组网方案</title>
+    <link href="https://igeekbb.github.io/2023/08/08/K2TKVR/"/>
+    <id>https://igeekbb.github.io/2023/08/08/K2TKVR/</id>
+    <published>2023-08-08T05:31:44.000Z</published>
+    <updated>2024-03-24T08:37:24.204Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;早在 19 年，看了“司波图“的《&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="K2T" scheme="https://igeekbb.github.io/tags/K2T/"/>
+    
+    <category term="网络" scheme="https://igeekbb.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从 NotionNext 转战 Hexo 博客记录</title>
+    <link href="https://igeekbb.github.io/2023/07/28/notion2hexo/"/>
+    <id>https://igeekbb.github.io/2023/07/28/notion2hexo/</id>
+    <published>2023-07-28T03:44:49.000Z</published>
+    <updated>2024-03-24T08:37:24.182Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt; Geek 以前通过 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="web" scheme="https://igeekbb.github.io/categories/web/"/>
+    
+    
+    <category term="Hexo" scheme="https://igeekbb.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker 部署免费 GPT4-FreeGPT</title>
+    <link href="https://igeekbb.github.io/2023/07/07/FreeGPT4/"/>
+    <id>https://igeekbb.github.io/2023/07/07/FreeGPT4/</id>
+    <published>2023-07-07T08:37:49.000Z</published>
+    <updated>2024-03-24T08:37:24.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;💡 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    
+    <category term="Docker" scheme="https://igeekbb.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>618 RSSHub 订阅《什么值得买》榜单分享</title>
+    <link href="https://igeekbb.github.io/2023/06/09/RSSHub/"/>
+    <id>https://igeekbb.github.io/2023/06/09/RSSHub/</id>
+    <published>2023-06-09T08:27:12.000Z</published>
+    <updated>2024-03-24T08:37:24.186Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;618</summary>
+        
+      
+    
+    
+    
+    <category term="web" scheme="https://igeekbb.github.io/categories/web/"/>
+    
+    
+    <category term="RSS" scheme="https://igeekbb.github.io/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>124 元实现最佳性价比双千兆软路由 OpenWrt</title>
+    <link href="https://igeekbb.github.io/2023/05/30/Routeropenwrt/"/>
+    <id>https://igeekbb.github.io/2023/05/30/Routeropenwrt/</id>
+    <published>2023-05-30T02:52:31.000Z</published>
+    <updated>2024-03-24T08:37:24.216Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文所有配件均来至二手闲鱼，无任何推广成份，只是技术分享&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="OpenWrt" scheme="https://igeekbb.github.io/tags/OpenWrt/"/>
+    
+    <category term="软路由" scheme="https://igeekbb.github.io/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由</title>
+    <link href="https://igeekbb.github.io/2023/05/26/pandora/"/>
+    <id>https://igeekbb.github.io/2023/05/26/pandora/</id>
+    <published>2023-05-26T02:04:11.000Z</published>
+    <updated>2024-03-24T08:37:24.185Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h3&gt;&lt;p&gt;在生活和板砖奔波两地，ChatGPT</summary>
+        
+      
+    
+    
+    
+    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    
+    
+    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    
+    <category term="Docker" scheme="https://igeekbb.github.io/tags/Docker/"/>
+    
+    <category term="OpenWrt" scheme="https://igeekbb.github.io/tags/OpenWrt/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我把使用多年的哪吒监控换成了 ServerStatus-Rust</title>
+    <link href="https://igeekbb.github.io/2023/05/23/ServerStatusRust/"/>
+    <id>https://igeekbb.github.io/2023/05/23/ServerStatusRust/</id>
+    <published>2023-05-23T01:53:42.000Z</published>
+    <updated>2024-03-24T08:37:24.171Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS，监控" scheme="https://igeekbb.github.io/tags/VPS%EF%BC%8C%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
+  
+</feed>
