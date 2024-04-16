@@ -6,7 +6,7 @@
   <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://igeekbb.github.io/"/>
-  <updated>2024-04-08T11:36:57.943Z</updated>
+  <updated>2024-04-16T08:21:36.000Z</updated>
   <id>https://igeekbb.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>$35/年 搬瓦工DC9传家宝 融合怪脚本跑分</title>
+    <link href="https://igeekbb.github.io/2024/04/16/bandwagong-dc9/"/>
+    <id>https://igeekbb.github.io/2024/04/16/bandwagong-dc9/</id>
+    <published>2024-04-16T07:50:11.000Z</published>
+    <updated>2024-04-16T08:21:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin colorful note&quot; color=&quot;cyan&quot;&gt;&lt;div class=&quot;body&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+  </entry>
   
   <entry>
     <title>转译-10个 Prompts 助你重写内容</title>
@@ -518,31 +545,6 @@
     <category term="Docker" scheme="https://igeekbb.github.io/tags/Docker/"/>
     
     <category term="OpenWrt" scheme="https://igeekbb.github.io/tags/OpenWrt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我把使用多年的哪吒监控换成了 ServerStatus-Rust</title>
-    <link href="https://igeekbb.github.io/2023/05/23/ServerStatusRust/"/>
-    <id>https://igeekbb.github.io/2023/05/23/ServerStatusRust/</id>
-    <published>2023-05-23T01:53:42.000Z</published>
-    <updated>2024-03-24T08:37:24.171Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="VPS，监控" scheme="https://igeekbb.github.io/tags/VPS%EF%BC%8C%E7%9B%91%E6%8E%A7/"/>
     
   </entry>
   
