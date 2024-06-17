@@ -6,7 +6,7 @@
   <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://igeekbb.github.io/"/>
-  <updated>2024-05-17T05:18:18.424Z</updated>
+  <updated>2024-06-17T05:43:20.563Z</updated>
   <id>https://igeekbb.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-theme-stellar 更新后阅读标签展示</title>
+    <link href="https://igeekbb.github.io/2024/05/23/stellar-129/"/>
+    <id>https://igeekbb.github.io/2024/05/23/stellar-129/</id>
+    <published>2024-05-23T11:48:48.000Z</published>
+    <updated>2024-06-17T05:43:20.563Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Hexo 主题 hexo-theme-stellar 更新到 V1.29 了,其中添加的阅读标签真好看.&lt;/p&gt;
+&lt;div class=&quot;tag-plugin paper&quot;&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>垃圾佬新欢 CC150 简单跑分评测</title>
@@ -28,7 +50,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;购入&quot; type=&quot;text&quot;&gt;&lt;a href=&quot;#购入&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;购入&quot; type=&quot;text&quot;&gt;&lt;span</summary>
         
       
     
@@ -55,7 +77,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;精选自用软件&quot; type=&quot;text&quot;&gt;&lt;a href=&quot;#精选自用软件&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;精选自用软件&quot; type=&quot;text&quot;&gt;&lt;span</summary>
         
       
     
@@ -107,7 +129,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;img class=&quot;icon prefix&quot;</summary>
         
       
     
@@ -134,7 +156,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;img class=&quot;icon prefix&quot;</summary>
         
       
     
@@ -161,7 +183,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;img class=&quot;icon prefix&quot;</summary>
         
       
     
@@ -188,7 +210,7 @@
       
         
         
-    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;购入&quot; type=&quot;text&quot;&gt;&lt;a href=&quot;#购入&quot;</summary>
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;购入&quot; type=&quot;text&quot;&gt;&lt;span</summary>
         
       
     
@@ -514,32 +536,6 @@
     <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
     
     <category term="Docker" scheme="https://igeekbb.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>618 RSSHub 订阅《什么值得买》榜单分享</title>
-    <link href="https://igeekbb.github.io/2023/06/09/RSSHub/"/>
-    <id>https://igeekbb.github.io/2023/06/09/RSSHub/</id>
-    <published>2023-06-09T08:27:12.000Z</published>
-    <updated>2024-03-24T08:37:24.186Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;618</summary>
-        
-      
-    
-    
-    
-    <category term="web" scheme="https://igeekbb.github.io/categories/web/"/>
-    
-    
-    <category term="RSS" scheme="https://igeekbb.github.io/tags/RSS/"/>
     
   </entry>
   
