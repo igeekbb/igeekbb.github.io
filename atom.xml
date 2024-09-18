@@ -6,7 +6,7 @@
   <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://igeekbb.github.io/"/>
-  <updated>2024-09-14T11:06:02.216Z</updated>
+  <updated>2024-09-18T14:21:28.818Z</updated>
   <id>https://igeekbb.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian 我的常用一键脚本</title>
+    <link href="https://igeekbb.github.io/2024/09/18/debian/"/>
+    <id>https://igeekbb.github.io/2024/09/18/debian/</id>
+    <published>2024-09-18T10:56:08.000Z</published>
+    <updated>2024-09-18T14:21:28.818Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h3 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;img class=&quot;icon prefix&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    
+    <category term="脚本" scheme="https://igeekbb.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+  </entry>
   
   <entry>
     <title>记录用 AI 解决的小问题</title>
@@ -509,31 +536,6 @@
     <category term="硬件" scheme="https://igeekbb.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
     
     <category term="DIY" scheme="https://igeekbb.github.io/tags/DIY/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从 NotionNext 转战 Hexo 博客记录</title>
-    <link href="https://igeekbb.github.io/2023/07/28/notion2hexo/"/>
-    <id>https://igeekbb.github.io/2023/07/28/notion2hexo/</id>
-    <published>2023-07-28T03:44:49.000Z</published>
-    <updated>2024-03-24T08:37:24.182Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt; Geek 以前通过 &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="web" scheme="https://igeekbb.github.io/categories/web/"/>
-    
-    
-    <category term="Hexo" scheme="https://igeekbb.github.io/tags/Hexo/"/>
     
   </entry>
   
