@@ -6,7 +6,7 @@
   <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://igeekbb.github.io/"/>
-  <updated>2024-09-18T14:21:28.818Z</updated>
+  <updated>2024-09-26T14:47:37.776Z</updated>
   <id>https://igeekbb.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用优选 CNAME 域名提高网站访问速度</title>
+    <link href="https://igeekbb.github.io/2024/09/26/cloudflare-saas/"/>
+    <id>https://igeekbb.github.io/2024/09/26/cloudflare-saas/</id>
+    <published>2024-09-26T01:52:38.000Z</published>
+    <updated>2024-09-26T14:47:37.776Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div class=&quot;tag-plugin quot&quot;&gt;&lt;h2 class=&quot;content&quot; id=&quot;引言&quot; type=&quot;icon&quot;&gt;&lt;img class=&quot;icon prefix&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Cloudflare" scheme="https://igeekbb.github.io/tags/Cloudflare/"/>
+    
+    <category term="优选" scheme="https://igeekbb.github.io/tags/%E4%BC%98%E9%80%89/"/>
+    
+  </entry>
   
   <entry>
     <title>Debian 我的常用一键脚本</title>
@@ -509,33 +536,6 @@
     
     
     <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>稳定三年的斐讯 K2T 三台 KVR 组网方案</title>
-    <link href="https://igeekbb.github.io/2023/08/08/K2TKVR/"/>
-    <id>https://igeekbb.github.io/2023/08/08/K2TKVR/</id>
-    <published>2023-08-08T05:31:44.000Z</published>
-    <updated>2024-05-16T14:35:29.055Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;早在 19 年，看了“司波图“的《&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="硬件" scheme="https://igeekbb.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
-    <category term="DIY" scheme="https://igeekbb.github.io/tags/DIY/"/>
     
   </entry>
   
