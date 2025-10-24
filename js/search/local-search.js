@@ -127,6 +127,14 @@ var searchFunc = function(path, filter, wrapperId, searchId, contentId) {
   }
 };
 
+
+function enableSearchInput() {
+  var $input = document.getElementById('search-input');
+  if ($input) {
+    $input.disabled = false;
+  }
+}
+
 utils.jq(() => {
   (function preloadSearchData() {
     var path = ctx.search.path;
@@ -139,6 +147,7 @@ utils.jq(() => {
       var cached = localStorage.getItem(searchCacheKey);
       if (cached) {
         searchCache = JSON.parse(cached);
+        enableSearchInput();
       }
     } catch (e) {
       console.warn('搜索缓存解析失败', e);
@@ -153,10 +162,12 @@ utils.jq(() => {
         } catch (e) {
           console.warn('搜索缓存写入失败', e);
         }
+        enableSearchInput();
       });
   })();
 
   var $inputArea = $("input#search-input");
+
   if ($inputArea.length == 0) return;
   var $resultArea = document.querySelector("div#search-result");
 
