@@ -1,0 +1,9 @@
+/* Custom lazyload blur transition */
+.lazy.bg {
+  transition: filter 0.3s ease-in-out;
+  filter: blur(10px);
+}
+
+.lazy.loaded.bg {
+  filter: blur(0);
+}
