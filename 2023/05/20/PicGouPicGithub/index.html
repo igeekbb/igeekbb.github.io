@@ -6,13 +6,13 @@
   
   <meta name="generator" content="Hexo 8.1.2">
   <meta http-equiv="x-dns-prefetch-control" content="on">
-  
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin=""><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="HandheldFriendly" content="True">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   <title data-stellar-page-meta="">PicGo + uPic + Github 搭建免费图床 - Geek</title>
@@ -32,7 +32,7 @@
   <meta name="description" content="介绍自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 &amp; Cloudflare R2，感兴趣的可以看看 R2 vs S3，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github，要比" data-stellar-page-meta="">
 <meta property="og:type" content="article" data-stellar-page-meta="">
 <meta property="og:title" content="PicGo + uPic + Github 搭建免费图床" data-stellar-page-meta="">
-<meta property="og:url" content="https://igeekbb.github.io/2023/05/20/PicGouPicGithub/" data-stellar-page-meta="">
+<meta property="og:url" content="https://www.igeekbb.com/2023/05/20/PicGouPicGithub/" data-stellar-page-meta="">
 <meta property="og:site_name" content="Geek" data-stellar-page-meta="">
 <meta property="og:description" content="介绍自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 &amp; Cloudflare R2，感兴趣的可以看看 R2 vs S3，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github，要比" data-stellar-page-meta="">
 <meta property="og:locale" content="zh_CN" data-stellar-page-meta="">
@@ -71,9 +71,11 @@
 
   
 
-  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2023-05-20T09:40:39+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2023-05-20T09:40:39+08:00","description":"介绍自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 \u0026amp; Cloudflare R2，感兴趣的可以看看 R2 vs S3，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github...","headline":"PicGo + uPic + Github 搭建免费图床","mainEntityOfPage":{"@type":"WebPage","@id":"https://igeekbb.github.io/2023/05/20/PicGouPicGithub/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://igeekbb.github.io/2023/05/20/PicGouPicGithub/","image":["https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270945084.webp"],"keywords":"Github, 图床","thumbnailUrl":"https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270945084.webp"}</script>
-  <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
-<style>.post-list .post-cover{display:none}</style>
+  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2023-05-20T09:40:39+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2023-05-20T09:40:39+08:00","description":"介绍自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 \u0026amp; Cloudflare R2，感兴趣的可以看看 R2 vs S3，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github...","headline":"PicGo + uPic + Github 搭建免费图床","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.igeekbb.com/2023/05/20/PicGouPicGithub/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://www.igeekbb.com/2023/05/20/PicGouPicGithub/","image":["https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270945084.webp"],"keywords":"Github, 图床","thumbnailUrl":"https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270945084.webp"}</script>
+  <link rel="preload" as="style" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<style>.post-list .post-cover{display:none}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}</style>
 
 
   <link rel="stylesheet" href="/css/stellar-icons.css?v=7c185ad1a9a79674">
@@ -84,7 +86,7 @@
 <body data-page-type="content" data-page-layout="post" data-article-style="tech"><div data-stellar-runtime-region="" id="site-cover" class="site-cover"></div><div class="site-shell" id="start" data-regions="leftbar rightbar"><div class="site-workspace">
 <aside data-stellar-runtime-region="" id="leftbar-region" class="site-region site-region--leftbar" data-region="leftbar" aria-label="Leftbar"><div class="site-region__surface ui-surface"><div class="site-region__decoration" aria-hidden="true"></div><div class="site-region__viewport"><header class="site-region__header site-region__zone site-region__zone--top">
     <div class="widget-instance widget-instance--brand" data-widget-id="leftbar:fixed:brand" data-presentation="leftbar" data-leftbar-rail="">
-<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
+<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/" aria-label="Geek"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="Geek" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
 
 <div class="ui-collection" data-layout="list" data-variant="nav" data-density="auto">
   
@@ -209,7 +211,7 @@
   <div class="widget-body"><div class="ui-collection" data-layout="list" data-variant="nav" data-density="compact">
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">圾</span>
@@ -227,7 +229,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -245,7 +247,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">垃</span>
@@ -263,7 +265,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -281,7 +283,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -299,7 +301,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">个</span>
@@ -317,7 +319,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -335,7 +337,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -343,24 +345,6 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">PassWall+MosDNS 分流设置</span>
-      
-      
-    </span>
-  
-  
-  
-</a>
-
-  
-    
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测">
-  
-  
-  <span class="ui-collection__initial" aria-hidden="true">R</span>
-  
-    <span class="ui-collection__content">
-      
-      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -379,6 +363,24 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">转译-7个必备的 ChatGPT Excel Prompts</span>
+      
+      
+    </span>
+  
+  
+  
+</a>
+
+  
+    
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测" data-stellar-navigation="">
+  
+  
+  <span class="ui-collection__initial" aria-hidden="true">R</span>
+  
+    <span class="ui-collection__content">
+      
+      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -431,9 +433,9 @@
     
   </div>
   </div></div>
-<article class="md-text content"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 &amp; Cloudflare R2，感兴趣的可以看看 <a target="_blank" rel="noopener" href="https://www.vantage.sh/blog/cloudflare-r2-aws-s3-comparison" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fwww.vantage.sh%2Fblog%2Fcloudflare-r2-aws-s3-comparison"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>R2 vs S3</a>，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github，要比稳定，谁能比过 Github？使用总之一句话：”有备无患”。</p>
-<h3 id="Github-图库"><a href="#Github-图库" class="headerlink" title="Github 图库"></a>Github 图库</h3><h4 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h4><p>注册好 Github 帐号，新建仓库，仓库名记住。</p>
-<h4 id="新建-token"><a href="#新建-token" class="headerlink" title="新建 token"></a>新建 token</h4><p>1/点击个人——“设置”</p>
+<article class="md-text content"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍" data-stellar-navigation=""></a>介绍</h3><p>自从来到 xLog 就开始养成写博客的习惯，虽然 xLog 目前上传图片无限制也免费，但一直以来我使用的服务都养成了备份的习惯，也不怕跑路。对比了 Amazon S3 &amp; Cloudflare R2，感兴趣的可以看看 <a target="_blank" rel="noopener" href="https://www.vantage.sh/blog/cloudflare-r2-aws-s3-comparison" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fwww.vantage.sh%2Fblog%2Fcloudflare-r2-aws-s3-comparison"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>R2 vs S3</a>，感觉 Cloudflare R2 性价比更高，还可以免费嫖 10 GB，但总怕背刺，我不考虑大陆 IP 访问问题，所以索性换成免费的 Github，要比稳定，谁能比过 Github？使用总之一句话：”有备无患”。</p>
+<h3 id="Github-图库"><a href="#Github-图库" class="headerlink" title="Github 图库" data-stellar-navigation=""></a>Github 图库</h3><h4 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库" data-stellar-navigation=""></a>新建仓库</h4><p>注册好 Github 帐号，新建仓库，仓库名记住。</p>
+<h4 id="新建-token"><a href="#新建-token" class="headerlink" title="新建 token" data-stellar-navigation=""></a>新建 token</h4><p>1/点击个人——“设置”</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2010.35.21@2x.png" alt="CleanShot2023-05-20at10.35.21@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1372" height="1132" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[206.8991,14.4366,88.607,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2010.35.21@2x.png"></p>
 <p>2/左边最下面选择” &lt;&gt;Developer settings “</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949561.webp" alt="3" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1678" height="1526" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[234.0517,0.0541,54.6662,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270949561.webp"></p>
@@ -445,7 +447,7 @@
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270950127.webp" alt="6" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2340" height="944" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[190.9332,25.6323,97.0836,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270950127.webp"></p>
 <p>以上，Github 图库仓库设置完成</p>
 <hr>
-<h3 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h3><h4 id="下载-PicGo"><a href="#下载-PicGo" class="headerlink" title="下载 PicGo"></a>下载 PicGo</h4><div class="md-table-scroll"><table>
+<h3 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo" data-stellar-navigation=""></a>PicGo</h3><h4 id="下载-PicGo"><a href="#下载-PicGo" class="headerlink" title="下载 PicGo" data-stellar-navigation=""></a>下载 PicGo</h4><div class="md-table-scroll"><table>
 <thead>
 <tr>
 <th align="left">项目</th>
@@ -461,12 +463,12 @@
 <td align="left"><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2FMolunerfinn%2FPicGo%2Freleases"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>https://github.com/Molunerfinn/PicGo/releases</a></td>
 </tr>
 </tbody></table></div>
-<h4 id="设置-PicGo"><a href="#设置-PicGo" class="headerlink" title="设置 PicGo"></a>设置 PicGo</h4><p>打开 PicGo 设置，选择 Github 后编辑右边的配置文件</p>
+<h4 id="设置-PicGo"><a href="#设置-PicGo" class="headerlink" title="设置 PicGo" data-stellar-navigation=""></a>设置 PicGo</h4><p>打开 PicGo 设置，选择 Github 后编辑右边的配置文件</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270951296.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1824" height="1124" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[180.8688,9.4136,16.0801,0.7215]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307270951296.webp"></p>
 <p>填入第一步记下的仓库名（格式是 userame/repo）和拷贝下来的 token，确定即可</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.27.35@2x.png" alt="CleanShot2023-05-20at13.27.35@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1824" height="1124" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[191.9555,9.105,22.3558,0.7285]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.27.35@2x.png"></p>
 <hr>
-<h3 id="uPic"><a href="#uPic" class="headerlink" title="uPic"></a>uPic</h3><h4 id="下载-uPic"><a href="#下载-uPic" class="headerlink" title="下载 uPic"></a>下载 uPic</h4><div class="md-table-scroll"><table>
+<h3 id="uPic"><a href="#uPic" class="headerlink" title="uPic" data-stellar-navigation=""></a>uPic</h3><h4 id="下载-uPic"><a href="#下载-uPic" class="headerlink" title="下载 uPic" data-stellar-navigation=""></a>下载 uPic</h4><div class="md-table-scroll"><table>
 <thead>
 <tr>
 <th align="left">项目</th>
@@ -486,7 +488,7 @@
 <td align="left"><a target="_blank" rel="noopener" href="https://github.com/gee1k/uPic/releases" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fgee1k%2FuPic%2Freleases"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>https://github.com/gee1k/uPic/releases</a></td>
 </tr>
 </tbody></table></div>
-<h4 id="配置-uPic"><a href="#配置-uPic" class="headerlink" title="配置 uPic"></a>配置 uPic</h4><p>在设置中选择图床，左下脚 + “Github”</p>
+<h4 id="配置-uPic"><a href="#配置-uPic" class="headerlink" title="配置 uPic" data-stellar-navigation=""></a>配置 uPic</h4><p>在设置中选择图床，左下脚 + “Github”</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.43.20@2x.png" alt="CleanShot2023-05-20at13.43.20@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="582" height="710" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[250.371,2.055,36.0107,0.8611]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.43.20@2x.png"></p>
 <blockquote>
 <ul>
@@ -500,7 +502,7 @@
 </blockquote>
 <p>保存即可</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.50@2x.png" alt="CleanShot2023-05-20at13.44.50@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1424" height="1164" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[293.6352,1.382,66.2017,0.7022]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.50@2x.png"></p>
-<h4 id="jsDelivr-加速"><a href="#jsDelivr-加速" class="headerlink" title="jsDelivr 加速"></a>jsDelivr 加速</h4><p>需要 <code>jsdelivr</code> CDN 加速访问请勾选👇</p>
+<h4 id="jsDelivr-加速"><a href="#jsDelivr-加速" class="headerlink" title="jsDelivr 加速" data-stellar-navigation=""></a>jsDelivr 加速</h4><p>需要 <code>jsdelivr</code> CDN 加速访问请勾选👇</p>
 <p>链接将会变成</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/geekbb/oss_img@×***</span><br></pre></td></tr></tbody></table></figure>
 
@@ -508,7 +510,7 @@
 
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.30@2x.png" alt="CleanShot2023-05-20at13.44.30@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1424" height="1164" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[293.9232,0.6178,35.781,0.8363]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.44.30@2x.png"></p>
 <hr>
-<h3 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h3><p>Typora 的配置更为简单，只要你配置好 PicGo，在 Typora 设置里选择 PicGo. app 即可</p>
+<h3 id="Typora"><a href="#Typora" class="headerlink" title="Typora" data-stellar-navigation=""></a>Typora</h3><p>Typora 的配置更为简单，只要你配置好 PicGo，在 Typora 设置里选择 PicGo. app 即可</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.55.06@2x.png" alt="CleanShot2023-05-20at13.55.06@2x" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1664" height="1184" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[75.6522,0.0775,41.4948,0.8413]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img@master/uPic/CleanShot%202023-05-20%20at%2013.55.06@2x.png"></p>
 </article>
 <div class="article-tags"><a class="tag" href="/tags/Github/"><svg class="icon" viewBox="0 0 1 1" data-icon="default:hashtag" aria-hidden="true"></svg>Github</a><a class="tag" href="/tags/%E5%9B%BE%E5%BA%8A/"><svg class="icon" viewBox="0 0 1 1" data-icon="default:hashtag" aria-hidden="true"></svg>图床</a></div>
@@ -516,7 +518,7 @@
 
   <div class="article-share" id="share">
     <div class="body">
-      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=PicGo%20%2B%20uPic%20%2B%20Github%20%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%20-%20Geek&amp;body=https%3A%2F%2Figeekbb.github.io%2F2023%2F05%2F20%2FPicGouPicGithub%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
+      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=PicGo%20%2B%20uPic%20%2B%20Github%20%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%20-%20Geek&amp;body=https%3A%2F%2Fwww.igeekbb.com%2F2023%2F05%2F20%2FPicGouPicGithub%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
       
     </div>
   </div>
@@ -528,7 +530,7 @@
 </div>
     </section></div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note"><svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-left" aria-hidden="true"></svg> 较新文章</div><a href="/2023/05/23/ServerStatusRust/">我把使用多年的哪吒监控换成了 ServerStatus-Rust</a></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2023/05/14/v2ray/">个人搭梯过墙备忘录</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note"><svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-left" aria-hidden="true"></svg> 较新文章</div><a href="/2023/05/23/ServerStatusRust/" data-stellar-navigation="">我把使用多年的哪吒监控换成了 ServerStatus-Rust</a></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2023/05/14/v2ray/" data-stellar-navigation="">个人搭梯过墙备忘录</a></div></section></div>
 
 
 
@@ -548,7 +550,7 @@
       <button type="button" class="cap-action ui-interactive card-hover card-hover--spotlight" data-shell-action="toggle-toc" aria-label="Toggle table of contents" aria-pressed="false"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"></path></svg></span></button>
     </div>
   
-  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#Github-%E5%9B%BE%E5%BA%93"><span class="toc-text">Github 图库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-text">新建仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%96%B0%E5%BB%BA-token"><span class="toc-text">新建 token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#PicGo"><span class="toc-text">PicGo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E4%B8%8B%E8%BD%BD-PicGo"><span class="toc-text">下载 PicGo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%AE%BE%E7%BD%AE-PicGo"><span class="toc-text">设置 PicGo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#uPic"><span class="toc-text">uPic</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E4%B8%8B%E8%BD%BD-uPic"><span class="toc-text">下载 uPic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E9%85%8D%E7%BD%AE-uPic"><span class="toc-text">配置 uPic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#jsDelivr-%E5%8A%A0%E9%80%9F"><span class="toc-text">jsDelivr 加速</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#Typora"><span class="toc-text">Typora</span></a></li></ol></div>
+  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E4%BB%8B%E7%BB%8D" data-stellar-navigation=""><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#Github-%E5%9B%BE%E5%BA%93" data-stellar-navigation=""><span class="toc-text">Github 图库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93" data-stellar-navigation=""><span class="toc-text">新建仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%96%B0%E5%BB%BA-token" data-stellar-navigation=""><span class="toc-text">新建 token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#PicGo" data-stellar-navigation=""><span class="toc-text">PicGo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E4%B8%8B%E8%BD%BD-PicGo" data-stellar-navigation=""><span class="toc-text">下载 PicGo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%AE%BE%E7%BD%AE-PicGo" data-stellar-navigation=""><span class="toc-text">设置 PicGo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#uPic" data-stellar-navigation=""><span class="toc-text">uPic</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E4%B8%8B%E8%BD%BD-uPic" data-stellar-navigation=""><span class="toc-text">下载 uPic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E9%85%8D%E7%BD%AE-uPic" data-stellar-navigation=""><span class="toc-text">配置 uPic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#jsDelivr-%E5%8A%A0%E9%80%9F" data-stellar-navigation=""><span class="toc-text">jsDelivr 加速</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#Typora" data-stellar-navigation=""><span class="toc-text">Typora</span></a></li></ol></div>
   <div class="widget-footer"><a class="top ui-interactive" onclick="util.scrollTop()"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" d="M20.536 3.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464" opacity=".5"></path><path fill="currentColor" d="M9.53 12.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 9.56z"></path><path fill="currentColor" d="M9.53 16.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 13.56z"></path></svg></span><span>回到顶部</span></a></div>
 </widget>
 
@@ -599,7 +601,7 @@
 <script data-stellar-script="defines">
   window.canonical = window.stellarClientData.canonical;
   const ctx = window.stellarClientData.ctx;
-  window.canonical.param = {permalink: "https://igeekbb.github.io/2023/05/20/PicGouPicGithub/", checklink: ctx.services.video.js};
+  window.canonical.param = {permalink: "https://www.igeekbb.com/2023/05/20/PicGouPicGithub/", checklink: ctx.services.video.js};
   ctx.date_suffix = {"just":"刚刚","min":"分钟前","hour":"小时前","day":"天前"};
   if (ctx.search) Object.assign(ctx.search, {"more":"更多","no_more":"没有更多了"});
   const def = window.stellarClientData.def;
@@ -617,15 +619,14 @@
 
 
 
-<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
+<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.jsdelivr.net/npm/marked@4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
 <script data-stellar-script="core" type="module" src="/js/runtime/index.js?v=2.0.0&amp;runtime=1"></script>
 
 
 <!-- inject -->
-<script defer="" src="https://umami.661662.xyz/script.js" data-website-id="1a6cbcfd-9303-4a1b-8cf7-1ef97e50a0d6"></script>
 
 
 <script data-stellar-script="core" defer="" src="/js/navigation-init.js?v=2.0.0"></script>
 </div>
 
-</body></html>
+<script type="application/json" id="stellar-navigation-config">{"collection":"[\"post\",\"post\"]","url":"https://www.igeekbb.com/2023/05/20/PicGouPicGithub/","signature":"7887768f68c61095d2c64c9a0883b27665114bd3d5f65e127c0ba3e89e9207b7"}</script></body></html>

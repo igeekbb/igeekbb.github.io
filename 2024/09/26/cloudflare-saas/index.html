@@ -6,13 +6,13 @@
   
   <meta name="generator" content="Hexo 8.1.2">
   <meta http-equiv="x-dns-prefetch-control" content="on">
-  
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin=""><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="HandheldFriendly" content="True">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   <title data-stellar-page-meta="">利用优选 CNAME 域名提高网站访问速度 - Geek</title>
@@ -32,7 +32,7 @@
   <meta name="description" content="引言  折腾 Cloudflare 给网站优选加速, 到达废寝忘食的地步, 起因是一个项目 Enhanced-FaaS-in-China 号称可以提升部署在 Cloudflare、Vercel 或 Netlify 网页在中国的访问速度和稳定性. 项目是很久前就分享了, 因为我的博客是放 GitHub Pages, 研究了一下这个项目好像不能给 GitHub 加速, 故作罢….. 但转念一想, 为什" data-stellar-page-meta="">
 <meta property="og:type" content="article" data-stellar-page-meta="">
 <meta property="og:title" content="利用优选 CNAME 域名提高网站访问速度" data-stellar-page-meta="">
-<meta property="og:url" content="https://igeekbb.github.io/2024/09/26/cloudflare-saas/" data-stellar-page-meta="">
+<meta property="og:url" content="https://www.igeekbb.com/2024/09/26/cloudflare-saas/" data-stellar-page-meta="">
 <meta property="og:site_name" content="Geek" data-stellar-page-meta="">
 <meta property="og:description" content="引言  折腾 Cloudflare 给网站优选加速, 到达废寝忘食的地步, 起因是一个项目 Enhanced-FaaS-in-China 号称可以提升部署在 Cloudflare、Vercel 或 Netlify 网页在中国的访问速度和稳定性. 项目是很久前就分享了, 因为我的博客是放 GitHub Pages, 研究了一下这个项目好像不能给 GitHub 加速, 故作罢….. 但转念一想, 为什" data-stellar-page-meta="">
 <meta property="og:locale" content="zh_CN" data-stellar-page-meta="">
@@ -71,9 +71,11 @@
 
   
 
-  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2024-09-26T09:52:38+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2024-09-26T09:52:38+08:00","description":"引言\n\n折腾 Cloudflare 给网站优选加速, 到达废寝忘食的地步, 起因是一个项目 Enhanced-FaaS-in-China 号称可以提升部署在 Cloudflare、Vercel 或 Netlify 网页在中国的访问速度和稳定性. 项目是很久前就分享了, 因为我的博客是放 GitHub Pages, 研究了一下这个项目好像不能给 GitHub 加速, 故作罢….. 但转念一想,...","headline":"利用优选 CNAME 域名提高网站访问速度","mainEntityOfPage":{"@type":"WebPage","@id":"https://igeekbb.github.io/2024/09/26/cloudflare-saas/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://igeekbb.github.io/2024/09/26/cloudflare-saas/","image":["https://img.igeekbb.com/blog-img/2024/09/63c565a23edfdb0b6f7750dcb7563c40.webp"],"keywords":"Cloudflare, 优选","thumbnailUrl":"https://img.igeekbb.com/blog-img/2024/09/63c565a23edfdb0b6f7750dcb7563c40.webp"}</script>
-  <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
-<style>.post-list .post-cover{display:none}</style>
+  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2024-09-26T09:52:38+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2024-09-26T09:52:38+08:00","description":"引言\n\n折腾 Cloudflare 给网站优选加速, 到达废寝忘食的地步, 起因是一个项目 Enhanced-FaaS-in-China 号称可以提升部署在 Cloudflare、Vercel 或 Netlify 网页在中国的访问速度和稳定性. 项目是很久前就分享了, 因为我的博客是放 GitHub Pages, 研究了一下这个项目好像不能给 GitHub 加速, 故作罢….. 但转念一想,...","headline":"利用优选 CNAME 域名提高网站访问速度","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.igeekbb.com/2024/09/26/cloudflare-saas/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://www.igeekbb.com/2024/09/26/cloudflare-saas/","image":["https://img.igeekbb.com/blog-img/2024/09/63c565a23edfdb0b6f7750dcb7563c40.webp"],"keywords":"Cloudflare, 优选","thumbnailUrl":"https://img.igeekbb.com/blog-img/2024/09/63c565a23edfdb0b6f7750dcb7563c40.webp"}</script>
+  <link rel="preload" as="style" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<style>.post-list .post-cover{display:none}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}</style>
 
 
   <link rel="stylesheet" href="/css/stellar-icons.css?v=7c185ad1a9a79674">
@@ -84,7 +86,7 @@
 <body data-page-type="content" data-page-layout="post" data-article-style="tech"><div data-stellar-runtime-region="" id="site-cover" class="site-cover"></div><div class="site-shell" id="start" data-regions="leftbar rightbar"><div class="site-workspace">
 <aside data-stellar-runtime-region="" id="leftbar-region" class="site-region site-region--leftbar" data-region="leftbar" aria-label="Leftbar"><div class="site-region__surface ui-surface"><div class="site-region__decoration" aria-hidden="true"></div><div class="site-region__viewport"><header class="site-region__header site-region__zone site-region__zone--top">
     <div class="widget-instance widget-instance--brand" data-widget-id="leftbar:fixed:brand" data-presentation="leftbar" data-leftbar-rail="">
-<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
+<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/" aria-label="Geek"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="Geek" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
 
 <div class="ui-collection" data-layout="list" data-variant="nav" data-density="auto">
   
@@ -209,7 +211,7 @@
   <div class="widget-body"><div class="ui-collection" data-layout="list" data-variant="nav" data-density="compact">
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">圾</span>
@@ -227,7 +229,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -245,7 +247,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">垃</span>
@@ -263,7 +265,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -281,7 +283,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -299,7 +301,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">个</span>
@@ -317,7 +319,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -335,7 +337,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -343,24 +345,6 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">PassWall+MosDNS 分流设置</span>
-      
-      
-    </span>
-  
-  
-  
-</a>
-
-  
-    
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测">
-  
-  
-  <span class="ui-collection__initial" aria-hidden="true">R</span>
-  
-    <span class="ui-collection__content">
-      
-      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -379,6 +363,24 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">转译-7个必备的 ChatGPT Excel Prompts</span>
+      
+      
+    </span>
+  
+  
+  
+</a>
+
+  
+    
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测" data-stellar-navigation="">
+  
+  
+  <span class="ui-collection__initial" aria-hidden="true">R</span>
+  
+    <span class="ui-collection__content">
+      
+      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -441,18 +443,18 @@
 <div class="tag-plugin quot h2"><h2 class="content" id="教程"><svg class="icon" viewBox="0 0 1 1" data-icon="quot:hashtag" aria-hidden="true"></svg><span class="text">教程</span><span class="empty"></span></h2></div>
 
 <p>好, 直接上教程, 分三类加速, 因为有点绕 (我是各种坑踩了一遍, 网上的视频教程也绕到姥姥家了). 我尽量说得简单一些, 希望大家能看懂.</p>
-<h3 id="1-Vercel-网站加速"><a href="#1-Vercel-网站加速" class="headerlink" title="1. Vercel 网站加速 "></a>1. Vercel 网站加速 <mark class="tag-plugin colorful mark" color="green">域名一个</mark></h3><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a><strong>第一步</strong></h5><p>也是最简单实现的方式, 以 <code>ChatGPTNextWeb</code> 项目为例, 在 Vercel 部署好后添加托管在 Cloudflare 的域名. 这里我就添加 <code>ggk.10kg.us.kg</code> 域名:</p>
+<h3 id="1-Vercel-网站加速"><a href="#1-Vercel-网站加速" class="headerlink" title="1. Vercel 网站加速 " data-stellar-navigation=""></a>1. Vercel 网站加速 <mark class="tag-plugin colorful mark" color="green">域名一个</mark></h3><h5 id="第一步"><a href="#第一步" class="headerlink" title="第一步" data-stellar-navigation=""></a><strong>第一步</strong></h5><p>也是最简单实现的方式, 以 <code>ChatGPTNextWeb</code> 项目为例, 在 Vercel 部署好后添加托管在 Cloudflare 的域名. 这里我就添加 <code>ggk.10kg.us.kg</code> 域名:</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2758/1850;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409292129563.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2758" height="1850" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[239.824,1.8227,97.3341,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409292129563.webp"><div class="lazy-icon"></div></div></div>
 
 <hr>
-<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a><strong>第二步</strong></h5><p>按照上图提示, 到 Cloudflare 域名管理页面, 将 <code>ggk.10kg.us.kg</code> <strong>CNAME</strong> 地址指向 <code>cname.vercel-dns.com</code> 等待解析和 SSL 证书申请(不要开始小云朵).</p>
+<h5 id="第二步"><a href="#第二步" class="headerlink" title="第二步" data-stellar-navigation=""></a><strong>第二步</strong></h5><p>按照上图提示, 到 Cloudflare 域名管理页面, 将 <code>ggk.10kg.us.kg</code> <strong>CNAME</strong> 地址指向 <code>cname.vercel-dns.com</code> 等待解析和 SSL 证书申请(不要开始小云朵).</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2356/1310;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301039936.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2356" height="1310" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[212.586,14.2231,97.3206,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301039936.webp"><div class="lazy-icon"></div></div></div>
 
 <p>回到 Vercel 项目一定要等 <mark class="tag-plugin colorful mark" color="blue">✅两个勾</mark> 打上</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2682/1428;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301042868.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2682" height="1428" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[212.786,0.3489,61.6229,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301042868.webp"><div class="lazy-icon"></div></div></div>
 
 <hr>
-<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a><strong>第三步</strong></h5><p>再回到 Cloudflare 域名管理将 <code>ggk.10kg.us.kg</code>  <strong>CNAME</strong> 地址指向优选域名, 保存搞定. 🎉</p>
+<h5 id="第三步"><a href="#第三步" class="headerlink" title="第三步" data-stellar-navigation=""></a><strong>第三步</strong></h5><p>再回到 Cloudflare 域名管理将 <code>ggk.10kg.us.kg</code>  <strong>CNAME</strong> 地址指向优选域名, 保存搞定. 🎉</p>
 <div class="tag-plugin copy"><span>CNAME优选</span><input class="copy-area" id="copy_1" value="vercel-cname.xingpingcn.top"><button class="copy-btn" onclick="util.copy(&quot;copy_1&quot;,&quot;复制成功&quot;)"><svg class="icon" viewBox="0 0 1 1" data-icon="copy:copy" aria-hidden="true"></svg></button></div>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2344/888;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301044231.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2344" height="888" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[260.7138,6.2551,97.0265,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301044231.webp"><div class="lazy-icon"></div></div></div>
 
@@ -460,11 +462,11 @@
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2732/1580;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301045442.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2732" height="1580" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[121.1716,45.2684,91.719,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301045442.webp"><div class="lazy-icon"></div></div></div>
 
 <hr>
-<h4 id="2-VPS-网站加速"><a href="#2-VPS-网站加速" class="headerlink" title="2. VPS 网站加速 "></a>2. VPS 网站加速 <mark class="tag-plugin colorful mark" color="green">域名两个</mark></h4><p>  给部署在 VPS 上的网站套优选稍微复杂些, 需要开通 Cloudflar saas (免费). 过程虽然有些绕, 我坚信多踩几个坑就爬出来了. 这张图看不懂就别看了, 画完我也不知道画的是个啥玩意儿, 我们简单点直接上手操作.</p>
+<h4 id="2-VPS-网站加速"><a href="#2-VPS-网站加速" class="headerlink" title="2. VPS 网站加速 " data-stellar-navigation=""></a>2. VPS 网站加速 <mark class="tag-plugin colorful mark" color="green">域名两个</mark></h4><p>  给部署在 VPS 上的网站套优选稍微复杂些, 需要开通 Cloudflar saas (免费). 过程虽然有些绕, 我坚信多踩几个坑就爬出来了. 这张图看不懂就别看了, 画完我也不知道画的是个啥玩意儿, 我们简单点直接上手操作.</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2470/1500;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301045330.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2470" height="1500" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[203.5716,14.2619,94.152,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301045330.webp"><div class="lazy-icon"></div></div></div>
 
 
-<h5 id="第一步-1"><a href="#第一步-1" class="headerlink" title="第一步"></a><strong>第一步</strong></h5><p>准备两个域名分别托管在不同的运营商,这里以 Cloudflar &amp; DNSPod 为例:</p>
+<h5 id="第一步-1"><a href="#第一步-1" class="headerlink" title="第一步" data-stellar-navigation=""></a><strong>第一步</strong></h5><p>准备两个域名分别托管在不同的运营商,这里以 Cloudflar &amp; DNSPod 为例:</p>
 <div class="tag-plugin colorful checkbox"><input type="checkbox" checked="true"><span>geek.AAA.com-托管在 Cloudflar</span></div>
 <div class="tag-plugin colorful checkbox"><input type="checkbox" checked="true"><span>geek.BBB.com-托管在 DNSPod</span></div>
 
@@ -476,10 +478,10 @@
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2136/1180;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301046275.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2136" height="1180" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[217.457,6.5515,97.436,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301046275.webp"><div class="lazy-icon"></div></div></div>
 
 <hr>
-<h5 id="第二步-1"><a href="#第二步-1" class="headerlink" title="第二步"></a><strong>第二步</strong></h5><p>最重要的步骤来了, 回到刚才开通的 Cloudflare for SaaS 页面, 将二级域名 <mark class="tag-plugin colorful mark" color="orange">geek.AAA.com</mark> 添加进回退源地址, 等待<strong>回退源状态</strong>变成：<mark class="tag-plugin colorful mark" color="green">有效</mark></p>
+<h5 id="第二步-1"><a href="#第二步-1" class="headerlink" title="第二步" data-stellar-navigation=""></a><strong>第二步</strong></h5><p>最重要的步骤来了, 回到刚才开通的 Cloudflare for SaaS 页面, 将二级域名 <mark class="tag-plugin colorful mark" color="orange">geek.AAA.com</mark> 添加进回退源地址, 等待<strong>回退源状态</strong>变成：<mark class="tag-plugin colorful mark" color="green">有效</mark></p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2432/1192;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301047809.png" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2432" height="1192" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[214.0554,16.6149,96.4358,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301047809.png"><div class="lazy-icon"></div></div></div>
 
-<h5 id="第三步-1"><a href="#第三步-1" class="headerlink" title="第三步"></a><strong>第三步</strong></h5><p>自定义主机名 -&gt; 添加自定义主机名, 将托管在 DNSPod 的 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark> 添加进自定义主机</p>
+<h5 id="第三步-1"><a href="#第三步-1" class="headerlink" title="第三步" data-stellar-navigation=""></a><strong>第三步</strong></h5><p>自定义主机名 -&gt; 添加自定义主机名, 将托管在 DNSPod 的 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark> 添加进自定义主机</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2364/1478;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301047776.png" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2364" height="1478" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[221.1223,17.874,98.2131,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301047776.png"><div class="lazy-icon"></div></div></div>
 
 <p>需要验证 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark>  TXT 记录, 在 DNSPod 域名管理里添加自己的验证信息.</p>
@@ -498,11 +500,11 @@
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2270/1120;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301050740.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2270" height="1120" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[207.0149,9.0337,97.0177,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301050740.webp"><div class="lazy-icon"></div></div></div>
 
 <p>打开托管在 DNSPod 的 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark>  应该可以访问你部署在 VPS 服务网站啦.</p>
-<h5 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a><strong>第四步</strong></h5><p>好! 最后重要一步<strong>加优选</strong>, 进入 DNSPod 域名管理, 将刚刚 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark> <strong>CNAME</strong> 指向改为 <a target="_blank" rel="noopener" href="https://github.com/xingpingcn/enhanced-FaaS-in-China" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fxingpingcn%2Fenhanced-FaaS-in-China"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>Enhanced-FaaS-in-China</a> 项目的优选地址:<code>cf-cname.xingpingcn.top</code> 大功告成 🎉</p>
+<h5 id="第四步"><a href="#第四步" class="headerlink" title="第四步" data-stellar-navigation=""></a><strong>第四步</strong></h5><p>好! 最后重要一步<strong>加优选</strong>, 进入 DNSPod 域名管理, 将刚刚 <mark class="tag-plugin colorful mark" color="purple">geek.BBB.com</mark> <strong>CNAME</strong> 指向改为 <a target="_blank" rel="noopener" href="https://github.com/xingpingcn/enhanced-FaaS-in-China" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fxingpingcn%2Fenhanced-FaaS-in-China"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>Enhanced-FaaS-in-China</a> 项目的优选地址:<code>cf-cname.xingpingcn.top</code> 大功告成 🎉</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:2048/1076;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301056360.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2048" height="1076" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[212.4574,5.5211,76.6088,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301056360.webp"><div class="lazy-icon"></div></div></div> 
 
 <hr>
-<h4 id="3-VPS-网站加速"><a href="#3-VPS-网站加速" class="headerlink" title="3. VPS 网站加速 "></a>3. VPS 网站加速 <mark class="tag-plugin colorful mark" color="green">域名一个</mark></h4><p>其实就是项目作者对于<a target="_blank" rel="noopener" href="https://github.com/xingpingcn/enhanced-FaaS-in-China/blob/main/docs/how2use-SaaS-for-CF/how2use-SaaS-for-CF.md#%E9%9C%80%E8%A6%81%E4%BB%80%E4%B9%88" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fxingpingcn%2Fenhanced-FaaS-in-China%2Fblob%2Fmain%2Fdocs%2Fhow2use-SaaS-for-CF%2Fhow2use-SaaS-for-CF.md%23%25E9%259C%2580%25E8%25A6%2581%25E4%25BB%2580%25E4%25B9%2588"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>一个域名</a>的思路, 我实践了, 是可行的! (操作起来更复杂一些)</p>
+<h4 id="3-VPS-网站加速"><a href="#3-VPS-网站加速" class="headerlink" title="3. VPS 网站加速 " data-stellar-navigation=""></a>3. VPS 网站加速 <mark class="tag-plugin colorful mark" color="green">域名一个</mark></h4><p>其实就是项目作者对于<a target="_blank" rel="noopener" href="https://github.com/xingpingcn/enhanced-FaaS-in-China/blob/main/docs/how2use-SaaS-for-CF/how2use-SaaS-for-CF.md#%E9%9C%80%E8%A6%81%E4%BB%80%E4%B9%88" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fxingpingcn%2Fenhanced-FaaS-in-China%2Fblob%2Fmain%2Fdocs%2Fhow2use-SaaS-for-CF%2Fhow2use-SaaS-for-CF.md%23%25E9%259C%2580%25E8%25A6%2581%25E4%25BB%2580%25E4%25B9%2588"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>一个域名</a>的思路, 我实践了, 是可行的! (操作起来更复杂一些)</p>
 <div class="tag-plugin image"><div class="image-bg" style="aspect-ratio:1840/672;"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.igeekbb.com/blog-img/2024/09/202409301057777.webp" data-fancybox="true" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1840" height="672" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[209.7001,13.5103,16.1775,1]}" data-stellar-image-source="https://img.igeekbb.com/blog-img/2024/09/202409301057777.webp"><div class="lazy-icon"></div></div></div> 
 
 <p>还是两个域名管理运营商 Cloudflare 和 DNSPod, 域名只要一个  <strong>AAA.com</strong> 托管在 Cloudflare. </p>
@@ -565,7 +567,7 @@
 
   <div class="article-share" id="share">
     <div class="body">
-      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=%E5%88%A9%E7%94%A8%E4%BC%98%E9%80%89%20CNAME%20%E5%9F%9F%E5%90%8D%E6%8F%90%E9%AB%98%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%20-%20Geek&amp;body=https%3A%2F%2Figeekbb.github.io%2F2024%2F09%2F26%2Fcloudflare-saas%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
+      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=%E5%88%A9%E7%94%A8%E4%BC%98%E9%80%89%20CNAME%20%E5%9F%9F%E5%90%8D%E6%8F%90%E9%AB%98%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%20-%20Geek&amp;body=https%3A%2F%2Fwww.igeekbb.com%2F2024%2F09%2F26%2Fcloudflare-saas%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
       
     </div>
   </div>
@@ -577,7 +579,7 @@
 </div>
     </section></div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2024/09/18/debian/">Debian 我的常用一键脚本</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2024/09/18/debian/" data-stellar-navigation="">Debian 我的常用一键脚本</a></div></section></div>
 
 
 
@@ -597,7 +599,7 @@
       <button type="button" class="cap-action ui-interactive card-hover card-hover--spotlight" data-shell-action="toggle-toc" aria-label="Toggle table of contents" aria-pressed="false"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"></path></svg></span></button>
     </div>
   
-  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-2"><a class="toc-link ui-interactive" href="#%E5%BC%95%E8%A8%80"><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link ui-interactive" href="#%E6%95%99%E7%A8%8B"><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#1-Vercel-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F"><span class="toc-text">1. Vercel 网站加速 域名一个</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#2-VPS-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F"><span class="toc-text">2. VPS 网站加速 域名两个</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-1"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-1"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-1"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5"><span class="toc-text">第四步</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#3-VPS-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F"><span class="toc-text">3. VPS 网站加速 域名一个</span></a></li></ol></li></ol></li></ol></div>
+  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-2"><a class="toc-link ui-interactive" href="#%E5%BC%95%E8%A8%80" data-stellar-navigation=""><span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link ui-interactive" href="#%E6%95%99%E7%A8%8B" data-stellar-navigation=""><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#1-Vercel-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F" data-stellar-navigation=""><span class="toc-text">1. Vercel 网站加速 域名一个</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5" data-stellar-navigation=""><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5" data-stellar-navigation=""><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5" data-stellar-navigation=""><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#2-VPS-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F" data-stellar-navigation=""><span class="toc-text">2. VPS 网站加速 域名两个</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-1" data-stellar-navigation=""><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-1" data-stellar-navigation=""><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-1" data-stellar-navigation=""><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-5"><a class="toc-link ui-interactive" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5" data-stellar-navigation=""><span class="toc-text">第四步</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#3-VPS-%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F" data-stellar-navigation=""><span class="toc-text">3. VPS 网站加速 域名一个</span></a></li></ol></li></ol></li></ol></div>
   <div class="widget-footer"><a class="top ui-interactive" onclick="util.scrollTop()"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" d="M20.536 3.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464" opacity=".5"></path><path fill="currentColor" d="M9.53 12.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 9.56z"></path><path fill="currentColor" d="M9.53 16.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 13.56z"></path></svg></span><span>回到顶部</span></a></div>
 </widget>
 
@@ -648,7 +650,7 @@
 <script data-stellar-script="defines">
   window.canonical = window.stellarClientData.canonical;
   const ctx = window.stellarClientData.ctx;
-  window.canonical.param = {permalink: "https://igeekbb.github.io/2024/09/26/cloudflare-saas/", checklink: ctx.services.video.js};
+  window.canonical.param = {permalink: "https://www.igeekbb.com/2024/09/26/cloudflare-saas/", checklink: ctx.services.video.js};
   ctx.date_suffix = {"just":"刚刚","min":"分钟前","hour":"小时前","day":"天前"};
   if (ctx.search) Object.assign(ctx.search, {"more":"更多","no_more":"没有更多了"});
   const def = window.stellarClientData.def;
@@ -666,15 +668,14 @@
 
 
 
-<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
+<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.jsdelivr.net/npm/marked@4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
 <script data-stellar-script="core" type="module" src="/js/runtime/index.js?v=2.0.0&amp;runtime=1"></script>
 
 
 <!-- inject -->
-<script defer="" src="https://umami.661662.xyz/script.js" data-website-id="1a6cbcfd-9303-4a1b-8cf7-1ef97e50a0d6"></script>
 
 
 <script data-stellar-script="core" defer="" src="/js/navigation-init.js?v=2.0.0"></script>
 </div>
 
-</body></html>
+<script type="application/json" id="stellar-navigation-config">{"collection":"[\"post\",\"post\"]","url":"https://www.igeekbb.com/2024/09/26/cloudflare-saas/","signature":"7887768f68c61095d2c64c9a0883b27665114bd3d5f65e127c0ba3e89e9207b7"}</script></body></html>

@@ -6,13 +6,13 @@
   
   <meta name="generator" content="Hexo 8.1.2">
   <meta http-equiv="x-dns-prefetch-control" content="on">
-  
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin=""><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="HandheldFriendly" content="True">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   <title data-stellar-page-meta="">用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由 - Geek</title>
@@ -32,7 +32,7 @@
   <meta name="description" content="介绍在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。 项目这次使用的是潘多拉 (Pandora)，一个使用 Access Token 实现了网页版 ChatGPT 的开源项目" data-stellar-page-meta="">
 <meta property="og:type" content="article" data-stellar-page-meta="">
 <meta property="og:title" content="用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由" data-stellar-page-meta="">
-<meta property="og:url" content="https://igeekbb.github.io/2023/05/26/pandora/" data-stellar-page-meta="">
+<meta property="og:url" content="https://www.igeekbb.com/2023/05/26/pandora/" data-stellar-page-meta="">
 <meta property="og:site_name" content="Geek" data-stellar-page-meta="">
 <meta property="og:description" content="介绍在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。 项目这次使用的是潘多拉 (Pandora)，一个使用 Access Token 实现了网页版 ChatGPT 的开源项目" data-stellar-page-meta="">
 <meta property="og:locale" content="zh_CN" data-stellar-page-meta="">
@@ -72,9 +72,11 @@
 
   
 
-  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2023-05-26T10:04:11+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2023-05-26T10:04:11+08:00","description":"介绍在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。\n项目这次使用的是潘多拉 (Pandora)，一个使用 Access Token 实现了网页版 ChatGPT 的开...","headline":"用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由","mainEntityOfPage":{"@type":"WebPage","@id":"https://igeekbb.github.io/2023/05/26/pandora/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://igeekbb.github.io/2023/05/26/pandora/","image":["https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009388.webp"],"keywords":"Docker, OpenWrt, ChatGPT","thumbnailUrl":"https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009388.webp"}</script>
-  <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
-<style>.post-list .post-cover{display:none}</style>
+  <script type="application/ld+json" data-stellar-page-meta="">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"},"dateCreated":"2023-05-26T10:04:11+08:00","dateModified":"2026-10-06T17:15:03+08:00","datePublished":"2023-05-26T10:04:11+08:00","description":"介绍在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。\n项目这次使用的是潘多拉 (Pandora)，一个使用 Access Token 实现了网页版 ChatGPT 的开...","headline":"用 Docker 将类 ChatGPT 官方服务部署到 OpenWrt 软路由","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.igeekbb.com/2023/05/26/pandora/"},"publisher":{"@type":"Organization","name":"Geek","sameAs":[],"image":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp"}},"url":"https://www.igeekbb.com/2023/05/26/pandora/","image":["https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009388.webp"],"keywords":"Docker, OpenWrt, ChatGPT","thumbnailUrl":"https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009388.webp"}</script>
+  <link rel="preload" as="style" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+<style>.post-list .post-cover{display:none}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}</style>
 
 
   <link rel="stylesheet" href="/css/stellar-icons.css?v=7c185ad1a9a79674">
@@ -85,7 +87,7 @@
 <body data-page-type="content" data-page-layout="post" data-article-style="tech"><div data-stellar-runtime-region="" id="site-cover" class="site-cover"></div><div class="site-shell" id="start" data-regions="leftbar rightbar"><div class="site-workspace">
 <aside data-stellar-runtime-region="" id="leftbar-region" class="site-region site-region--leftbar" data-region="leftbar" aria-label="Leftbar"><div class="site-region__surface ui-surface"><div class="site-region__decoration" aria-hidden="true"></div><div class="site-region__viewport"><header class="site-region__header site-region__zone site-region__zone--top">
     <div class="widget-instance widget-instance--brand" data-widget-id="leftbar:fixed:brand" data-presentation="leftbar" data-leftbar-rail="">
-<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
+<header class="brand-header brand-header--regular brand-header--site"><div class="brand-wrap"><a class="brand-image brand-image--avatar" href="/" aria-label="Geek"><img no-lazy="" src="https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp" alt="Geek" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;"></a><a class="brand-title" href="/"><div class="brand-name">Geek</div><div class="brand-tagline cap">🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤</div></a></div><div class="brand-search">
 
 <div class="ui-collection" data-layout="list" data-variant="nav" data-density="auto">
   
@@ -210,7 +212,7 @@
   <div class="widget-body"><div class="ui-collection" data-layout="list" data-variant="nav" data-density="compact">
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/01/02/13900h/" title="圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">圾</span>
@@ -228,7 +230,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/29/proxmoxve/" title="Proxmoxve 安装手记 - All in One" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -246,7 +248,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/16/cc150/" title="垃圾佬新欢 CC150 简单跑分评测" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">垃</span>
@@ -264,7 +266,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/18/hysteria/" title="Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -282,7 +284,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2024/05/23/stellar-129/" title="hexo-theme-stellar 更新后阅读标签展示" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">H</span>
@@ -300,7 +302,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/05/14/v2ray/" title="个人搭梯过墙备忘录" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">个</span>
@@ -318,7 +320,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/10/18/passwall-haproxy/" title="PassWall 负载均衡 HAProxy 保姆级设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -336,7 +338,7 @@
 
   
     
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置">
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/09/29/passwall2mosdns/" title="PassWall+MosDNS 分流设置" data-stellar-navigation="">
   
   
   <span class="ui-collection__initial" aria-hidden="true">P</span>
@@ -344,24 +346,6 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">PassWall+MosDNS 分流设置</span>
-      
-      
-    </span>
-  
-  
-  
-</a>
-
-  
-    
-<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测">
-  
-  
-  <span class="ui-collection__initial" aria-hidden="true">R</span>
-  
-    <span class="ui-collection__content">
-      
-      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -380,6 +364,24 @@
     <span class="ui-collection__content">
       
       <span class="ui-collection__title">转译-7个必备的 ChatGPT Excel Prompts</span>
+      
+      
+    </span>
+  
+  
+  
+</a>
+
+  
+    
+<a class="ui-collection__item ui-interactive card-hover card-hover--spotlight" href="/2023/11/25/racknerd/" title="RackNerd黑五闪购1C1G12GB圣何塞机房评测" data-stellar-navigation="">
+  
+  
+  <span class="ui-collection__initial" aria-hidden="true">R</span>
+  
+    <span class="ui-collection__content">
+      
+      <span class="ui-collection__title">RackNerd黑五闪购1C1G12GB圣何塞机房评测</span>
       
       
     </span>
@@ -432,8 +434,8 @@
     
   </div>
   </div></div>
-<article class="md-text content"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。</p>
-<h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><p>这次使用的是<a target="_blank" rel="noopener" href="https://github.com/pengzhile/pandora" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fpengzhile%2Fpandora"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>潘多拉 (Pandora)</a>，一个使用 Access Token 实现了网页版 ChatGPT 的开源项目。后端优化，绕过 Cloudflare，速度喜人。</p>
+<article class="md-text content"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍" data-stellar-navigation=""></a>介绍</h3><p>在生活和板砖奔波两地，ChatGPT 官网又经常抽风，碰巧两地都有软路由 OpenWrt，所以我将 ChatGPT 部署到软路由上。两地的网关都是 192.168.2.1，再把软路由上的 ChatGPT 加入 Google Chrome 收藏夹，这样就能随时在两地快速访问。</p>
+<h3 id="项目"><a href="#项目" class="headerlink" title="项目" data-stellar-navigation=""></a>项目</h3><p>这次使用的是<a target="_blank" rel="noopener" href="https://github.com/pengzhile/pandora" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fpengzhile%2Fpandora"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>潘多拉 (Pandora)</a>，一个使用 Access Token 实现了网页版 ChatGPT 的开源项目。后端优化，绕过 Cloudflare，速度喜人。</p>
 <div class="md-table-scroll"><table>
 <thead>
 <tr>
@@ -451,7 +453,7 @@
 </tr>
 </tbody></table></div>
 <p><code>Access Token</code> 有效期 <code>14</code> 天，期间访问<strong>不需要梯子</strong></p>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><h4 id="安装-Docker"><a href="#安装-Docker" class="headerlink" title="安装 Docker"></a>安装 Docker</h4><p>打开 OpenWrt 我使用的固件是 <a target="_blank" rel="noopener" href="https://supes.top/" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fsupes.top%2F"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>https://supes.top/</a> ，找到<code>系统</code>—<code>软件包</code>，点击更新列表</p>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署" data-stellar-navigation=""></a>部署</h3><h4 id="安装-Docker"><a href="#安装-Docker" class="headerlink" title="安装 Docker" data-stellar-navigation=""></a>安装 Docker</h4><p>打开 OpenWrt 我使用的固件是 <a target="_blank" rel="noopener" href="https://supes.top/" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fsupes.top%2F"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>https://supes.top/</a> ，找到<code>系统</code>—<code>软件包</code>，点击更新列表</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009390.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1880" height="632" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[235.8532,2.1826,43.2971,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009390.webp"></p>
 <p>更新后分别安装：</p>
 <ol>
@@ -468,14 +470,14 @@
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009393.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2442" height="1580" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[228.1481,33.831,93.1433,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009393.webp"></p>
 <p>下面的操作建议在 SSH 完成，OpenWrt 上操作 Docker 真难用！</p>
 <p>使用 SSH 工具连接 OpenWrt 网关 192.168.2.1，用户名和密码就是 OpenWrt 的用户名和密码。推荐工具  <a target="_blank" rel="noopener" href="https://github.com/electerm/electerm" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Felecterm%2Felecterm"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>electerm</a></p>
-<h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull pengzhile/pandora</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像" data-stellar-navigation=""></a>拉取镜像</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull pengzhile/pandora</span><br></pre></td></tr></tbody></table></figure>
 
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009394.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2108" height="1678" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[122.0057,3.2276,2.6169,0.7878]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009394.webp"></p>
-<h4 id="运行镜像"><a href="#运行镜像" class="headerlink" title="运行镜像"></a>运行镜像</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -e PANDORA_CLOUD=cloud -e PANDORA_SERVER=0.0.0.0:8899 -p 8899:8899 -d pengzhile/pandora</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="运行镜像"><a href="#运行镜像" class="headerlink" title="运行镜像" data-stellar-navigation=""></a>运行镜像</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -e PANDORA_CLOUD=cloud -e PANDORA_SERVER=0.0.0.0:8899 -p 8899:8899 -d pengzhile/pandora</span><br></pre></td></tr></tbody></table></figure>
 
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009395.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="2108" height="1678" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[179.4273,8.9926,3.2894,0.7878]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009395.webp"></p>
 <p>更多 Docker 环境变量请看： <a target="_blank" rel="noopener" href="https://github.com/pengzhile/pandora/blob/master/doc/wiki.md#docker%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=https%3A%2F%2Fgithub.com%2Fpengzhile%2Fpandora%2Fblob%2Fmaster%2Fdoc%2Fwiki.md%23docker%25E7%258E%25AF%25E5%25A2%2583%25E5%258F%2598%25E9%2587%258F"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>pandora 环境变量</a></p>
-<h4 id="获取-Access-Token"><a href="#获取-Access-Token" class="headerlink" title="获取 Access Token"></a>获取 Access Token</h4><ul>
+<h4 id="获取-Access-Token"><a href="#获取-Access-Token" class="headerlink" title="获取 Access Token" data-stellar-navigation=""></a>获取 Access Token</h4><ul>
 <li><p>官方登录，然后访问 <a target="_blank" rel="noopener" href="http://chat.openai.com/api/auth/session" data-md-link="" data-siteinfo-api="https://site-info-api-tau.vercel.app/api/v1?url=http%3A%2F%2Fchat.openai.com%2Fapi%2Fauth%2Fsession"><span class="md-link-icon ui-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor"><g opacity=".5"><path d="M19.7388 4.26118C17.0572 1.57961 12.7095 1.57961 10.0279 4.26118L9.30707 4.98203C9.01418 5.27492 9.01418 5.7498 9.30707 6.04269C9.59997 6.33558 10.0748 6.33558 10.3677 6.04269L11.0886 5.32184C13.1844 3.22605 16.5823 3.22605 18.6781 5.32184C20.7739 7.41763 20.7739 10.8156 18.6781 12.9114L17.9573 13.6322C17.6644 13.9251 17.6644 14.4 17.9573 14.6929C18.2502 14.9858 18.725 14.9858 19.0179 14.6929L19.7388 13.972C22.4203 11.2905 22.4203 6.94276 19.7388 4.26118Z"></path><path d="M6.04269 9.30707C6.33558 9.59997 6.33558 10.0748 6.04269 10.3677L5.32184 11.0886C3.22605 13.1844 3.22605 16.5823 5.32184 18.6781C7.41763 20.7739 10.8156 20.7739 12.9114 18.6781L13.6322 17.9573C13.9251 17.6644 14.4 17.6644 14.6929 17.9573C14.9858 18.2501 14.9858 18.725 14.6929 19.0179L13.972 19.7388C11.2905 22.4203 6.94276 22.4203 4.26118 19.7388C1.57961 17.0572 1.57961 12.7095 4.26118 10.0279L4.98203 9.30707C5.27492 9.01418 5.7498 9.01418 6.04269 9.30707Z"></path></g><path d="M14.6933 9.30707C14.9862 9.59997 14.9862 10.0748 14.6933 10.3677L10.3682 14.6928C10.0753 14.9857 9.60045 14.9857 9.30756 14.6928C9.01467 14.3999 9.01467 13.9251 9.30756 13.6322L13.6327 9.30707C13.9255 9.01418 14.4004 9.01418 14.6933 9.30707Z"></path></g></svg></span>这里</a> 拿 <code>Access Token</code> 有效期 <code>14</code> 天</p>
 </li>
 <li><p>也可以直接用 OpenAI 帐号登录<br>打开 http://网关:8899/<br>我使用 <code>Access Token</code><br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009396.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1906" height="1598" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[178.7839,33.8136,94.3458,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009396.webp"></p>
@@ -483,7 +485,7 @@
 </ul>
 <p>搞定，使用 cloud 模式，和 ChatGPT 官网无异，聊天记录同步更新，比官网稳定快捷。</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009397.webp" onerror="this.onerror=null;this.src=&quot;/images/stellar-error.491ee870f4940739.svg&quot;" width="1920" height="1350" data-stellar-image-dimensions="true" data-stellar-image-color="{&quot;size&quot;:64,&quot;hsla&quot;:[184.8898,6.3112,74.8367,1]}" data-stellar-image-source="https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271009397.webp"></p>
-<h3 id="设置开机启动-非必须"><a href="#设置开机启动-非必须" class="headerlink" title="设置开机启动 (非必须)"></a>设置开机启动 (非必须)</h3><ul>
+<h3 id="设置开机启动-非必须"><a href="#设置开机启动-非必须" class="headerlink" title="设置开机启动 (非必须)" data-stellar-navigation=""></a>设置开机启动 (非必须)</h3><ul>
 <li><p>使用/etc/rc.local 文件来执行自定义的启动脚本</p>
 </li>
 <li><p>找到<code>/etc/rc.local</code>文件</p>
@@ -509,7 +511,7 @@
 
   <div class="article-share" id="share">
     <div class="body">
-      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=%E7%94%A8%20Docker%20%E5%B0%86%E7%B1%BB%20ChatGPT%20%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0%20OpenWrt%20%E8%BD%AF%E8%B7%AF%E7%94%B1%20-%20Geek&amp;body=https%3A%2F%2Figeekbb.github.io%2F2023%2F05%2F26%2Fpandora%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
+      <div class="social-wrap dis-select"><a class="social share-item email ui-interactive is-icon-only" href="mailto:?subject=%E7%94%A8%20Docker%20%E5%B0%86%E7%B1%BB%20ChatGPT%20%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E5%88%B0%20OpenWrt%20%E8%BD%AF%E8%B7%AF%E7%94%B1%20-%20Geek&amp;body=https%3A%2F%2Fwww.igeekbb.com%2F2023%2F05%2F26%2Fpandora%2F" aria-label="分享文章: Email" title="分享文章: Email"><span class="share-item__icon ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" fill-rule="evenodd" d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828C4.343 20 6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172C22 17.657 22 15.771 22 12s0-5.657-1.172-6.828C19.657 4 17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172m15.404 2.348a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.739-1.605 1.338-2.24 1.746-.66.424-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.576a.75.75 0 1 1 .96-1.152l2.159 1.799c.933.777 1.58 1.315 2.128 1.667.529.34.888.455 1.233.455s.704-.115 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097" clip-rule="evenodd"></path></svg></span></a></div>
       
     </div>
   </div>
@@ -521,7 +523,7 @@
 </div>
     </section></div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note"><svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-left" aria-hidden="true"></svg> 较新文章</div><a href="/2023/05/30/Routeropenwrt/">124 元实现最佳性价比双千兆软路由 OpenWrt</a></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2023/05/23/ServerStatusRust/">我把使用多年的哪吒监控换成了 ServerStatus-Rust</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note"><svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-left" aria-hidden="true"></svg> 较新文章</div><a href="/2023/05/30/Routeropenwrt/" data-stellar-navigation="">124 元实现最佳性价比双千兆软路由 OpenWrt</a></div><div class="item" id="next"><div class="note">较早文章 <svg class="icon" viewBox="0 0 1 1" data-icon="default:arrow-right" aria-hidden="true"></svg></div><a href="/2023/05/23/ServerStatusRust/" data-stellar-navigation="">我把使用多年的哪吒监控换成了 ServerStatus-Rust</a></div></section></div>
 
 
 
@@ -541,7 +543,7 @@
       <button type="button" class="cap-action ui-interactive card-hover card-hover--spotlight" data-shell-action="toggle-toc" aria-label="Toggle table of contents" aria-pressed="false"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"></path></svg></span></button>
     </div>
   
-  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E9%A1%B9%E7%9B%AE"><span class="toc-text">项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E9%83%A8%E7%BD%B2"><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E5%AE%89%E8%A3%85-Docker"><span class="toc-text">安装 Docker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="toc-text">拉取镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%BF%90%E8%A1%8C%E9%95%9C%E5%83%8F"><span class="toc-text">运行镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%8E%B7%E5%8F%96-Access-Token"><span class="toc-text">获取 Access Token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8-%E9%9D%9E%E5%BF%85%E9%A1%BB"><span class="toc-text">设置开机启动 (非必须)</span></a></li></ol></div>
+  <div class="widget-body"><ol class="toc ui-collection-adapter"><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E4%BB%8B%E7%BB%8D" data-stellar-navigation=""><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E9%A1%B9%E7%9B%AE" data-stellar-navigation=""><span class="toc-text">项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E9%83%A8%E7%BD%B2" data-stellar-navigation=""><span class="toc-text">部署</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E5%AE%89%E8%A3%85-Docker" data-stellar-navigation=""><span class="toc-text">安装 Docker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F" data-stellar-navigation=""><span class="toc-text">拉取镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%BF%90%E8%A1%8C%E9%95%9C%E5%83%8F" data-stellar-navigation=""><span class="toc-text">运行镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link ui-interactive" href="#%E8%8E%B7%E5%8F%96-Access-Token" data-stellar-navigation=""><span class="toc-text">获取 Access Token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link ui-interactive" href="#%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8-%E9%9D%9E%E5%BF%85%E9%A1%BB" data-stellar-navigation=""><span class="toc-text">设置开机启动 (非必须)</span></a></li></ol></div>
   <div class="widget-footer"><a class="top ui-interactive" onclick="util.scrollTop()"><span class="ui-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="currentColor" d="M20.536 3.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464" opacity=".5"></path><path fill="currentColor" d="M9.53 12.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 9.56z"></path><path fill="currentColor" d="M9.53 16.03a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06L12 13.56z"></path></svg></span><span>回到顶部</span></a></div>
 </widget>
 
@@ -592,7 +594,7 @@
 <script data-stellar-script="defines">
   window.canonical = window.stellarClientData.canonical;
   const ctx = window.stellarClientData.ctx;
-  window.canonical.param = {permalink: "https://igeekbb.github.io/2023/05/26/pandora/", checklink: ctx.services.video.js};
+  window.canonical.param = {permalink: "https://www.igeekbb.com/2023/05/26/pandora/", checklink: ctx.services.video.js};
   ctx.date_suffix = {"just":"刚刚","min":"分钟前","hour":"小时前","day":"天前"};
   if (ctx.search) Object.assign(ctx.search, {"more":"更多","no_more":"没有更多了"});
   const def = window.stellarClientData.def;
@@ -610,15 +612,14 @@
 
 
 
-<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/vanilla-lazyload/17.8.4/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.bootcdn.net/ajax/libs/flying-pages/2.1.2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js","css":"https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
+<script data-stellar-script="core" type="application/json" id="stellar-runtime-config">{"version":1,"root":"/","policy":{"cache":{"enabled":true,"defaultTtl":3600,"ttl":{"giscus":600,"waline":600,"artalk":600,"memos":600,"memos-user":86400,"sites":86400,"friends":86400,"friends_and_posts":86400,"siteinfo":86400},"maxEntries":200},"request":{"retries":2,"timeoutMs":5000,"idleTimeoutMs":3000,"maxCacheEntryBytes":204800},"features":{"codeCopyToastMs":2500},"providers":{"linkPrefetch":"flying_pages","lightbox":"fancybox","diagrams":"mermaid"}},"extensions":[{"id":"pin-slider","module":"/js/runtime/extensions/pin-slider.js","scope":"region","when":{"selector":".pin-slider"},"config":{}},{"id":"page-controls","module":"/js/runtime/extensions/page-controls.js","scope":"region","when":{"always":true},"config":{"highlight":"/js/search/highlight.js","tagtree":"/js/tagtree.js"}},{"id":"partial-navigation","module":"/js/runtime/extensions/partial-navigation.js","scope":"document","when":{"always":true},"config":{}},{"id":"search","module":"/js/runtime/extensions/search.js","scope":"document","when":{"selector":".search-input"},"config":{"provider":"local","options":{"scope":"all","includeContent":true,"cacheTtlSeconds":86400},"assets":{"client":null,"provider":"/js/search/local-search.js","shortcut":"/js/search/shortcut.js"}}},{"id":"hero-parallax","module":"/js/runtime/extensions/hero-parallax.js","scope":"region","when":{"selector":".wiki-hero"},"config":{}},{"id":"hero-effect","module":"/js/runtime/extensions/hero-effect.js","scope":"region","when":{"selector":"canvas[data-hero-effect]"},"config":{}},{"id":"lazy-loading","module":"/js/runtime/extensions/lazy-loading.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js"}},{"id":"deferred-icons","module":"/js/runtime/extensions/deferred-icons.js","scope":"region","when":{"selector":"svg.icon[data-icon]"},"config":{}},{"id":"dropdown","module":"/js/runtime/extensions/dropdown.js","scope":"region","when":{"selector":"details.dropdown"},"config":{}},{"id":"services","module":"/js/runtime/extensions/services.js","scope":"region","when":{"selector":"#artalk_container, #twikoo_container, #waline_container, .data-service, [class*='ds-'], a[cardlink], a[data-md-link][data-siteinfo-api], .site-card [data-siteinfo-api], .voice\u003eaudio, .video\u003evideo, .chat-file"},"config":{"marked":"https://cdn.jsdelivr.net/npm/marked@4.0.18/marked.min.js"}},{"id":"settings","module":"/js/runtime/extensions/settings.js","scope":"region","when":{"selector":".settings-page"},"config":{}},{"id":"link-prefetch","module":"/js/runtime/extensions/link-prefetch.js","scope":"document","when":{"always":true},"config":{"asset":"https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"}},{"id":"lightbox","module":"/js/runtime/extensions/lightbox.js","scope":"region","when":{"selector":"[data-fancybox]:not(.error), .with-fancybox, .ds-memos, .timenode p\u003eimg"},"config":{"enabled":true,"selector":".timenode p\u003eimg","assets":{"localCss":"/css/plugins/fancybox.css","js":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.umd.js","css":"https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.css"}}},{"id":"code-copy","module":"/js/runtime/extensions/code-copy.js","scope":"region","when":{"selector":".code"},"config":{"assets":{"js":"/js/plugins/copycode.js"},"messages":{"label":"复制","copied":"复制成功","denied":"未获得剪贴板权限","unsupported":"当前浏览器不支持剪贴板或页面不是 HTTPS"}}},{"id":"adaptive-text","module":"/js/runtime/extensions/adaptive-text.js","scope":"region","when":{"selector":"[data-text-adaptive]"},"config":{"assets":{"colorJs":"/js/color.js","js":"/js/plugins/adaptive-text.js"}}},{"id":"swiper","module":"/js/runtime/extensions/swiper.js","scope":"region","when":{"selector":"#swiper-api"},"config":{"assets":{"localCss":"/css/plugins/swiper.css","js":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js","css":"https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css"}}}]}</script>
 <script data-stellar-script="core" type="module" src="/js/runtime/index.js?v=2.0.0&amp;runtime=1"></script>
 
 
 <!-- inject -->
-<script defer="" src="https://umami.661662.xyz/script.js" data-website-id="1a6cbcfd-9303-4a1b-8cf7-1ef97e50a0d6"></script>
 
 
 <script data-stellar-script="core" defer="" src="/js/navigation-init.js?v=2.0.0"></script>
 </div>
 
-</body></html>
+<script type="application/json" id="stellar-navigation-config">{"collection":"[\"post\",\"post\"]","url":"https://www.igeekbb.com/2023/05/26/pandora/","signature":"39325c1eeb530a3f35fa03b41b74ac8860ee61196ada0c20d5b01616a17ffc66"}</script></body></html>

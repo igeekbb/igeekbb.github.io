@@ -3,11 +3,11 @@
   <title>Geek</title>
   
   
-  <link href="https://igeekbb.github.io/atom.xml" rel="self"/>
+  <link href="https://www.igeekbb.com/atom.xml" rel="self"/>
   
-  <link href="https://igeekbb.github.io/"/>
+  <link href="https://www.igeekbb.com/"/>
   <updated>2026-10-06T09:15:03.583Z</updated>
-  <id>https://igeekbb.github.io/</id>
+  <id>https://www.igeekbb.com/</id>
   
   <author>
     <name>Geek</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>利用优选 CNAME 域名提高网站访问速度</title>
-    <link href="https://igeekbb.github.io/2024/09/26/cloudflare-saas/"/>
-    <id>https://igeekbb.github.io/2024/09/26/cloudflare-saas/</id>
+    <link href="https://www.igeekbb.com/2024/09/26/cloudflare-saas/"/>
+    <id>https://www.igeekbb.com/2024/09/26/cloudflare-saas/</id>
     <published>2024-09-26T01:52:38.000Z</published>
     <updated>2026-10-06T09:15:03.583Z</updated>
     
@@ -34,19 +34,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Cloudflare" scheme="https://igeekbb.github.io/tags/Cloudflare/"/>
+    <category term="Cloudflare" scheme="https://www.igeekbb.com/tags/Cloudflare/"/>
     
-    <category term="优选" scheme="https://igeekbb.github.io/tags/%E4%BC%98%E9%80%89/"/>
+    <category term="优选" scheme="https://www.igeekbb.com/tags/%E4%BC%98%E9%80%89/"/>
     
   </entry>
   
   <entry>
     <title>Debian 我的常用一键脚本</title>
-    <link href="https://igeekbb.github.io/2024/09/18/debian/"/>
-    <id>https://igeekbb.github.io/2024/09/18/debian/</id>
+    <link href="https://www.igeekbb.com/2024/09/18/debian/"/>
+    <id>https://www.igeekbb.com/2024/09/18/debian/</id>
     <published>2024-09-18T10:56:08.000Z</published>
     <updated>2026-10-06T09:15:03.584Z</updated>
     
@@ -61,19 +61,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
-    <category term="脚本" scheme="https://igeekbb.github.io/tags/%E8%84%9A%E6%9C%AC/"/>
+    <category term="脚本" scheme="https://www.igeekbb.com/tags/%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>记录用 AI 解决的小问题</title>
-    <link href="https://igeekbb.github.io/2024/09/13/aiproblems/"/>
-    <id>https://igeekbb.github.io/2024/09/13/aiproblems/</id>
+    <link href="https://www.igeekbb.com/2024/09/13/aiproblems/"/>
+    <id>https://www.igeekbb.com/2024/09/13/aiproblems/</id>
     <published>2024-09-13T12:28:21.000Z</published>
     <updated>2026-10-06T09:15:03.583Z</updated>
     
@@ -88,17 +88,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="AI" scheme="https://igeekbb.github.io/tags/AI/"/>
+    <category term="AI" scheme="https://www.igeekbb.com/tags/AI/"/>
     
   </entry>
   
   <entry>
     <title>hexo-theme-stellar 更新后阅读标签展示</title>
-    <link href="https://igeekbb.github.io/2024/05/23/stellar-129/"/>
-    <id>https://igeekbb.github.io/2024/05/23/stellar-129/</id>
+    <link href="https://www.igeekbb.com/2024/05/23/stellar-129/"/>
+    <id>https://www.igeekbb.com/2024/05/23/stellar-129/</id>
     <published>2024-05-23T11:48:48.000Z</published>
     <updated>2026-10-06T09:15:03.587Z</updated>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>垃圾佬新欢 CC150 简单跑分评测</title>
-    <link href="https://igeekbb.github.io/2024/05/16/cc150/"/>
-    <id>https://igeekbb.github.io/2024/05/16/cc150/</id>
+    <link href="https://www.igeekbb.com/2024/05/16/cc150/"/>
+    <id>https://www.igeekbb.com/2024/05/16/cc150/</id>
     <published>2024-05-16T14:00:58.000Z</published>
     <updated>2026-10-06T09:27:01.192Z</updated>
     
@@ -135,19 +135,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="硬件" scheme="https://igeekbb.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    <category term="硬件" scheme="https://www.igeekbb.com/tags/%E7%A1%AC%E4%BB%B6/"/>
     
-    <category term="DIY" scheme="https://igeekbb.github.io/tags/DIY/"/>
+    <category term="DIY" scheme="https://www.igeekbb.com/tags/DIY/"/>
     
   </entry>
   
   <entry>
     <title>数码荔枝正版 Geek 精选软件推荐</title>
-    <link href="https://igeekbb.github.io/2024/04/29/lizhi/"/>
-    <id>https://igeekbb.github.io/2024/04/29/lizhi/</id>
+    <link href="https://www.igeekbb.com/2024/04/29/lizhi/"/>
+    <id>https://www.igeekbb.com/2024/04/29/lizhi/</id>
     <published>2024-04-29T01:40:54.000Z</published>
     <updated>2026-10-06T09:15:03.584Z</updated>
     
@@ -162,19 +162,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="正版" scheme="https://igeekbb.github.io/tags/%E6%AD%A3%E7%89%88/"/>
+    <category term="正版" scheme="https://www.igeekbb.com/tags/%E6%AD%A3%E7%89%88/"/>
     
-    <category term="软件" scheme="https://igeekbb.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
+    <category term="软件" scheme="https://www.igeekbb.com/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>$35/年 搬瓦工DC9传家宝 融合怪脚本跑分</title>
-    <link href="https://igeekbb.github.io/2024/04/16/bandwagong-dc9/"/>
-    <id>https://igeekbb.github.io/2024/04/16/bandwagong-dc9/</id>
+    <link href="https://www.igeekbb.com/2024/04/16/bandwagong-dc9/"/>
+    <id>https://www.igeekbb.com/2024/04/16/bandwagong-dc9/</id>
     <published>2024-04-16T07:50:11.000Z</published>
     <updated>2026-10-06T09:15:03.583Z</updated>
     
@@ -189,17 +189,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
   </entry>
   
   <entry>
     <title>转译-10个 Prompts 助你重写内容</title>
-    <link href="https://igeekbb.github.io/2024/04/08/Rewrite-Content-prompts/"/>
-    <id>https://igeekbb.github.io/2024/04/08/Rewrite-Content-prompts/</id>
+    <link href="https://www.igeekbb.com/2024/04/08/Rewrite-Content-prompts/"/>
+    <id>https://www.igeekbb.com/2024/04/08/Rewrite-Content-prompts/</id>
     <published>2024-04-08T00:51:43.000Z</published>
     <updated>2026-10-06T09:15:03.581Z</updated>
     
@@ -214,19 +214,19 @@
     
     
     
-    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://www.igeekbb.com/categories/AI/"/>
     
     
-    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://www.igeekbb.com/tags/ChatGPT/"/>
     
-    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    <category term="Prompt" scheme="https://www.igeekbb.com/tags/Prompt/"/>
     
   </entry>
   
   <entry>
     <title>转译-7个必备的 ChatGPT Excel Prompts</title>
-    <link href="https://igeekbb.github.io/2024/04/04/prompts-for-excel/"/>
-    <id>https://igeekbb.github.io/2024/04/04/prompts-for-excel/</id>
+    <link href="https://www.igeekbb.com/2024/04/04/prompts-for-excel/"/>
+    <id>https://www.igeekbb.com/2024/04/04/prompts-for-excel/</id>
     <published>2024-04-04T02:39:28.000Z</published>
     <updated>2026-10-06T09:15:03.586Z</updated>
     
@@ -241,19 +241,19 @@
     
     
     
-    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://www.igeekbb.com/categories/AI/"/>
     
     
-    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://www.igeekbb.com/tags/ChatGPT/"/>
     
-    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    <category term="Prompt" scheme="https://www.igeekbb.com/tags/Prompt/"/>
     
   </entry>
   
   <entry>
     <title>转译-15个适用于学术写作的 ChatGPT Prompts</title>
-    <link href="https://igeekbb.github.io/2024/04/02/academicprompts/"/>
-    <id>https://igeekbb.github.io/2024/04/02/academicprompts/</id>
+    <link href="https://www.igeekbb.com/2024/04/02/academicprompts/"/>
+    <id>https://www.igeekbb.com/2024/04/02/academicprompts/</id>
     <published>2024-04-02T01:35:51.000Z</published>
     <updated>2026-10-06T09:15:03.582Z</updated>
     
@@ -268,19 +268,19 @@
     
     
     
-    <category term="AI" scheme="https://igeekbb.github.io/categories/AI/"/>
+    <category term="AI" scheme="https://www.igeekbb.com/categories/AI/"/>
     
     
-    <category term="ChatGPT" scheme="https://igeekbb.github.io/tags/ChatGPT/"/>
+    <category term="ChatGPT" scheme="https://www.igeekbb.com/tags/ChatGPT/"/>
     
-    <category term="Prompt" scheme="https://igeekbb.github.io/tags/Prompt/"/>
+    <category term="Prompt" scheme="https://www.igeekbb.com/tags/Prompt/"/>
     
   </entry>
   
   <entry>
     <title>圾皇狂喜 新手地狱？i9 13900H 魔改板U套装评测</title>
-    <link href="https://igeekbb.github.io/2024/01/02/13900h/"/>
-    <id>https://igeekbb.github.io/2024/01/02/13900h/</id>
+    <link href="https://www.igeekbb.com/2024/01/02/13900h/"/>
+    <id>https://www.igeekbb.com/2024/01/02/13900h/</id>
     <published>2024-01-02T01:07:01.000Z</published>
     <updated>2026-10-06T09:27:01.193Z</updated>
     
@@ -295,19 +295,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="硬件" scheme="https://igeekbb.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    <category term="硬件" scheme="https://www.igeekbb.com/tags/%E7%A1%AC%E4%BB%B6/"/>
     
-    <category term="DIY" scheme="https://igeekbb.github.io/tags/DIY/"/>
+    <category term="DIY" scheme="https://www.igeekbb.com/tags/DIY/"/>
     
   </entry>
   
   <entry>
     <title>Proxmoxve 安装手记 - All in One</title>
-    <link href="https://igeekbb.github.io/2023/11/29/proxmoxve/"/>
-    <id>https://igeekbb.github.io/2023/11/29/proxmoxve/</id>
+    <link href="https://www.igeekbb.com/2023/11/29/proxmoxve/"/>
+    <id>https://www.igeekbb.com/2023/11/29/proxmoxve/</id>
     <published>2023-11-29T05:39:23.000Z</published>
     <updated>2026-10-06T09:27:01.193Z</updated>
     
@@ -323,19 +323,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="Proxmoxve" scheme="https://igeekbb.github.io/tags/Proxmoxve/"/>
+    <category term="Proxmoxve" scheme="https://www.igeekbb.com/tags/Proxmoxve/"/>
     
-    <category term="虚拟机" scheme="https://igeekbb.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <category term="虚拟机" scheme="https://www.igeekbb.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>RackNerd黑五闪购1C1G12GB圣何塞机房评测</title>
-    <link href="https://igeekbb.github.io/2023/11/25/racknerd/"/>
-    <id>https://igeekbb.github.io/2023/11/25/racknerd/</id>
+    <link href="https://www.igeekbb.com/2023/11/25/racknerd/"/>
+    <id>https://www.igeekbb.com/2023/11/25/racknerd/</id>
     <published>2023-11-25T15:41:24.000Z</published>
     <updated>2026-10-06T09:15:03.586Z</updated>
     
@@ -350,17 +350,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
   </entry>
   
   <entry>
     <title>PassWall 负载均衡 HAProxy 保姆级设置</title>
-    <link href="https://igeekbb.github.io/2023/10/18/passwall-haproxy/"/>
-    <id>https://igeekbb.github.io/2023/10/18/passwall-haproxy/</id>
+    <link href="https://www.igeekbb.com/2023/10/18/passwall-haproxy/"/>
+    <id>https://www.igeekbb.com/2023/10/18/passwall-haproxy/</id>
     <published>2023-10-18T03:32:58.000Z</published>
     <updated>2026-10-06T09:15:03.586Z</updated>
     
@@ -375,19 +375,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="OpenWrt" scheme="https://igeekbb.github.io/tags/OpenWrt/"/>
+    <category term="OpenWrt" scheme="https://www.igeekbb.com/tags/OpenWrt/"/>
     
-    <category term="负载均衡" scheme="https://igeekbb.github.io/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
+    <category term="负载均衡" scheme="https://www.igeekbb.com/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/"/>
     
   </entry>
   
   <entry>
     <title>欧洲 Scaleway 年付 40RMB VPS IPV6 搭梯评测</title>
-    <link href="https://igeekbb.github.io/2023/10/06/Scaleway/"/>
-    <id>https://igeekbb.github.io/2023/10/06/Scaleway/</id>
+    <link href="https://www.igeekbb.com/2023/10/06/Scaleway/"/>
+    <id>https://www.igeekbb.com/2023/10/06/Scaleway/</id>
     <published>2023-10-06T11:13:09.000Z</published>
     <updated>2026-10-06T09:15:03.582Z</updated>
     
@@ -403,19 +403,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
-    <category term="IPV6" scheme="https://igeekbb.github.io/tags/IPV6/"/>
+    <category term="IPV6" scheme="https://www.igeekbb.com/tags/IPV6/"/>
     
   </entry>
   
   <entry>
     <title>PassWall+MosDNS 分流设置</title>
-    <link href="https://igeekbb.github.io/2023/09/29/passwall2mosdns/"/>
-    <id>https://igeekbb.github.io/2023/09/29/passwall2mosdns/</id>
+    <link href="https://www.igeekbb.com/2023/09/29/passwall2mosdns/"/>
+    <id>https://www.igeekbb.com/2023/09/29/passwall2mosdns/</id>
     <published>2023-09-29T02:28:03.000Z</published>
     <updated>2026-10-06T09:15:03.586Z</updated>
     
@@ -430,19 +430,19 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
-    <category term="DNS" scheme="https://igeekbb.github.io/tags/DNS/"/>
+    <category term="DNS" scheme="https://www.igeekbb.com/tags/DNS/"/>
     
   </entry>
   
   <entry>
     <title>macOS 14 Sonoma 博通网卡驱动支持</title>
-    <link href="https://igeekbb.github.io/2023/09/27/Hackintoswifi/"/>
-    <id>https://igeekbb.github.io/2023/09/27/Hackintoswifi/</id>
+    <link href="https://www.igeekbb.com/2023/09/27/Hackintoswifi/"/>
+    <id>https://www.igeekbb.com/2023/09/27/Hackintoswifi/</id>
     <published>2023-09-27T13:04:14.000Z</published>
     <updated>2023-12-25T10:04:14.000Z</updated>
     
@@ -457,17 +457,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="黑苹果" scheme="https://igeekbb.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    <category term="黑苹果" scheme="https://www.igeekbb.com/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
   </entry>
   
   <entry>
     <title>对抗 QoS 阻断&amp;限速 Hysteria2 端口跳跃设置</title>
-    <link href="https://igeekbb.github.io/2023/09/22/Hysteria2Port/"/>
-    <id>https://igeekbb.github.io/2023/09/22/Hysteria2Port/</id>
+    <link href="https://www.igeekbb.com/2023/09/22/Hysteria2Port/"/>
+    <id>https://www.igeekbb.com/2023/09/22/Hysteria2Port/</id>
     <published>2023-09-22T01:08:41.000Z</published>
     <updated>2026-10-06T09:15:03.580Z</updated>
     
@@ -482,17 +482,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
   </entry>
   
   <entry>
     <title>Hysteria2 &amp; VLESS-gRPC-uTLS-REALITY 对比测试</title>
-    <link href="https://igeekbb.github.io/2023/09/18/hysteria/"/>
-    <id>https://igeekbb.github.io/2023/09/18/hysteria/</id>
+    <link href="https://www.igeekbb.com/2023/09/18/hysteria/"/>
+    <id>https://www.igeekbb.com/2023/09/18/hysteria/</id>
     <published>2023-09-18T11:40:33.000Z</published>
     <updated>2026-10-06T09:27:01.191Z</updated>
     
@@ -507,17 +507,17 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
   </entry>
   
   <entry>
     <title>入手搬瓦工 CN2 GIA 特别限量版</title>
-    <link href="https://igeekbb.github.io/2023/09/14/bandwagonhost/"/>
-    <id>https://igeekbb.github.io/2023/09/14/bandwagonhost/</id>
+    <link href="https://www.igeekbb.com/2023/09/14/bandwagonhost/"/>
+    <id>https://www.igeekbb.com/2023/09/14/bandwagonhost/</id>
     <published>2023-09-14T11:44:00.000Z</published>
     <updated>2026-10-06T09:15:03.583Z</updated>
     
@@ -532,10 +532,10 @@
     
     
     
-    <category term="技术" scheme="https://igeekbb.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="技术" scheme="https://www.igeekbb.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="VPS" scheme="https://igeekbb.github.io/tags/VPS/"/>
+    <category term="VPS" scheme="https://www.igeekbb.com/tags/VPS/"/>
     
   </entry>
   
