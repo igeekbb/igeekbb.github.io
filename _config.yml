@@ -120,4 +120,4 @@ feed:
 deploy:
  type: git
  repo: https://github.com/igeekbb/igeekbb.github.io.git
- branch: main
+ branch: gh-pages
