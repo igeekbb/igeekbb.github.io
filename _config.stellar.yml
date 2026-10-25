@@ -1,0 +1,339 @@
+# Stellar v2 主题配置（由 v1.44.0 迁移）
+# 只覆盖需要修改的默认值，未写出的字段沿用主题默认。
+# 迁移说明：https://xaoxuu.com/wiki/stellar/migration/v1-to-v2/
+
+######## Leftbar ########
+leftbar:
+  brand:
+    # 搜索入口从菜单移到 Brand（原 menubar 中的 type: search）
+    search: true
+    image:
+      # 原 logo.avatar: '[{config.avatar}](/about/)'，v2 拆分为独立字段
+      src: https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp
+      variant: avatar
+    name: Geek
+    # 原 logo.subtitle
+    tagline: 🧠在家居士\🥦素食者 | 就是爱瞎折腾🐤
+    href: /
+  # 原 menubar.columns: 4；v2 用 menu_columns（3-5 列只显示图标）
+  menu_columns: 4
+  # 原 menubar.items；theme 配色改名为 accent
+  menu:
+    - id: post
+      accent: '#1BCDFC'
+      icon: default:documents
+      title: 博客
+      url: /
+    - id: wiki
+      accent: '#3DC550'
+      icon: example:notebook
+      title: 文档
+      url: /topic/
+    - id: social
+      accent: '#F44336'
+      icon: example:chat
+      title: X
+      url: https://twitter.com/geekbb
+
+######## Profiles ########
+# 原 site_tree；leftbar/rightbar 字符串改为 Region 的 widgets 数组
+profiles:
+  home:
+    leftbar:
+      widgets:
+        - recent
+    rightbar:
+      widgets: []
+  blog_index:
+    # 原 index_blog.base_dir: blog
+    path: /blog/
+    active_menu: post
+    leftbar:
+      widgets:
+        - recent
+    rightbar:
+      widgets: []
+  post:
+    active_menu: post
+    leftbar:
+      widgets:
+        - related
+        - recent
+    rightbar:
+      widgets:
+        - ghrepo
+        - toc
+  topic:
+    # 原 index_topic.base_dir: topic
+    path: /topic/
+    active_menu: post
+  wiki_index:
+    # 原 index_wiki.base_dir: wiki
+    path: /wiki/
+    active_menu: null
+    leftbar:
+      widgets:
+        - related
+        - recent
+    rightbar:
+      widgets: []
+  wiki:
+    active_menu: null
+    leftbar:
+      menu: []
+      widgets:
+        - tree
+        - related
+        - recent
+    rightbar:
+      widgets:
+        - ghrepo
+        - toc
+  author:
+    # 原 author.base_dir: author
+    path: /author/
+    active_menu: post
+    leftbar:
+      widgets:
+        - recent
+        - timeline
+    rightbar:
+      widgets:
+        - timeline
+  page:
+    leftbar:
+      widgets:
+        - recent
+    rightbar:
+      widgets:
+        - toc
+  error:
+    # 原 error_page
+    path: /404.html
+    image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/404/1c830bfcd517d.svg
+    active_menu: post
+    leftbar:
+      widgets:
+        - recent
+        - timeline
+    rightbar:
+      widgets:
+        - timeline
+
+######## Article ########
+article:
+  # 原 article.type: tech
+  style: tech
+  # 原 article.indent（留空 = auto）
+  paragraph_indent: auto
+  banner:
+    # 内容页横幅使用封面作为背景
+    background: true
+  listing:
+    # 原 article.pin_style / card_style / cover_ratio / auto_excerpt / card_tags
+    pinned_layout: carousel
+    card_layout: classic
+    cover_ratio: 2.4
+    excerpt_length: 100
+    show_tags: true
+  # 原 article.category_color
+  category_colors:
+    探索号: '#f44336'
+  show_reading_time: false
+  # 原 article.related_posts.enable: false（关闭则为 0）
+  related_posts_limit: 0
+  footer:
+    # 原 article.license
+    license: 本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+    # 原 article.share: [email, link]；v2 中 link 已移除，改用 qrcode
+    share:
+      - email
+    # 原 article.tags（文章末尾标签行）
+    show_tags: true
+
+######## Appearance ########
+appearance:
+  # 原 style.leftbar.ui-style: glass；v2 提升为站点级外观预设
+  preset: glass
+  # 原 style.prefers_theme: auto
+  color_scheme: auto
+  colors:
+    # 原 style.color.theme / accent / link；background、block、code、text 在 v2 由主题内部管理
+    primary: hsl(192 98% 55%)
+    accent: hsl(14 100% 57%)
+    link: hsl(207 90% 54%)
+  gradients:
+    # 原 style.gradient.start
+    primary_action: linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))
+  typography:
+    font_family:
+      # 原 style.font-family.body / code；logo 字体在 v2 不再单独配置
+      body: LXGW Wenkai Screen
+      code: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif
+    font_size:
+      # 原 style.font-size.root / code / codeblock
+      root: 16px
+      inline_code: 85%
+      code_block: 0.8125rem
+    # 原 style.text-align: left
+    content_align: left
+  shape:
+    radius:
+      # 原 style.border-radius.card-l / card / bar / image
+      card_large: 16px
+      card: 12px
+      bar: 8px
+      image: 12px
+  code_block:
+    # 原 style.codeblock
+    scrollbar_width: 4px
+    highlight_stylesheet: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css
+
+######## Search ########
+search:
+  # 原 search.service: local_search
+  provider: local
+  local:
+    # 原 search.local_search.field / content
+    scope: all
+    include_content: true
+    cache_ttl_seconds: 86400
+
+######## Comments ########
+comments:
+  provider: null
+
+######## Tags ########
+# 原 tag_plugins；copy.toast、timeline.max-height、okr 状态表、image.parse_markdown 在 v2 已移除
+tags:
+  note:
+    default_color: ''
+    border: true
+  checkbox:
+    interactive: false
+  quot:
+    default:
+      prefix: quot:quote-left
+      suffix: quot:quote-right
+    hashtag:
+      prefix: quot:hashtag
+    question:
+      prefix: quot:question
+  emoji:
+    # 原 tag_plugins.emoji；v2 拆为 default_source + sources
+    default_source: qq
+    sources:
+      twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/{name}.svg
+      qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/{name}.gif
+      aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/{name}.gif
+      tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/{name}.png
+      blobcat: https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/{name}.png
+  icon:
+    default_color: accent
+  button:
+    default_color: theme
+  mark:
+    default_color: yellow
+  hashtag:
+    default_color: null
+  gallery:
+    # 原 tag_plugins.gallery.size / ratio；ratio 改为 aspect_ratio，origin 改为 original
+    # 原 layout: grid 不再是全局配置，需在每个 gallery 标签中写 layout:grid
+    size: mix
+    aspect_ratio: square
+
+######## Features ########
+# 原 plugins；能力名有变化，copycode / adaptive_text 由主题内置接管
+features:
+  lazy_loading:
+    # 原 dependencies.lazyload
+    js: https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.4/dist/lazyload.min.js
+    transition: blur
+  link_prefetch:
+    # 原 plugins.preload
+    enabled: true
+    js: https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js
+  lightbox:
+    # 原 plugins.fancybox；mode 在 v2 不再是配置项，由主题按需加载
+    enabled: true
+    js: https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.umd.js
+    css: https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.css
+    selector: .timenode p>img
+  swiper:
+    js: https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js
+    css: https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css
+  reveal:
+    # 原 plugins.scrollreveal.enable 为空（关闭）
+    enabled: false
+    distance: 16
+    duration: 800
+    interval: 100
+  card_hover:
+    # v2 新增，默认均为 false
+    spotlight: false
+    tilt: false
+  heti:
+    # 原 plugins.heti.enable: false
+    enabled: false
+  math:
+    # 原顶层 katex / mathjax；两者都未启用，按文章 front-matter 决定
+    provider: null
+    katex:
+      css: https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
+      css_integrity: sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0
+  diagrams:
+    # 原 plugins.mermaid
+    provider: null
+    mermaid:
+      js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
+      theme: neutral
+
+######## Services ########
+# 原 data_services / api_host；内部脚本路径不再可配置
+services:
+  markdown:
+    # 原 dependencies.marked
+    js: https://cdn.jsdelivr.net/npm/marked@4.0.18/marked.min.js
+  site_info:
+    provider: site_info_api
+    site_info_api:
+      # 原 data_services.siteinfo.api
+      endpoint: https://site-info-api-tau.vercel.app/api/v1?url={href}
+  github:
+    # 原 api_host
+    api_url: https://api.github.com
+    raw_url: https://raw.githubusercontent.com
+    gist_url: https://gist.github.com
+
+######## Footer ########
+# 原 footer.social 改为 leftbar.footer.actions；原配置全部为注释，这里保持为空
+footer:
+  sitemap: []
+  content: | # 支持 Markdown 格式
+    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+
+######## 其它 ########
+preconnect:
+  - https://gcore.jsdelivr.net
+  - https://cdn.jsdelivr.net
+
+# 原 default；v2 中头像/链接卡/封面进入 fallbacks，错误图进入 profiles.error.image
+fallbacks:
+  avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg
+  link_card: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/link/8f277b4ee0ecd.svg
+  cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg
+
+# 原 open_graph.enable
+open_graph:
+  enabled: true
+  twitter_id: geekbb
+
+inject:
+  # 原 _config.yml 的 inject.head（LXGW Wenkai 字体）；v2 不再读取 Hexo 级 inject
+  # 字体改为非阻塞加载（media=print + onload 切回 all），避免 render-blocking 拖慢 FCP/LCP
+  head_end: |
+    <link rel="preload" as="style" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css">
+    <link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+    <style>.post-list .post-cover{display:none}
+    .visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}</style>

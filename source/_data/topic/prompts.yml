@@ -1,0 +1,10 @@
+name: 精选-ChatGPT Prompts # 在面包屑导航上会显示较短的名字
+headline: ChatGPT Prompts 精选 # 在列表页会显示完整的专栏标题
+icon: https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404040946183.webp
+cover: https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202404040946183.webp
+description: 一个优秀的 Prompts 是可以在一定程度上能弥补 AI 模型的局限性。
+listing:
+  sort: # 原 order_by: -date
+    field: date
+    direction: desc
+  excerpt_length: 100 # 原全局 article.auto_excerpt: 100，专栏列表卡片摘要长度
