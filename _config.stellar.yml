@@ -9,7 +9,7 @@ leftbar:
     search: true
     image:
       # 原 logo.avatar: '[{config.avatar}](/about/)'，v2 拆分为独立字段
-      src: https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp
+      src: /images/avatar-192.webp
       variant: avatar
     name: Geek
     # 原 logo.subtitle

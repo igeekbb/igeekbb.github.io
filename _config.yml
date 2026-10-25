@@ -4,7 +4,7 @@
 
 # Site
 title: Geek
-avatar: https://cdn.jsdelivr.net/gh/igeekbb/OSS@main/2024/202403241805175.webp
+avatar: /images/avatar-192.webp
 favicon: https://cdn.jsdelivr.net/gh/geekbb/oss_img/202307271443409.ico
 subtitle: ''
 description: Geek 的个人博客，记录技术与生活折腾，涵盖 AI、编程、工具、日常思考等内容。
@@ -120,4 +120,4 @@ feed:
 deploy:
  type: git
  repo: https://github.com/igeekbb/igeekbb.github.io.git
- branch: gh-pages
+ branch: main
