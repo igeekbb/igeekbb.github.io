@@ -1,0 +1,8 @@
+/* 由 scripts/subset-font.py 生成，不要手改。重跑条件见脚本头部。 */
+@font-face {
+  font-family: 'LXGW WenKai Screen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./lxgw-subset.woff2') format('woff2');
+}
