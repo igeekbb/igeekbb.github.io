@@ -8,3 +8,7 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 字体子集脚本的本地缓存与虚拟环境
+scripts/.venv/
+scripts/.cache/

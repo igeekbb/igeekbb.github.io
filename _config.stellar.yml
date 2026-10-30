@@ -168,7 +168,7 @@ appearance:
   typography:
     font_family:
       # 原 style.font-family.body / code；logo 字体在 v2 不再单独配置
-      body: LXGW Wenkai Screen
+      body: "'LXGW Wenkai Screen', 'LXGW WenKai', 'Kaiti SC', KaiTi, 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', SimSun, serif"
       code: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif
     font_size:
       # 原 style.font-size.root / code / codeblock

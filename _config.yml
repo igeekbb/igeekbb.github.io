@@ -103,6 +103,13 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: stellar
+
+# Stylus 编译：不要开 compress。它会把 calc(0px + 1rem) 压成 calc(0 + 1rem)，
+# 无单位 0 不能与长度相加，自定义属性失效，实测左侧栏整体偏移 88px。
+# 需要压缩请用能正确解析 calc()/max() 的工具（csso、lightningcss），不要用 stylus 自带的。
+stylus:
+  compress: false
+
 # rss配置
 feed:
   enable: true
