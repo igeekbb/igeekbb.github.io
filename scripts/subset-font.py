@@ -8,7 +8,7 @@
     因此这里把 97 个分块合并回完整字体，再从它切子集——保证与线上字形逐点相同。
 
 用法：
-  python3 scripts/subset-font.py            # 生成 scripts/fonts/lxgw-subset.woff2 + .css
+  python3 scripts/subset-font.py            # 生成 source/fonts/lxgw-subset.{woff2,css}
   python3 scripts/subset-font.py --check    # 只校验，不写文件；有漂移则退出码 1
 
 何时需要重跑：
@@ -33,7 +33,8 @@ import urllib.request
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE = os.path.join(REPO, "scripts", ".cache")
-OUT = os.path.join(REPO, "scripts", "fonts")
+OUT = os.path.join(REPO, "source", "fonts")          # 只有 source/ 下的文件会被 hexo 发布
+META = os.path.join(REPO, "scripts", "fonts.meta.json")  # 清单不发布
 VENV = os.path.join(REPO, "scripts", ".venv")
 
 PKG = "lxgw-wenkai-screen-webfont"
@@ -227,7 +228,7 @@ def coverage(woff2: str, site: set[int]) -> tuple[list[int], int]:
 
 # ---------------------------------------------------------------- 清单
 def meta_path() -> str:
-    return os.path.join(OUT, "lxgw-subset.meta.json")
+    return META
 
 
 def load_meta() -> dict:
